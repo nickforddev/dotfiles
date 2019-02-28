@@ -57,7 +57,7 @@ Opinionated Vim config tha
 | [godlygeek/tabular](https://github.com/godlygeek/tabular)                                     | _tab alignment tools_                 |
 | [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region)                     | _selection expansion/reduction_       |
 | [kristijanhusak/vim-multiple-cursors](https://github.com/kristijanhusak/vim-multiple-cursors) | _allow for multiple cursors_          |
-| [**Buffers**](https://github.com/**Buffers**)                                                 |                                       |
+| **Buffers**                                                                                   |                                       |
 | [blueyed/ZoomWin](https://github.com/blueyed/ZoomWin)                                         | _zoom in and out of tabbed buffers_   |
 | [sjl/vitality.vim](https://github.com/sjl/vitality.vim)                                       | _iterm / tmux support_                |
 | **Themes**                                                                                    |                                       |
