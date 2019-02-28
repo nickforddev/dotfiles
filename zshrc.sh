@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 
 # plugins 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
-plugins=(brew git jsontools pip python sudo virtualenv)
+plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontools)
 
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"

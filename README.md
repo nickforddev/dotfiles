@@ -22,8 +22,25 @@ Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powe
 
 ### Plugins
 
-- oh-my-zsh
-- powerlevel9k
+| Package                                                                                          | Description         |
+|--------------------------------------------------------------------------------------------------|---------------------|
+| **zsh plugins**                                                                                  |                     |
+| [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)                                           | _zsh framework_     |
+| [powerlevel9k](https://github.com/bhilburn/powerlevel9k)                                         | _powerline theme_   |
+| **oh-my-zsh plugins**                                                                            |                     |
+| [osx](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/osx/README.md)               | _osx plugin_        |
+| [sudo](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/sudo/README.md)             | _sudo plugin_       |
+| [brew](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/brew/README.md)             | _homebrew plugin_   |
+| [git](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/README.md)               | _git plugin_        |
+| [github](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/github/README.md)         | _github plugin_     |
+| [docker](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/docker/README.md)         | _docker plugin_     |
+| [virtualenv](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/virtualenv/README.md) | _virtualenv plugin_ |
+| [npm](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/npm/README.md)               | _npm plugin_        |
+| [node](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/node/README.md)             | _node plugin_       |
+| [pip](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/pip/README.md)               | _pip plugin_        |
+| [python](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/python/README.md)         | _python plugin_     |
+| [jsontools](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/jsontools/README.md)   | _json tools plugin_ |
+
 
 ## Vim
 
