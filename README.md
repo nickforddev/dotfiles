@@ -1,6 +1,8 @@
 # dotfiles
 
-My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
 
 ## Installation
 
@@ -10,7 +12,7 @@ Install dependencies
 npm run install
 ```
 
-Run the setup script, which will create symlinks for the dotfiles:
+Run the setup script, which will give you a prompt to decide which dotfiles to symlink:
 
 ```bash
 npm run setup
@@ -18,7 +20,7 @@ npm run setup
 
 ## ZSH
 
-Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme.
+Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme and a bunch of oh-my-zsh-plugins.
 
 ### Plugins
 
