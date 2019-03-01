@@ -18,3 +18,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# VSCode configs
+
+/configs/vscode/User/workspaceStorage
+/configs/vscode/User/globalStorage
