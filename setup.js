@@ -4,6 +4,12 @@ const {
   install
 } = require('./lib/utils');
 
+const configs = [
+  'zsh',
+  'vim',
+  'vscode'
+];
+
 tidyup();
 
 inquirer
@@ -13,7 +19,7 @@ inquirer
       name: 'type',
       message: 'What do you want to install?',
       choices: [
-        'Default (zsh, vim)',
+        `Default (${configs.join(', ')})`,
         'Custom'
       ]
     }
@@ -26,22 +32,16 @@ inquirer
             type: 'checkbox',
             name: 'type',
             message: 'What configs do you want to install?',
-            choices: [
-              {
-                name: 'zsh',
-                checked: true
-              },
-              {
-                name: 'vim',
-                checked: true
-              }
-            ]
+            choices: configs.map(name => ({
+              name,
+              checked: true
+            }))
           }
         ])
         .then((answers) => {
           install(answers.type);
         });
     } else {
-      install(['zsh', 'vim']);
+      install(configs);
     }
   });
