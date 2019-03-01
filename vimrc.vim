@@ -1,49 +1,83 @@
-" ==================================================================================================
-" Vim config
+" ==================================================================================================  
+" Vim config local
 " ==================================================================================================
 
 set nocompatible                                " Disable legacy mode
 
-filetype on                                     " Must set to on before turning off
-filetype off
-
 " Vundle
-set rtp+=~/.vim/bundle/Vundle.vim               " set Vundle runtime path
+" --------------------------------------------------------------------------------------------------
 
-call vundle#begin()                             " begin Vundle
+set rtp+=~/.vim/bundle/Vundle.vim               " set vundle runtime path
 
-if filereadable(expand("~/.vimrc.bundles"))     " include Vundle plugin files
+call vundle#begin()                             " begin vundle
+
+if filereadable(expand("~/.vimrc.bundles"))     " include vundle plugin files
   source ~/.vimrc.bundles
   source ~/.vimrc.bundles.local
 endif
 
-call vundle#end()                               " end Vundle
+call vundle#end()                               " end vundle
 
 " Settings
+" --------------------------------------------------------------------------------------------------
+
+set shell=/bin/zsh                              " set shell
+set ff=unix                                     " use linux line endings
+
+filetype on                                     " must set to on before turning off
+filetype off
+
 syntax on                                       " turn on syntax highlighting
 filetype plugin indent on                       " determine syntax via filetype and more
 
 let mapleader=","                               " change to easier mapleader
 
-" Spelling                                      " does this belong here? or in .local
-set spell spelllang=en_us
+" Spelling
+" --------------------------------------------------------------------------------------------------
+
+set spell spelllang=en_us                       " use english
 setlocal spell spelllang=en_us
+nn <F7> :setlocal spell! spelllang=en_us<CR>    " toggle spelling with the F7 key
 
-" Toggle spelling with the F7 key (should this move?)
-nn <F7> :setlocal spell! spelllang=en_us<CR>
+" Layout
+" --------------------------------------------------------------------------------------------------
 
-" Formatting
 set number                                      " line numbers
 set numberwidth=5                               " width of line number column
 set autoindent                                  " tabs are fixed width
 set nocursorcolumn                              " hides vertical highlight (cross-hair)
 set cursorline                                  " highlights cursor line
-set encoding=utf-8                              " file encoding
 set title                                       " Show the filename in the window title bar
 set shortmess=atI                               " hide intro
 set report=0                                    " show messages
 
+" Buffers
+" --------------------------------------------------------------------------------------------------
+
+set ruler                                       " coordinates bottom right
+set list                                        " display whitespace
+set listchars=tab:\ ·,trail:·                   " characters to represent spaces and tabs
+set fillchars=vert:\ "                          "" define character to use for buffer separators
+set showbreak=↪	                                " character to represent line break
+set splitbelow                                  " open new buffer below instead of above
+set splitright                                  " open new vert buffer on right
+set laststatus=2                                " always show status line
+
+if exists("&cc")                                " colorcolumn at col 100
+  set cc=100
+endif
+
+" Formatting
+" --------------------------------------------------------------------------------------------------
+
+set encoding=utf-8                              " file encoding
+set isk+=_,$,@,%,#,-                            " word dividers
+set fo+=tcqlnr                                  " avoid formatting bullets
+set flp=^\\s*\\d\\+\\.\\s\\+\\\|^[-*+]\\s\\+
+
 " Tabs
+" --------------------------------------------------------------------------------------------------
+
 set backspace=indent,eol,start                  " allow backspacing over everything in insert mode
 set tabstop=2                                   " length of tabs
 set shiftwidth=2                                " length of auto tabs (inside code block)
@@ -51,35 +85,35 @@ set softtabstop=2                               " length of tabs in insert mode
 set shiftround                                  " round tabs to multiples of shiftwidth
 set expandtab                                   " currently being overridden
 
-" inoremap <S-Tab> <C-V><Tab><CR> this isnt working, cant toggle hard and soft tabs
-
 " Wrapping
+" --------------------------------------------------------------------------------------------------
+
 set nowrap                                      " should we make shortcut to toggle?
 set linebreak                                   " if wrap is on, only add a line break manually
 set textwidth=200                               " columns for text wrap
 
-" Buffer options
-set ruler                                       " coordinates bottom right
-set list                                        " display whitespace
-set listchars=tab:\ ·,trail:·                   " characters to represent spaces and tabs
-set fillchars=vert:\ " empty is nicer on our term   " define character to use for buffer separators
-set showbreak=↪	                                " character to represent line break
-set splitbelow                                  " open new buffer below instead of above
-set splitright                                  " open new vert buffer on right
-set laststatus=2                                " always show status line
+" Performance
+" --------------------------------------------------------------------------------------------------
 
-" Improve performance
 set lazyredraw                                  " only redraw when necessary
 set showmatch	                                  " jump cursor to matching brace when you close a block
 set matchtime=3                                 " defined match hop in tenths of a second
+set ttyfast                                     " optimize for fast terminal connections
+set notimeout                                   " time out on key codes but not mappings
+set ttimeout
+set ttimeoutlen=10
 
 " Search
+" --------------------------------------------------------------------------------------------------
+
 set hlsearch                                    " highlight search term matches
 set incsearch                                   " turn incremental searching on
 set ignorecase                                  " ignore case when searching
 set smartcase                                   " only watch case if including an uppercase letter
 
 " Autocomplete
+" --------------------------------------------------------------------------------------------------
+
 set completeopt=longest,menuone                 " display autocomplete as an optionlist like IDEs
 set omnifunc=syntaxcomplete#Complete            " turn on omnicompletion
 
@@ -87,16 +121,16 @@ set clipboard+=unnamed                          " share your clipboard with syst
 set mouse=a                                     " allow mouse use
 set modeline                                    " allow to change expandtab within a file
 set modelines=10                                " set range for beginning or end of file for modeline
-set shell=/bin/bash                              " set shell
 
-" Tabs
 set wildmode=list:longest,list:full             " Tab completion
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*,*/nimcache/*
 set wildignore+=*.swp,*~,._*
 
-" History / File handling
+" History/File handling
+" --------------------------------------------------------------------------------------------------
+
 set history=999                                 " increase history (default = 20)
 set undolevels=999                              " moar undo (default=100)
 set autoread                                    " reload files if changed externally
@@ -110,55 +144,33 @@ set backupskip=/tmp/*,/private/tmp/*            " allow Vim to edit crontab file
 set nobackup                                    " disable backups
 set noswapfile                                  " disable swap files
 
-" Avoid formatting bullets
-set fo+=tcqlnr
-" set fo-=r
-" set fo-=o
-set flp=^\\s*\\d\\+\\.\\s\\+\\\|^[-*+]\\s\\+
-
 if exists("&undodir")                           " persistent undo
   set undodir=~/.vim/undo/
   set undofile
 endif
 
-set nostartofline " Don’t reset cursor to start of line when moving around.
-set esckeys " Allow cursor keys in insert mode
-set ttyfast " Optimize for fast terminal connections
-set isk+=_,$,@,%,#,- " none word dividers
+set nostartofline                               " don’t reset cursor to start of line when moving around
+set esckeys                                     " allow cursor keys in insert mode
+
+" Passwords
+" --------------------------------------------------------------------------------------------------
 
 if exists("&cryptmethod")
-  set cryptmethod=blowfish " https://coderwall.com/p/hypjbg
+  set cryptmethod=blowfish                      " https://coderwall.com/p/hypjbg
 endif
 
-" Time out on key codes but not mappings.
-" Basically this makes terminal Vim work sanely.
-set notimeout
-set ttimeout
-set ttimeoutlen=10
+" Themes
+" --------------------------------------------------------------------------------------------------
 
-" Write better
-if exists("&cc")
-  set cc=100
-endif
-
-" In case we use molokay
-let g:rehash256 = 1
-
-" Set colors
 set background=dark
 colorscheme onedark
 
-" Add a more detailed theme for airline
-let g:airline_theme = 'tomorrow'
+let g:rehash256 = 1                             " use 256 color if theme is molokai
+let g:airline_theme = "tomorrow"                " add a more detailed theme for airline
+let g:airline_powerline_fonts = 1               " use powerline fonts
+let g:vim_markdown_folding_disabled=1           " disable markdown folding
 
-" Use Powerline fonts
-let g:airline_powerline_fonts = 1
-
-" Disable markdown floading
-let g:vim_markdown_folding_disabled=1
-
-" Verical bar in insert mode (for iTerm users only)
-if has("nvim")
+if has("nvim")                                  " verical bar in insert mode (for iTerm)
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 else
@@ -187,7 +199,7 @@ let g:go_snippet_engine = "ultisnips"
 let g:go_fmt_command = "goimports"
 
 " Use AG
-let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ackprg = "ag --nogroup --nocolor --column"
 
 " au FileType *    set expandtab   " others not ///// LOOK AT THIS
 " au FileType make set noexpandtab
@@ -358,15 +370,6 @@ let g:ctrlp_by_filename = 0
 " endif
 
 let g:jsx_pragma_required = 0
-
-" Clang format
-" let g:clang_format#auto_format = 1
-" let g:clang_format#style_options = {
-"   \ 'BasedOnStyle': 'llvm',
-"   \ 'ColumnLimit': 100,
-"   \ 'BreakBeforeBraces' : 'Stroustrup',
-"   \ }
-"   \ 'AlwaysBreakAfterDefinitionReturnType': 'true',
 
 " Additional mapping for buffer search
 map  <C-k> :CtrlPBuffer<CR>
