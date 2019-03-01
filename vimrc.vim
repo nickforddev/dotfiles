@@ -68,7 +68,7 @@ if exists("&cc")                                  " colorcolumn at col 100
   set cc=100
 endif
 
-let g:netrw_silent=1                            " stop netrw
+let g:netrw_silent=1                              " stop netrw
 let g:netrw_quiet=1
 let g:loaded_netrw=1
 
@@ -117,8 +117,8 @@ set hlsearch                                      " highlight search term matche
 set incsearch                                     " turn incremental searching on
 set ignorecase                                    " ignore case when searching
 set smartcase                                     " only watch case if including an uppercase letter
-let g:ackprg="ag --nogroup --nocolor --column"  " use AG
-let g:ctrlp_working_path_mode='ra'              " ctrlp
+let g:ackprg="ag --nogroup --nocolor --column"    " use AG
+let g:ctrlp_working_path_mode='ra'                " ctrlp
 let g:ctrlp_by_filename=0
 
 " if executable('fzf')
@@ -156,7 +156,7 @@ if has('conceal')                                 " for snippet_complete marker
   set conceallevel=2 concealcursor=i
 endif
 
-let g:UltiSnipsUsePythonVersion=3               " make UltiSnips play nice with YCM
+let g:UltiSnipsUsePythonVersion=3                 " make UltiSnips play nice with YCM
 let g:UltiSnipsListSnippets="<c-e>"
 let g:UltiSnipsExpandTrigger="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -200,7 +200,7 @@ set esckeys                                       " allow cursor keys in insert 
 
 au FocusLost * :silent! wall                      " save when losing focus
 au VimEnter * cd %:p:h                            " when we open a new session change the path
-au VimResized * :wincmd=                        " resize splits when the window is resized
+au VimResized * :wincmd=                          " resize splits when the window is resized
 au VimEnter * silent! cd %:p:h                    " set current chdir
 
 ca W! %!sudo tee > /dev/null %                    " use :W! to write to a file using sudo if needed
@@ -211,7 +211,7 @@ ca W! %!sudo tee > /dev/null %                    " use :W! to write to a file u
 " NERDTree
 " --------------------------------------------------------------------------------------------------
 
-let NERDTreeQuitOnOpen=0                       " dont collapse NERDTree when a file is opened
+let NERDTreeQuitOnOpen=0                          " dont collapse NERDTree when a file is opened
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=0
 let NERDTreeChDirMode=0
@@ -244,9 +244,9 @@ let g:ale_sign_column_always=1
 set background=dark
 colorscheme onedark
 
-let g:rehash256=1                               " use 256 color if theme is molokai
-let g:airline_theme="tomorrow"                  " add a more detailed theme for airline
-let g:airline_powerline_fonts=1                 " use powerline fonts
+let g:rehash256=1                                 " use 256 color if theme is molokai
+let g:airline_theme="tomorrow"                    " add a more detailed theme for airline
+let g:airline_powerline_fonts=1                   " use powerline fonts
 let g:airline#extensions#ale#enabled=1
 let g:vim_markdown_folding_disabled=1             " disable markdown folding
 
@@ -321,7 +321,7 @@ if has('nvim')                                    " nvim adjustments
   tnoremap <C-w>l <C-\><C-n><C-w>l
 endif
 
-let g:always_assume_iterm=0                     " vitality
+let g:always_assume_iterm=0                       " vitality
 
 " Shortcuts
 " --------------------------------------------------------------------------------------------------
