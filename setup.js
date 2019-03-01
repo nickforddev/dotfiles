@@ -1,16 +1,15 @@
 const inquirer = require('inquirer');
 const {
-  tidyup,
+  clearPrint,
+  getConfigNames,
   install
 } = require('./lib/utils');
 
-const configs = [
-  'zsh',
-  'vim',
-  'vscode'
-];
+const configs = getConfigNames();
 
-tidyup();
+clearPrint('dotfiles');
+
+console.log('wat');
 
 inquirer
   .prompt([
