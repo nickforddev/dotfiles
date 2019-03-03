@@ -19,14 +19,16 @@ BREW_PREFIX=$(brew --prefix)
 # install zsh
 brew install zsh zsh-completions
 
-# use zsh as default shell
-chsh -s /bin/zsh
+if [[ $SHELL =~ "zsh" ]]
+then
+  echo "zsh is already the current shell"
+else
+  echo "setting zsh to default shell"
+  chsh -s /bin/zsh
+fi
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# install wget
-brew install wget
 
 # install more recent versions of some macOS tools.
 brew install vim
@@ -48,7 +50,7 @@ brew cask install font-material-icons
 
 # Install other useful binaries.
 # brew install ack
-#brew install exiv2
+# brew install exiv2
 brew install git
 brew install git-lfs
 # brew install imagemagick --with-webp
