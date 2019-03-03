@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ~/.osx
-# paul's slight fork of https://mths.be/osx
+# based of paul irish's macos dotfile
 
 
 # FWIW, this `defaults find` is good at finding some set preferences.
