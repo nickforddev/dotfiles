@@ -47,6 +47,7 @@ Plugin 'sjl/vitality.vim'                      " iterm / tmux support
 Plugin 'jordwalke/flatlandia'                  " flatlandia
 Plugin 'morhetz/gruvbox'                       " gruvbox
 Plugin 'joshdick/onedark.vim'                  " one dark
+Plugin 'drewtempelmeyer/palenight.vim'         " pale night
 
 " Syntax
 " --------------------------------------------------------------------------------------------------

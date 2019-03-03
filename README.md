@@ -4,6 +4,12 @@
 
 My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
 
+## Screenshots
+
+![ZSH](./screenshots/zsh.png "ZSH")
+![Vim](./screenshots/vim.png "Vim")
+![VSCode](./screenshots/vscode.png "VSCode")
+
 ## Installation
 
 Install dependencies
@@ -20,7 +26,7 @@ npm run setup
 
 ## ZSH
 
-Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme and a bunch of oh-my-zsh-plugins.
+Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme and a bunch of oh-my-zsh-plugins
 
 ### Plugins
 
@@ -43,10 +49,9 @@ Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powe
 | [python](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/python/README.md)         | _python plugin_     |
 | [jsontools](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/jsontools/README.md)   | _json tools plugin_ |
 
-
 ## Vim
 
-Opinionated Vim config tha
+Opinionated Vim config using Vundle as a package manager
 
 ### Vim bundles
 
