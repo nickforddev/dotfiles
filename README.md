@@ -4,6 +4,12 @@
 
 My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
 
+## Screenshots
+
+![ZSH](./screenshots/zsh.png "ZSH")
+![Vim](./screenshots/vim.png "Vim")
+![VSCode](./screenshots/vscode.png "VSCode")
+
 ## Installation
 
 Install dependencies
