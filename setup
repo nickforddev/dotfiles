@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-# ./brew.sh
+# ./brew
 ./link
-./source.sh
+./source
