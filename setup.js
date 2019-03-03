@@ -9,8 +9,6 @@ const configs = getConfigNames();
 
 clearPrint('dotfiles');
 
-console.log('wat');
-
 inquirer
   .prompt([
     {

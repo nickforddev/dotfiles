@@ -242,13 +242,14 @@ let g:ale_sign_column_always=1
 " --------------------------------------------------------------------------------------------------
 
 set background=dark
-colorscheme onedark
+colorscheme palenight
 
 let g:rehash256=1                                 " use 256 color if theme is molokai
 let g:airline_theme="tomorrow"                    " add a more detailed theme for airline
 let g:airline_powerline_fonts=1                   " use powerline fonts
 let g:airline#extensions#ale#enabled=1
 let g:vim_markdown_folding_disabled=1             " disable markdown folding
+let g:palenight_terminal_italics=1
 
 if has("nvim")                                    " vertical bar in insert mode (for iTerm)
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -256,6 +257,10 @@ if has("nvim")                                    " vertical bar in insert mode 
 else
   let &t_SI="\<Esc>]50;CursorShape=1\x7"
   let &t_EI="\<Esc>]50;CursorShape=0\x7"
+endif
+
+if (has("termguicolors"))
+  set termguicolors
 endif
 
 " Git
