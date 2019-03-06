@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+$DOTFILES=~/.dotfiles
+
+env git clone --depth=1 https://github.com/nickforddesign/dotfiles.git "$DOTFILES"|| {
+  printf "Error: git clone of dotfiles repo failed\n"
+  exit 1
+}
+
+cd $DOTFILES

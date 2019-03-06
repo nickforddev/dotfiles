@@ -32,8 +32,7 @@ if [ ! -n "$ZSH" ]; then
 fi
 
 if [ -d "$ZSH" ]; then
-  printf "${YELLOW}You already have Oh My Zsh installed.${NORMAL}\n"
-  printf "You'll need to remove $ZSH if you want to re-install.\n"
+  echo "Oh-my-zsh already installed"
 else
   # install oh-my-zsh
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -58,7 +57,7 @@ brew install git-lfs
 
 # install node
 brew install nvm
-nvm install node --latest-npm
+env nvm install node --latest-npm
 
 # Remove outdated versions from the cellar.
 brew cleanup
