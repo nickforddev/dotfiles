@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+echo "Running Homebrew setup..."
+
+if hash brew 2>/dev/null; then
+  echo "Homebrew is installed"
+else
+  echo "Installing homebrew"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+# update homebrew and update packages
+brew update
+brew upgrade
+
+# save homebrew’s installed location.
+BREW_PREFIX=$(brew --prefix)
+
+# install zsh
+brew install zsh zsh-completions
+
+if [[ $SHELL =~ "zsh" ]]
+then
+  echo "Zsh is already the current shell"
+else
+  echo "Setting zsh to default shell"
+  chsh -s /bin/zsh
+fi
+
+if [ ! -n "$ZSH" ]; then
+  ZSH=~/.oh-my-zsh
+fi
+
+if [ -d "$ZSH" ]; then
+  echo "Oh-my-zsh already installed"
+else
+  # install oh-my-zsh
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
+# install more recent version of vim
+brew install vim
+
+# install powerlevel9k
+brew tap sambadevi/powerlevel9k
+brew install powerlevel9k
+
+# install fonts
+brew tap homebrew/cask-fonts
+brew cask install font-hack
+brew cask install font-roboto
+brew cask install font-open-sans
+brew cask install font-inconsolata
+brew cask install font-source-code-pro
+brew cask install font-source-code-pro-for-powerline
+brew cask install font-material-icons
+
+# Install other useful binaries.
+brew install git-lfs
+
+# install node
+brew install nvm
+env nvm install node
+
+# Remove outdated versions from the cellar.
+brew cleanup

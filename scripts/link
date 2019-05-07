@@ -1,9 +1,11 @@
+#!/usr/bin/env node
+
 const inquirer = require('inquirer');
 const {
   clearPrint,
   getConfigNames,
   install
-} = require('./lib/utils');
+} = require('../lib/utils');
 
 const configs = getConfigNames();
 

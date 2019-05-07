@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
+My dotfiles for zsh, vim, vscode, and macos based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
 
 ## Screenshots
 
@@ -10,19 +10,52 @@ My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github
 ![Vim](./screenshots/vim.png "Vim")
 ![VSCode](./screenshots/vscode.png "VSCode")
 
-## Installation
+## Setup
 
-Install dependencies
+Running the setup script does the following:
+
+1. Install homebrew & homebrew packages
+1. Install nvm, node, and npm
+1. Install node dependencies
+1. Symlink dotfiles
+1. Source `~/.zshrc`
+
+Before symlinking the dotfiles, you will be prompted to pick which ones to install, and if there are existing dotfiles there you'll be prompted to overwrite or skip.
+
+To run the setup script locally:
 
 ```bash
-npm run install
+# clone the repo
+git clone https://github.com/nickforddesign/dotfiles && cd dotfiles
+
+# run the install script
+./install.sh
 ```
 
-Run the setup script, which will give you a prompt to decide which dotfiles to symlink:
+## Homebrew
 
-```bash
-npm run setup
-```
+Installs the following:
+
+- homebrew
+- zsh
+- oh-my-zsh
+- powerlevel9k
+- git-lfs
+- vim
+- nvm
+- node
+- npm
+- cask-fonts
+
+## Fonts
+
+- hack
+- roboto
+- open-sans
+- inconsolata
+- source-code-pro
+- source-code-pro-for-powerline
+- material-icons
 
 ## ZSH
 
@@ -97,3 +130,11 @@ Opinionated Vim config using Vundle as a package manager
 | [groenewege/vim-less](https://github.com/groenewege/vim-less)                                 | _less_                                |
 | [isRuslan/vim-es6](https://github.com/isRuslan/vim-es6)                                       | _es6 (javascript)_                    |
 | [posva/vim-vue](https://github.com/posva/vim-vue)                                             | _vue_                                 |
+
+## VSCode
+
+Various preferred settings
+
+## MacOS
+
+Various preferred settings

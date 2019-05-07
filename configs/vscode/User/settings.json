@@ -16,7 +16,7 @@
             }
         ]
     },
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "vscode-great-icons",
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "eslint.validate": [
@@ -38,5 +38,6 @@
     "typescript.suggest.completeFunctionCalls": true,
     "javascript.suggest.completeFunctionCalls": true,
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "markdownTableFormatter.enable": true
+    "markdownTableFormatter.enable": true,
+    "explorer.confirmDragAndDrop": false
 }

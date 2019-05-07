@@ -112,7 +112,7 @@ defaults write com.apple.universalaccess 'closeViewSmoothImages' -bool false
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain InitialKeyRepeat -int 26
 
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
@@ -269,18 +269,20 @@ defaults write com.apple.dock showhidden -bool false
 # 11: Launchpad
 # 12: Notification Center
 
+# modifier for command key: 1048576
+
 # Top left screen corner → Put to sleep
 defaults write com.apple.dock wvous-tl-corner -int 1
 defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → no-op
 defaults write com.apple.dock wvous-tr-corner -int 1
-defaults write com.apple.dock wvous-tr-modifier -int 1048576
+defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → no-op
-defaults write com.apple.dock wvous-bl-corner -int 1
-defaults write com.apple.dock wvous-bl-modifier -int 1048576
+defaults write com.apple.dock wvous-bl-corner -int 4
+defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → no-op
-defaults write com.apple.dock wvous-br-corner -int 10
-defaults write com.apple.dock wvous-br-modifier -int 1048576
+defaults write com.apple.dock wvous-br-corner -int 5
+defaults write com.apple.dock wvous-br-modifier -int 0
 
 # --------------------------------------------------------------------------------------------------
 # Safari & WebKit

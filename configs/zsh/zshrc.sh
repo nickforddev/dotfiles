@@ -22,6 +22,7 @@ plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontool
 
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
