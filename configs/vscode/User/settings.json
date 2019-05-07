@@ -16,7 +16,7 @@
             }
         ]
     },
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "vscode-great-icons",
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "eslint.validate": [

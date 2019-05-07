@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-$DOTFILES=~/.dotfiles
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-env git clone --depth=1 https://github.com/nickforddesign/dotfiles.git "$DOTFILES"|| {
-  printf "Error: git clone of dotfiles repo failed\n"
-  exit 1
-}
+# $DOTFILES=~/.dotfiles
 
-cd $DOTFILES
+# env git clone --depth=1 https://github.com/nickforddesign/dotfiles.git "$DOTFILES"|| {
+#   printf "Error: git clone of dotfiles repo failed\n"
+#   exit 1
+# }
+
+# cd $DOTFILES

@@ -41,6 +41,10 @@ fi
 # install more recent version of vim
 brew install vim
 
+# install powerlevel9k
+brew tap sambadevi/powerlevel9k
+brew install powerlevel9k
+
 # install fonts
 brew tap homebrew/cask-fonts
 brew cask install font-hack
@@ -52,12 +56,11 @@ brew cask install font-source-code-pro-for-powerline
 brew cask install font-material-icons
 
 # Install other useful binaries.
-brew install git
 brew install git-lfs
 
 # install node
 brew install nvm
-env nvm install node --latest-npm
+env nvm install node
 
 # Remove outdated versions from the cellar.
 brew cleanup

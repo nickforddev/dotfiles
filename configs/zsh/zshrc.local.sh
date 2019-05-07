@@ -4,6 +4,7 @@
 
 alias chrome_nocors='open -a Google\ Chrome --args --disable-web-security'
 alias arestart='sudo apachectl restart'
+alias python='python3'
 
 source ~/.iterm2_shell_integration.zsh
 

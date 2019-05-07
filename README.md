@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-My dotfiles for zsh and vim, based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
+My dotfiles for zsh, vim, vscode, and macos based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
 
 ## Screenshots
 
@@ -22,10 +22,14 @@ Running the setup script does the following:
 
 Before symlinking the dotfiles, you will be prompted to pick which ones to install, and if there are existing dotfiles there you'll be prompted to overwrite or skip.
 
-To run the setup script:
+To run the setup script locally:
 
 ```bash
-./setup
+# clone the repo
+git clone https://github.com/nickforddesign/dotfiles && cd dotfiles
+
+# run the install script
+./install.sh
 ```
 
 ## Homebrew
@@ -33,9 +37,9 @@ To run the setup script:
 Installs the following:
 
 - homebrew
-- ZSH
+- zsh
 - oh-my-zsh
-- git
+- powerlevel9k
 - git-lfs
 - vim
 - nvm
@@ -129,8 +133,8 @@ Opinionated Vim config using Vundle as a package manager
 
 ## VSCode
 
-TODO
+Various preferred settings
 
 ## MacOS
 
-TODO
+Various preferred settings

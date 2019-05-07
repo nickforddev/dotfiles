@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-./brew      # runs bash
-./install   # runs bash, this currently runs asynchronously...
-./link      # runs node
-./source    # runs zsh
