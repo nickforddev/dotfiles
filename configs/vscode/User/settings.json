@@ -33,11 +33,51 @@
     },
     "emmet.includeLanguages": {
         "ejs": "html",
-        "vue": "html"
+        "vue": "html",
+        "javascriptreact": "html"
     },
     "typescript.suggest.completeFunctionCalls": true,
     "javascript.suggest.completeFunctionCalls": true,
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
     "markdownTableFormatter.enable": true,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "cSpell.userWords": [
+        "freeezeframe",
+        "freezeframe",
+        "gifs",
+        "thrivehive",
+        "transpiled",
+        "vuetify"
+    ],
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "handlebars",
+        "html",
+        "jade",
+        "java",
+        "javascriptreact",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pug",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ],
+    "editor.minimap.enabled": true
 }
