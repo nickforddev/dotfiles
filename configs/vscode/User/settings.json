@@ -32,14 +32,15 @@
         "**/.DS_Store": true
     },
     "emmet.includeLanguages": {
+        "html": "html",
         "ejs": "html",
         "vue": "html",
         "javascriptreact": "html"
     },
+    "emmet.triggerExpansionOnTab": true,
     "typescript.suggest.completeFunctionCalls": true,
     "javascript.suggest.completeFunctionCalls": true,
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "markdownTableFormatter.enable": true,
     "explorer.confirmDragAndDrop": false,
     "cSpell.userWords": [
         "freeezeframe",
