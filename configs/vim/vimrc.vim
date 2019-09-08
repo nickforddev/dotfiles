@@ -298,7 +298,7 @@ au FileType python
 au BufRead,BufNewFile *.wisp set ft=clojure
 
 " Python
-let g:ycm_server_python_interpreter='/usr/local/bin/python'
+let g:ycm_server_python_interpreter='/usr/local/bin/python3'
 let g:pymode_rope_goto_definition_bind='<Leader>gt'
 let g:pymode_folding=0
 let g:pymode_options_max_line_length=100
