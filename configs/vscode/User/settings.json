@@ -80,5 +80,6 @@
         "typescriptreact",
         "yml"
     ],
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "sync.autoUpload": true
 }

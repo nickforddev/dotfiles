@@ -6,41 +6,85 @@
 	<array>
 		<dict>
 			<key>ID</key>
-			<string>QSGetGlobalSelectionTrigger</string>
+			<string>QSiTunesDecreaseVolume</string>
 			<key>command</key>
-			<string>QSGetGlobalSelectionCommand</string>
-			<key>enabled</key>
-			<true/>
+			<string>QSiTunesDecreaseVolume</string>
+			<key>defaults</key>
+			<dict>
+				<key>keyCode</key>
+				<integer>103</integer>
+				<key>modifiers</key>
+				<integer>8651009</integer>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
 			<key>keyCode</key>
-			<integer>53</integer>
+			<integer>103</integer>
 			<key>modifiers</key>
-			<integer>1048840</integer>
+			<integer>8651009</integer>
+			<key>name</key>
+			<string>Decrease Volume</string>
 			<key>set</key>
-			<string>Quicksilver</string>
+			<string>iTunes</string>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSRelaunchSelfTrigger</string>
-			<key>applicationScope</key>
-			<array>
-				<string>com.blacktree.Quicksilver</string>
-			</array>
-			<key>applicationScopeType</key>
-			<integer>1</integer>
+			<string>QSiTunesIncreaseVolume</string>
 			<key>command</key>
-			<string>QSRelaunchSelfCommand</string>
-			<key>enabled</key>
-			<true/>
+			<string>QSiTunesIncreaseVolume</string>
+			<key>defaults</key>
+			<dict>
+				<key>keyCode</key>
+				<integer>111</integer>
+				<key>modifiers</key>
+				<integer>8651009</integer>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
 			<key>keyCode</key>
-			<integer>12</integer>
+			<integer>111</integer>
 			<key>modifiers</key>
-			<integer>1835305</integer>
-			<key>onPress</key>
-			<true/>
+			<integer>8651009</integer>
+			<key>name</key>
+			<string>Increase Volume</string>
 			<key>set</key>
-			<string>Quicksilver</string>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSearchTracks</string>
+			<key>command</key>
+			<string>QSiTunesSearchTracks</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Search Tracks</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesPauseTrigger</string>
+			<key>command</key>
+			<string>QSiTunesPauseCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Pause</string>
+			<key>set</key>
+			<string>iTunes</string>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
@@ -77,6 +121,142 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>QSiTunesDecreaseRating</string>
+			<key>command</key>
+			<string>QSiTunesDecreaseRating</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Decrease Rating</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesPlayPauseTrigger</string>
+			<key>command</key>
+			<string>QSiTunesPlayPauseCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Play/Pause</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesIncreaseRating</string>
+			<key>command</key>
+			<string>QSiTunesIncreaseRating</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Increase Rating</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSetRating2</string>
+			<key>command</key>
+			<string>QSiTunesSetRating2</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Set Rating to 2</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesEQToggleTrigger</string>
+			<key>command</key>
+			<string>QSiTunesEQToggleCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Toggle iTunes Equalizer</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesLoveTrackTrigger</string>
+			<key>command</key>
+			<string>QSiTunesLoveTrackCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Love Current Track</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSetRating1</string>
+			<key>command</key>
+			<string>QSiTunesSetRating1</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Set Rating to 1</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesNextSongTrigger</string>
+			<key>command</key>
+			<string>QSiTunesNextSongCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Next Song</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>6159E24A-5D12-40DC-BC0D-D5975E2DA19B</string>
 			<key>command</key>
 			<dict>
@@ -93,6 +273,270 @@
 			<integer>393475</integer>
 			<key>onPress</key>
 			<true/>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSearchAlbums</string>
+			<key>command</key>
+			<string>QSiTunesSearchAlbums</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Search Albums</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSetRating5</string>
+			<key>command</key>
+			<string>QSiTunesSetRating5</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Set Rating to 5</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesMute</string>
+			<key>command</key>
+			<string>QSiTunesMute</string>
+			<key>defaults</key>
+			<dict>
+				<key>keyCode</key>
+				<integer>109</integer>
+				<key>modifiers</key>
+				<integer>8651009</integer>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>keyCode</key>
+			<integer>109</integer>
+			<key>modifiers</key>
+			<integer>8651009</integer>
+			<key>name</key>
+			<string>Mute</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesShowTrackNotification</string>
+			<key>command</key>
+			<string>QSiTunesShowTrackNotification</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Show Playing Track</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesPlayTrigger</string>
+			<key>command</key>
+			<string>QSiTunesPlayCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Play</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSetRating0</string>
+			<key>command</key>
+			<string>QSiTunesSetRating0</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Set Rating to 0</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSearchAll</string>
+			<key>command</key>
+			<string>QSiTunesSearchAll</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Search iTunes</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesPreviousSongTrigger</string>
+			<key>command</key>
+			<string>QSiTunesPreviousSongCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Previous Song</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSearchArtists</string>
+			<key>command</key>
+			<string>QSiTunesSearchArtists</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Search Artists</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSetRating4</string>
+			<key>command</key>
+			<string>QSiTunesSetRating4</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Set Rating to 4</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSRelaunchSelfTrigger</string>
+			<key>applicationScope</key>
+			<array>
+				<string>com.blacktree.Quicksilver</string>
+			</array>
+			<key>applicationScopeType</key>
+			<integer>1</integer>
+			<key>command</key>
+			<string>QSRelaunchSelfCommand</string>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>12</integer>
+			<key>modifiers</key>
+			<integer>1835305</integer>
+			<key>onPress</key>
+			<true/>
+			<key>set</key>
+			<string>Quicksilver</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesLovePlaylistTrigger</string>
+			<key>command</key>
+			<string>QSiTunesLovePlaylistCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Love Current Playlist</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesStopTrigger</string>
+			<key>command</key>
+			<string>QSiTunesStopCommand</string>
+			<key>name</key>
+			<string>Stop</string>
+			<key>set</key>
+			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSGetGlobalSelectionTrigger</string>
+			<key>command</key>
+			<string>QSGetGlobalSelectionCommand</string>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>53</integer>
+			<key>modifiers</key>
+			<integer>1048840</integer>
+			<key>set</key>
+			<string>Quicksilver</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesSetRating3</string>
+			<key>command</key>
+			<string>QSiTunesSetRating3</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Set Rating to 3</string>
+			<key>set</key>
+			<string>iTunes</string>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
