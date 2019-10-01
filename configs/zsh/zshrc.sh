@@ -22,7 +22,7 @@ plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontool
 
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
@@ -46,8 +46,6 @@ source ~/.zshrc.local
 export ANDROID_HOME=/Users/nick/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
-
 unsetopt correct_all
 bindkey "^X\x7f" backward-kill-line
 
@@ -62,3 +60,11 @@ export NVM_DIR="$HOME/.nvm"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# pip
+export PATH=~/Library/Python/3.7/bin:$PATH
+
+# rvm
+# [[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
+# source $HOME/.rvm/scripts/rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
