@@ -39,6 +39,7 @@ alias vrcbl='vim ~/.vimrc.bundles.local'
 
 # get aliases and stuff from local
 source ~/.zshrc.local
+[[ -L ~/.zshrc.untracked ]] && source ~/.zshrc.untracked
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
