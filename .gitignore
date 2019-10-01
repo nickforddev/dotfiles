@@ -23,3 +23,7 @@ yarn-error.log*
 
 /configs/vscode/User/workspaceStorage
 /configs/vscode/User/globalStorage
+
+# ignored zshrc settings
+
+/configs/zsh/zshrc.untracked.sh
