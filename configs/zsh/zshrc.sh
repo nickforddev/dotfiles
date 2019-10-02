@@ -22,7 +22,6 @@ plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontool
 
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-# export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
@@ -41,8 +40,6 @@ alias vrcbl='vim ~/.vimrc.bundles.local'
 source ~/.zshrc.local
 [[ -L ~/.zshrc.untracked ]] && source ~/.zshrc.untracked
 
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 # android sdk
 export ANDROID_HOME=/Users/nick/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
@@ -54,8 +51,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -66,6 +63,4 @@ fi
 export PATH=~/Library/Python/3.7/bin:$PATH
 
 # rvm
-# [[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
-# source $HOME/.rvm/scripts/rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
