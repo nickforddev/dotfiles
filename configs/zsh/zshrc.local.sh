@@ -9,5 +9,3 @@ source ~/.iterm2_shell_integration.zsh
 
 unsetopt inc_append_history
 unsetopt share_history
-
-export PATH=$PATH:/usr/local/go/bin

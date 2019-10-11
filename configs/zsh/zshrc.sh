@@ -20,15 +20,13 @@ ENABLE_CORRECTION="true"
 # https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontools)
 
-# user path
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-
 # setup zshell
 source $ZSH/oh-my-zsh.sh
 
 # zsh rec files alises
 alias zrc='vim ~/.zshrc'
 alias zrcl='vim ~/.zshrc.local'
+alias sz='source ~/.zshrc'
 
 # vim rec file aliases
 alias vrc='vim ~/.vimrc'
@@ -36,13 +34,13 @@ alias vrcl='vim ~/.vimrc.local'
 alias vrcb='vim ~/.vimrc.bundles'
 alias vrcbl='vim ~/.vimrc.bundles.local'
 
+# yarn
+alias yi='yarn install'
+
 # get aliases and stuff from local
+source ~/.zprofile
 source ~/.zshrc.local
 [[ -L ~/.zshrc.untracked ]] && source ~/.zshrc.untracked
-
-# android sdk
-export ANDROID_HOME=/Users/nick/Library/Android/sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 unsetopt correct_all
 bindkey "^X\x7f" backward-kill-line
@@ -59,8 +57,12 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# pip
-export PATH=~/Library/Python/3.7/bin:$PATH
-
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh

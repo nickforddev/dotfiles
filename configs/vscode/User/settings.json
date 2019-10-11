@@ -3,7 +3,7 @@
     "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.rulers": [100],
-    "editor.snippetSuggestions": "top",
+    // "editor.snippetSuggestions": "top",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -23,7 +23,8 @@
         { "language": "javascript", "autoFix": true },
         { "language": "javascriptreact", "autoFix": true },
         { "language": "vue", "autoFix": true },
-        { "language": "html", "autoFix": true }
+        { "language": "html", "autoFix": true },
+        { "language": "typescript", "autoFix": true }
     ],
     "files.exclude": {
         "**/.git": true,
@@ -45,10 +46,20 @@
     "cSpell.userWords": [
         "freeezeframe",
         "freezeframe",
+        "fullscreen",
         "gifs",
+        "nowrap",
+        "pillpack",
+        "refetch",
+        "signup",
         "thrivehive",
         "transpiled",
-        "vuetify"
+        "ui's",
+        "vnode",
+        "vuetify",
+        "vuex",
+        "zendesk",
+        "zipcode"
     ],
     "cSpell.enabledLanguageIds": [
         "asciidoc",
@@ -81,5 +92,8 @@
         "yml"
     ],
     "editor.minimap.enabled": true,
-    "sync.autoUpload": true
+    "sync.autoUpload": true,
+    // "editor.suggestSelection": "first",
+    // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "solargraph.commandPath": "/Users/nicholas.ford/.rvm/gems/ruby-2.3.8@pillpack/bin/solargraph"
 }
