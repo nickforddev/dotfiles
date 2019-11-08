@@ -9,15 +9,6 @@
 			<string>QSiTunesDecreaseVolume</string>
 			<key>command</key>
 			<string>QSiTunesDecreaseVolume</string>
-			<key>defaults</key>
-			<dict>
-				<key>keyCode</key>
-				<integer>103</integer>
-				<key>modifiers</key>
-				<integer>8651009</integer>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>keyCode</key>
 			<integer>103</integer>
 			<key>modifiers</key>
@@ -34,15 +25,6 @@
 			<string>QSiTunesIncreaseVolume</string>
 			<key>command</key>
 			<string>QSiTunesIncreaseVolume</string>
-			<key>defaults</key>
-			<dict>
-				<key>keyCode</key>
-				<integer>111</integer>
-				<key>modifiers</key>
-				<integer>8651009</integer>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>keyCode</key>
 			<integer>111</integer>
 			<key>modifiers</key>
@@ -59,11 +41,6 @@
 			<string>QSiTunesSearchTracks</string>
 			<key>command</key>
 			<string>QSiTunesSearchTracks</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Search Tracks</string>
 			<key>set</key>
@@ -76,11 +53,6 @@
 			<string>QSiTunesPauseTrigger</string>
 			<key>command</key>
 			<string>QSiTunesPauseCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Pause</string>
 			<key>set</key>
@@ -124,11 +96,6 @@
 			<string>QSiTunesDecreaseRating</string>
 			<key>command</key>
 			<string>QSiTunesDecreaseRating</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Decrease Rating</string>
 			<key>set</key>
@@ -141,11 +108,6 @@
 			<string>QSiTunesPlayPauseTrigger</string>
 			<key>command</key>
 			<string>QSiTunesPlayPauseCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Play/Pause</string>
 			<key>set</key>
@@ -158,11 +120,6 @@
 			<string>QSiTunesIncreaseRating</string>
 			<key>command</key>
 			<string>QSiTunesIncreaseRating</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Increase Rating</string>
 			<key>set</key>
@@ -175,11 +132,6 @@
 			<string>QSiTunesSetRating2</string>
 			<key>command</key>
 			<string>QSiTunesSetRating2</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Set Rating to 2</string>
 			<key>set</key>
@@ -192,11 +144,6 @@
 			<string>QSiTunesEQToggleTrigger</string>
 			<key>command</key>
 			<string>QSiTunesEQToggleCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Toggle iTunes Equalizer</string>
 			<key>set</key>
@@ -209,11 +156,6 @@
 			<string>QSiTunesLoveTrackTrigger</string>
 			<key>command</key>
 			<string>QSiTunesLoveTrackCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Love Current Track</string>
 			<key>set</key>
@@ -226,11 +168,6 @@
 			<string>QSiTunesSetRating1</string>
 			<key>command</key>
 			<string>QSiTunesSetRating1</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Set Rating to 1</string>
 			<key>set</key>
@@ -243,11 +180,6 @@
 			<string>QSiTunesNextSongTrigger</string>
 			<key>command</key>
 			<string>QSiTunesNextSongCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Next Song</string>
 			<key>set</key>
@@ -281,11 +213,6 @@
 			<string>QSiTunesSearchAlbums</string>
 			<key>command</key>
 			<string>QSiTunesSearchAlbums</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Search Albums</string>
 			<key>set</key>
@@ -298,11 +225,6 @@
 			<string>QSiTunesSetRating5</string>
 			<key>command</key>
 			<string>QSiTunesSetRating5</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Set Rating to 5</string>
 			<key>set</key>
@@ -315,15 +237,6 @@
 			<string>QSiTunesMute</string>
 			<key>command</key>
 			<string>QSiTunesMute</string>
-			<key>defaults</key>
-			<dict>
-				<key>keyCode</key>
-				<integer>109</integer>
-				<key>modifiers</key>
-				<integer>8651009</integer>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>keyCode</key>
 			<integer>109</integer>
 			<key>modifiers</key>
@@ -340,11 +253,6 @@
 			<string>QSiTunesShowTrackNotification</string>
 			<key>command</key>
 			<string>QSiTunesShowTrackNotification</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Show Playing Track</string>
 			<key>set</key>
@@ -357,11 +265,6 @@
 			<string>QSiTunesPlayTrigger</string>
 			<key>command</key>
 			<string>QSiTunesPlayCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Play</string>
 			<key>set</key>
@@ -374,11 +277,6 @@
 			<string>QSiTunesSetRating0</string>
 			<key>command</key>
 			<string>QSiTunesSetRating0</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Set Rating to 0</string>
 			<key>set</key>
@@ -391,11 +289,6 @@
 			<string>QSiTunesSearchAll</string>
 			<key>command</key>
 			<string>QSiTunesSearchAll</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Search iTunes</string>
 			<key>set</key>
@@ -408,11 +301,6 @@
 			<string>QSiTunesPreviousSongTrigger</string>
 			<key>command</key>
 			<string>QSiTunesPreviousSongCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Previous Song</string>
 			<key>set</key>
@@ -425,11 +313,6 @@
 			<string>QSiTunesSearchArtists</string>
 			<key>command</key>
 			<string>QSiTunesSearchArtists</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Search Artists</string>
 			<key>set</key>
@@ -442,11 +325,6 @@
 			<string>QSiTunesSetRating4</string>
 			<key>command</key>
 			<string>QSiTunesSetRating4</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Set Rating to 4</string>
 			<key>set</key>
@@ -483,11 +361,6 @@
 			<string>QSiTunesLovePlaylistTrigger</string>
 			<key>command</key>
 			<string>QSiTunesLovePlaylistCommand</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Love Current Playlist</string>
 			<key>set</key>
@@ -528,11 +401,6 @@
 			<string>QSiTunesSetRating3</string>
 			<key>command</key>
 			<string>QSiTunesSetRating3</string>
-			<key>defaults</key>
-			<dict>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
-			</dict>
 			<key>name</key>
 			<string>Set Rating to 3</string>
 			<key>set</key>

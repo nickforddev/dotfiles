@@ -3,7 +3,9 @@
     "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.rulers": [100],
-    // "editor.snippetSuggestions": "top",
+    "editor.snippetSuggestions": "top",
+    // "editor.suggestSelection": "recentlyUsed",
+    // "editor.suggestSelection": "first",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -93,7 +95,11 @@
     ],
     "editor.minimap.enabled": true,
     "sync.autoUpload": true,
-    // "editor.suggestSelection": "first",
-    // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "solargraph.commandPath": "/Users/nicholas.ford/.rvm/gems/ruby-2.3.8@pillpack/bin/solargraph"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "solargraph.commandPath": "/Users/nicholas.ford/.rvm/gems/ruby-2.3.8@pillpack/bin/solargraph",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.suggestSelection": "first",
+    "path-autocomplete.pathMappings": {
+        "@": "${folder}/src"
+    }
 }
