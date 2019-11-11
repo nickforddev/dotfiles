@@ -30,24 +30,24 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs virtualenv)
 # command auto-correction
 ENABLE_CORRECTION="true"
 
-# plugins 
+# plugins
 # https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 plugins=(
-  osx 
-  sudo 
-  brew 
-  git 
-  github 
-  docker 
-  virtualenv 
-  npm 
-  node 
-  pip 
+  osx
+  sudo
+  brew
+  git
+  github
+  docker
+  virtualenv
+  npm
+  node
+  pip
   python
-  jsontools 
+  jsontools
   history-substring-search
-  zsh-syntax-highlighting 
-  fzf 
+  zsh-syntax-highlighting
+  fzf
   z
 )
 

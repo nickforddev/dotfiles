@@ -59,6 +59,8 @@ brew cask install font-material-icons
 
 # Install other useful binaries.
 brew install git-lfs
+brew install zsh-history-substring-search
+brew install zsh-syntax-highlighting
 brew install fzf
 brew install z
 
