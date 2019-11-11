@@ -32,7 +32,24 @@ ENABLE_CORRECTION="true"
 
 # plugins 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
-plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontools history-substring-search zsh-syntax-highlighting fzf)
+plugins=(
+  osx 
+  sudo 
+  brew 
+  git 
+  github 
+  docker 
+  virtualenv 
+  npm 
+  node 
+  pip 
+  python
+  jsontools 
+  history-substring-search
+  zsh-syntax-highlighting 
+  fzf 
+  z
+)
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
