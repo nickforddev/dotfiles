@@ -16,7 +16,7 @@ export FZF_BASE=/path/to/fzf/install/dir
 
 # fh - repeat history
 fh() {
-  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -r 's/ *[0-9]*\*? *//' | sed -r 's/\\/\\\\/g')
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
 }
 
 # set name of the theme to load
@@ -84,3 +84,4 @@ fi
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
