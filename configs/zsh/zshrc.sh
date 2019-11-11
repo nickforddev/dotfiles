@@ -5,6 +5,20 @@
 # path to oh-my-zsh installation
 export ZSH=~/.oh-my-zsh
 
+# Set fzf installation directory path
+export FZF_BASE=/path/to/fzf/install/dir
+
+# Uncomment the following line to disable fuzzy completion
+# export DISABLE_FZF_AUTO_COMPLETION="true"
+
+# Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
+# export DISABLE_FZF_KEY_BINDINGS="true"
+
+# fh - repeat history
+fh() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -r 's/ *[0-9]*\*? *//' | sed -r 's/\\/\\\\/g')
+}
+
 # set name of the theme to load
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -18,7 +32,7 @@ ENABLE_CORRECTION="true"
 
 # plugins 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
-plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontools)
+plugins=(osx sudo brew git github docker virtualenv npm node pip python jsontools history-substring-search zsh-syntax-highlighting fzf)
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
@@ -44,6 +58,10 @@ source ~/.zshrc.local
 
 unsetopt correct_all
 bindkey "^X\x7f" backward-kill-line
+# bindkey "^[[A" history-search-backward
+# bindkey "^[[B" history-search-forward
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
