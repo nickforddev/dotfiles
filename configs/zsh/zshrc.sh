@@ -36,6 +36,7 @@ plugins=(
   osx
   sudo
   brew
+  aws
   git
   github
   docker
