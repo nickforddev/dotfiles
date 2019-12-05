@@ -55,6 +55,9 @@ plugins=(
 # setup zshell
 source $ZSH/oh-my-zsh.sh
 
+# open dotfiles project in VSCode
+alias dotfiles='code ~/Sites/dotfiles'
+
 # zsh rec files alises
 alias zrc='vim ~/.zshrc'
 alias zrcl='vim ~/.zshrc.local'
@@ -103,3 +106,7 @@ fi
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
