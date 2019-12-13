@@ -16,6 +16,10 @@ export FZF_BASE=/path/to/fzf/install/dir
 
 # fh - repeat history
 fh() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 20% +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}
+
+fhf() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
 }
 
@@ -57,6 +61,9 @@ source $ZSH/oh-my-zsh.sh
 
 # open dotfiles project in VSCode
 alias dotfiles='code ~/Sites/dotfiles'
+
+# open current project readme in VSCode
+alias readme='code ./README.md'
 
 # zsh rec files alises
 alias zrc='vim ~/.zshrc'
