@@ -322,6 +322,27 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>2EEE7DF8-8B2A-4CA7-ABAF-05632EB91FD7</string>
+			<key>command</key>
+			<dict>
+				<key>actionID</key>
+				<string>FileOpenAction</string>
+				<key>directID</key>
+				<string>/Applications/Slack.app</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>40</integer>
+			<key>modifiers</key>
+			<integer>393475</integer>
+			<key>onPress</key>
+			<true/>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>QSiTunesSetRating4</string>
 			<key>command</key>
 			<string>QSiTunesSetRating4</string>

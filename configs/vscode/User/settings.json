@@ -102,5 +102,7 @@
     "path-autocomplete.pathMappings": {
         "@": "${folder}/src"
     },
-    "sync.gist": "bc30fc7c7d08b970683a97b3826fc3e6"
+    "sync.gist": "bc30fc7c7d08b970683a97b3826fc3e6",
+    "workbench.sideBar.location": "left",
+    "vetur.useWorkspaceDependencies": true
 }

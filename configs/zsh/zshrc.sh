@@ -16,6 +16,10 @@ export FZF_BASE=/path/to/fzf/install/dir
 
 # fh - repeat history
 fh() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 20% +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}
+
+fhf() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
 }
 
@@ -36,6 +40,7 @@ plugins=(
   osx
   sudo
   brew
+  aws
   git
   github
   docker
@@ -53,6 +58,12 @@ plugins=(
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
+
+# open dotfiles project in VSCode
+alias dotfiles='code ~/Sites/dotfiles'
+
+# open current project readme in VSCode
+alias readme='code ./README.md'
 
 # zsh rec files alises
 alias zrc='vim ~/.zshrc'
@@ -102,3 +113,7 @@ fi
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/nicholas.ford/Sites/consumer-web-app/node_modules/tabtab/.completions/slss.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

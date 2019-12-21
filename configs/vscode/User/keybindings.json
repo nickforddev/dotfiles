@@ -12,4 +12,9 @@
     "key": "cmd+shift+v",
     "command": "editor.action.clipboardPasteAction",
     "when": "editorTextFocus && !editorReadonly"
-}]
+},
+{
+    "key": "ctrl+alt+cmd+i",
+    "command": "workbench.files.action.collapseExplorerFolders"
+}
+]

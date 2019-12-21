@@ -1,5 +1,5 @@
 # user path
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # pip
 export PATH=~/Library/Python/3.7/bin:$PATH
@@ -7,8 +7,20 @@ export PATH=~/Library/Python/3.7/bin:$PATH
 # go
 export PATH=$PATH:/usr/local/go/bin
 
+# ruby gems
+# export PATH=$PATH:$HOME/Software/ruby/bin
+
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+  PATH="$PATH:$HOME/bin"
+fi
+
+for dir in /usr/local/Cellar/libpq/* ; do
+  PATH="${dir}/bin/:${PATH}"
+done
 
 # android sdk
 # export ANDROID_HOME=/Users/nick/Library/Android/sdk
