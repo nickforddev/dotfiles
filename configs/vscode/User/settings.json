@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "One Dark Pro",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "editor.tabSize": 2,
     "editor.rulers": [100],
     "editor.snippetSuggestions": "top",
@@ -18,7 +18,7 @@
             }
         ]
     },
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "eslint.validate": [
