@@ -76,6 +76,8 @@ alias vrcl='vim ~/.vimrc.local'
 alias vrcb='vim ~/.vimrc.bundles'
 alias vrcbl='vim ~/.vimrc.bundles.local'
 
+alias gmlm='gco master; gl; gco @{-1}; gm master'
+
 # yarn
 alias yi='yarn install'
 

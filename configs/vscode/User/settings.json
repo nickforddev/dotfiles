@@ -22,11 +22,11 @@
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "eslint.validate": [
-        { "language": "javascript", "autoFix": true },
-        { "language": "javascriptreact", "autoFix": true },
-        { "language": "vue", "autoFix": true },
-        { "language": "html", "autoFix": true },
-        { "language": "typescript", "autoFix": true }
+        "javascript",
+        "javascriptreact",
+        "vue",
+        "html",
+        "typescript"
     ],
     "files.exclude": {
         "**/.git": true,
@@ -104,5 +104,20 @@
     },
     "sync.gist": "bc30fc7c7d08b970683a97b3826fc3e6",
     "workbench.sideBar.location": "left",
-    "vetur.useWorkspaceDependencies": true
+    "vetur.useWorkspaceDependencies": true,
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.jediEnabled": false,
+    "rufo.exe": "/Users/nicholas.ford/.rvm/gems/ruby-2.6.5@pillpack/bin/rufo",
+    "rufo.useBundler": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
