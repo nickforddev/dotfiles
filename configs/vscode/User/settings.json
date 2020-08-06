@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "One Dark Pro",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.rulers": [100],
     "editor.snippetSuggestions": "top",
@@ -29,9 +29,17 @@
         "typescript"
     ],
     "files.exclude": {
+        ".viceroy": true,
+        "apollo-overrides": true,
+        "release-info": true,
+        "src/*/build": false,
+        "build": true,
+        "env": true,
+        "packageInfo*": true,
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
+        "**/CVS": true,
         "**/.DS_Store": true
     },
     "emmet.includeLanguages": {
@@ -43,7 +51,7 @@
     "emmet.triggerExpansionOnTab": true,
     "typescript.suggest.completeFunctionCalls": true,
     "javascript.suggest.completeFunctionCalls": true,
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "explorer.confirmDragAndDrop": false,
     "cSpell.userWords": [
         "freeezeframe",
@@ -119,5 +127,26 @@
     "rufo.useBundler": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "viceroy.config.lastVersion": "0.31.200738",
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.hg/store/**": true
+    },
+    "search.exclude": {
+        "env": true,
+        "src/*/build": true,
+        "build": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+    "viceroy.config.internal.lastUpdateTime": "2020-07-29T15:13:41.990Z",
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
+    "java.help.firstView": "gettingStarted"
 }
