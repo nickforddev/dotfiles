@@ -11,34 +11,24 @@
 		],
 		"description": "Log output to console"
 	},
-	"describe": {
+	"describe block": {
 		"prefix": "desc",
 		"body": [
 			"describe('$1', () => {",
-			"\ttest('$2', () => {",
+			"\tit('$2', () => {",
 			"\t\texpect($3)",
 			"\t})",
 			"})\n"
 		],
-		"description": "Jest-style test group"
+		"description": "Jest-style test block"
 	},
-	"test": {
-		"prefix": "test",
+	"assertion": {
+		"prefix": "it",
 		"body": [
-			"test('$2', () => {",
+			"it('$2', () => {",
 			"\texpect($3)",
 			"})",
-		]
-	},
-	"define": {
-		"prefix": "define",
-		"body": [
-			"define([",
-			"\t'$1'",
-			"], ($2) => {",
-			"\t$3",
-			"});",
-			""
-		]
+		],
+		"description": "Jest-style test"
 	}
 }

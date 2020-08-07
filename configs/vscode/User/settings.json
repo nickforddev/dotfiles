@@ -96,7 +96,7 @@
     "editor.minimap.enabled": true,
     "sync.autoUpload": true,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "solargraph.commandPath": "/Users/nicholas.ford/.rvm/gems/ruby-2.3.8@pillpack/bin/solargraph",
+    "solargraph.commandPath": "/Users/nicholas.ford/.rvm/gems/ruby-2.6.5@pillpack/bin/solargraph",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.suggestSelection": "first",
     "path-autocomplete.pathMappings": {
@@ -119,5 +119,7 @@
     "rufo.useBundler": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "diffEditor.ignoreTrimWhitespace": false
 }
