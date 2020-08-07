@@ -4,8 +4,11 @@
   "description": "dotfiles for zsh and vim",
   "main": "setup",
   "scripts": {
-    "setup": "node setup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link": "./scripts/link",
+    "brew": "./scripts/brew",
+    "clone": "./scripts/clone",
+    "npm": "./scripts/npm",
+    "source": "./scripts/source"
   },
   "repository": {
     "type": "git",

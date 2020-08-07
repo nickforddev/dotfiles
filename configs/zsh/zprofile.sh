@@ -18,9 +18,17 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
 fi
 
-for dir in /usr/local/Cellar/libpq/* ; do
-  PATH="${dir}/bin/:${PATH}"
-done
+# pgsql
+if [ -d "/usr/local/Cellar/libpq" ] ; then
+  for dir in /usr/local/Cellar/libpq/* ; do
+    PATH="${dir}/bin/:${PATH}"
+  done
+fi
+
+# toolbox
+if [ -d "$HOME/.toolbox" ] ; then
+  export PATH=$HOME/.toolbox/bin:$PATH
+fi
 
 # android sdk
 # export ANDROID_HOME=/Users/nick/Library/Android/sdk

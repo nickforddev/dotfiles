@@ -108,7 +108,7 @@
 			<key>onPress</key>
 			<true/>
 			<key>set</key>
-			<string>Quicksilver</string>
+			<string>iTunes</string>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
@@ -127,9 +127,11 @@
 			<key>keyCode</key>
 			<integer>33</integer>
 			<key>modifiers</key>
-			<integer>393475</integer>
+			<integer>1835305</integer>
 			<key>onPress</key>
 			<true/>
+			<key>set</key>
+			<string>Quicksilver</string>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
@@ -271,8 +273,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesSetRating5</string>
-			<key>command</key>
-			<string>QSiTunesSetRating5</string>
 			<key>name</key>
 			<string>Set Rating to 5</string>
 			<key>set</key>
@@ -331,8 +331,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSetRating0</string>
-			<key>command</key>
 			<string>QSiTunesSetRating0</string>
 			<key>name</key>
 			<string>Set Rating to 0</string>
