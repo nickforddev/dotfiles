@@ -26,11 +26,6 @@ fhf() {
 # set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Power Level 9K settings
-# https://github.com/bhilburn/powerlevel9k#available-prompt-segments
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs virtualenv)
-
 # command auto-correction
 ENABLE_CORRECTION="true"
 
