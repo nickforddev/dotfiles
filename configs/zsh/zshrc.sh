@@ -21,11 +21,15 @@ export FZF_BASE=/path/to/fzf/install/dir
 # Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
 # export DISABLE_FZF_KEY_BINDINGS="true"
 
-# fh - repeat history
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fh - search history
 fh() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 20% +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
 }
 
+# fh - search history full
 fhf() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
 }
@@ -89,6 +93,9 @@ alias gmld='gco develop; gl; gco @{-1}; gm develop'
 # yarn
 alias yi='yarn install'
 
+# misc
+alias chrome="open -a 'Google Chrome'"
+
 # get aliases and stuff from local
 source ~/.zprofile
 source ~/.zshrc.local
@@ -112,9 +119,6 @@ export NVM_DIR="$HOME/.nvm"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
 [[ -f /usr/local/opt/postgresql@11 ]] && export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
