@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-My dotfiles for zsh, vim, vscode, and macos based on the  [CTRL-FREAKZ dotfiles](https://github.com/ctrl-freaks/configs).
+My dotfiles for zsh, vim, vscode, etc
 
 ## Screenshots
 
@@ -31,6 +31,10 @@ git clone https://github.com/nickforddesign/dotfiles && cd dotfiles
 # run the install script
 ./install.sh
 ```
+
+## Untracked configs
+
+If a setting is device-specific or sensitive, it should be added to a `.untracked` config. For instance, if `~/.zshrc.untracked` exists, it will be automatically sourced, but not tracked by git.
 
 ## Homebrew
 
@@ -67,7 +71,7 @@ Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powe
 |--------------------------------------------------------------------------------------------------|---------------------|
 | **zsh plugins**                                                                                  |                     |
 | [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)                                           | _zsh framework_     |
-| [powerlevel9k](https://github.com/bhilburn/powerlevel9k)                                         | _powerline theme_   |
+| [powerlevel10k](https://github.com/romkatv/powerlevel10k)                                        | _zsh theme_         |
 | **oh-my-zsh plugins**                                                                            |                     |
 | [osx](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/osx/README.md)               | _osx plugin_        |
 | [sudo](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/sudo/README.md)             | _sudo plugin_       |
@@ -134,6 +138,10 @@ Opinionated Vim config using Vundle as a package manager
 ## VSCode
 
 Various preferred settings
+
+## Quicksilver
+
+Various preferred triggers
 
 ## MacOS
 

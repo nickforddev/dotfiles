@@ -221,6 +221,7 @@ let g:nerdtree_tabs_startup_cd=0
 let g:nerdtree_tabs_open_on_gui_startup=0
 
 autocmd VimEnter * NERDTree                       " open NERDTree on vim launch
+autocmd VimEnter * wincmd p                       " try to focus document instead of NERDTree
 
 " Passwords
 " --------------------------------------------------------------------------------------------------
@@ -369,5 +370,5 @@ vmap p                                            "_dP
 map  <C-k> :CtrlPBuffer<CR>                       " additional mapping for buffer search
 imap <C-k> <ESC>:CtrlPBuffer<CR>
 
-map  <C-b> :CtrlPBufTag<CR>
-imap <C-b> <ESC>:CtrlPBufTag<CR>
+" map  <C-b> :CtrlPBufTag<CR>
+" imap <C-b> <ESC>:CtrlPBufTag<CR>
