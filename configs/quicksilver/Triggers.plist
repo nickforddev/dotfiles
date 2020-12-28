@@ -341,6 +341,27 @@
 		</dict>
 		<dict>
 			<key>ID</key>
+			<string>DC61A5EB-1C33-4812-9E5A-4FAD4B1D7C49</string>
+			<key>command</key>
+			<dict>
+				<key>actionID</key>
+				<string>FileOpenAction</string>
+				<key>directID</key>
+				<string>/Applications/RubyMine.app</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>5</integer>
+			<key>modifiers</key>
+			<integer>393475</integer>
+			<key>onPress</key>
+			<true/>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>QSiTunesSearchArtists</string>
 			<key>command</key>
 			<string>QSiTunesSearchArtists</string>

@@ -132,7 +132,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "viceroy.config.lastVersion": "0.31.200738",
+    "viceroy.config.lastVersion": "0.34.200806",
     "files.watcherExclude": {
         "**/build/**": true,
         "**/.git/objects/**": true,
@@ -148,7 +148,7 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
-    "viceroy.config.internal.lastUpdateTime": "2020-07-29T15:13:41.990Z",
+    "viceroy.config.internal.lastUpdateTime": "2020-11-20T18:10:09.013Z",
     "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
     "java.help.firstView": "gettingStarted"
 }
