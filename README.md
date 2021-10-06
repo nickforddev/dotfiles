@@ -43,12 +43,12 @@ Installs the following:
 - homebrew
 - zsh
 - oh-my-zsh
-- powerlevel9k
+- powerlevel10k
 - git-lfs
 - vim
-- nvm
 - node
 - npm
+- nvm
 - cask-fonts
 
 ## Fonts
@@ -63,7 +63,7 @@ Installs the following:
 
 ## ZSH
 
-Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme and a bunch of oh-my-zsh-plugins
+With [Powerlevel10k](https://github.com/romkatv/powerlevel10k) theme and a bunch of oh-my-zsh plugins
 
 ### Plugins
 
@@ -72,6 +72,7 @@ Fairly uninteresting config with [Powerlevel9k](https://github.com/bhilburn/powe
 | **zsh plugins**                                                                                  |                     |
 | [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)                                           | _zsh framework_     |
 | [powerlevel10k](https://github.com/romkatv/powerlevel10k)                                        | _zsh theme_         |
+| [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)                          | _autocompletion_    |
 | **oh-my-zsh plugins**                                                                            |                     |
 | [osx](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/osx/README.md)               | _osx plugin_        |
 | [sudo](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/sudo/README.md)             | _sudo plugin_       |
