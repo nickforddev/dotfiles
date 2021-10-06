@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "One Dark Pro",
-    "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.rulers": [100],
     "editor.snippetSuggestions": "top",
@@ -36,6 +35,7 @@
         "build": true,
         "env": true,
         "packageInfo*": true,
+        ".bemol": true,
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
@@ -132,7 +132,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "viceroy.config.lastVersion": "0.34.200806",
+    "viceroy.config.lastVersion": "0.42.200985",
     "files.watcherExclude": {
         "**/build/**": true,
         "**/.git/objects/**": true,
@@ -148,7 +148,42 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
-    "viceroy.config.internal.lastUpdateTime": "2020-11-20T18:10:09.013Z",
+    "viceroy.config.internal.lastUpdateTime": "2021-10-06T17:33:31.398Z",
     "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
-    "java.help.firstView": "gettingStarted"
+    "java.help.firstView": "gettingStarted",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false,
+    "yaml.schemas": {
+        "file:///Users/nichford/.vscode/extensions/marklel.vscode-brazil-0.42.200985/assets/languages/rde/schema.json": "**/definition.yaml"
+    },
+    "viceroy.doc.welcome.showAtStartup": false,
+    "redhat.telemetry.enabled": false
 }

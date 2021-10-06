@@ -16,5 +16,65 @@
 {
     "key": "ctrl+alt+cmd+i",
     "command": "workbench.files.action.collapseExplorerFolders"
+},
+{
+    "key": "ctrl+alt+down",
+    "command": "console.log.wrap.down",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+alt+w down",
+    "command": "-console.log.wrap.down",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+alt+down",
+    "command": "console.log.wrap.string.down",
+    "when": "editorTextFocus"
+},
+{
+    "key": "shift+alt+w down",
+    "command": "-console.log.wrap.string.down",
+    "when": "editorTextFocus"
+},
+{
+    "key": "shift+alt+w shift+alt+down",
+    "command": "console.log.wrap.down.input",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+alt+w down",
+    "command": "-console.log.wrap.down.input",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+alt+i",
+    "command": "console.log.wrap.input",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+alt+w w",
+    "command": "-console.log.wrap.input",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+alt+/",
+    "command": "console.log.wrap",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+alt+w w",
+    "command": "-console.log.wrap",
+    "when": "editorTextFocus"
+},
+{
+    "key": "shift+alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
 }
 ]

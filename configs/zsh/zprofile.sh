@@ -7,12 +7,6 @@ export PATH=~/Library/Python/3.7/bin:$PATH
 # go
 export PATH=$PATH:/usr/local/go/bin
 
-# ruby gems
-# export PATH=$PATH:$HOME/Software/ruby/bin
-
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
@@ -33,3 +27,9 @@ fi
 # android sdk
 # export ANDROID_HOME=/Users/nick/Library/Android/sdk
 # export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# ruby gems
+# export PATH=$PATH:$HOME/Software/ruby/bin
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 

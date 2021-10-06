@@ -43,9 +43,8 @@ brew install pyenv
 # install more recent version of vim
 brew install vim
 
-# install powerlevel9k
-brew tap sambadevi/powerlevel9k
-brew install powerlevel9k
+# install powerlevel10k
+brew install romkatv/powerlevel10k/powerlevel10k
 
 # install fonts
 brew tap homebrew/cask-fonts
@@ -62,6 +61,7 @@ brew install git-lfs
 brew install zsh-history-substring-search
 brew install fzf
 brew install z
+brew install thefuck
 
 # install node
 brew install nvm

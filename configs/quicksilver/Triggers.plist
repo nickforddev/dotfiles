@@ -7,8 +7,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesSetRating2</string>
-			<key>command</key>
-			<string>QSiTunesSetRating2</string>
 			<key>name</key>
 			<string>Set Rating to 2</string>
 			<key>set</key>
@@ -18,8 +16,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSearchTracks</string>
-			<key>command</key>
 			<string>QSiTunesSearchTracks</string>
 			<key>name</key>
 			<string>Search Tracks</string>
@@ -31,8 +27,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesSearchAlbums</string>
-			<key>command</key>
-			<string>QSiTunesSearchAlbums</string>
 			<key>name</key>
 			<string>Search Albums</string>
 			<key>set</key>
@@ -43,8 +37,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesLoveTrackTrigger</string>
-			<key>command</key>
-			<string>QSiTunesLoveTrackCommand</string>
 			<key>name</key>
 			<string>Love Current Track</string>
 			<key>set</key>
@@ -55,8 +47,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesPlayPauseTrigger</string>
-			<key>command</key>
-			<string>QSiTunesPlayPauseCommand</string>
 			<key>name</key>
 			<string>Play/Pause</string>
 			<key>set</key>
@@ -67,8 +57,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesIncreaseRating</string>
-			<key>command</key>
-			<string>QSiTunesIncreaseRating</string>
 			<key>name</key>
 			<string>Increase Rating</string>
 			<key>set</key>
@@ -78,8 +66,27 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSetRating3</string>
+			<string>05A5DF8E-CDDF-46CE-B461-28999EC337D1</string>
 			<key>command</key>
+			<dict>
+				<key>actionID</key>
+				<string>FileOpenAction</string>
+				<key>directID</key>
+				<string>/System/Applications/Calendar.app</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>1</integer>
+			<key>modifiers</key>
+			<integer>655650</integer>
+			<key>onPress</key>
+			<true/>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>QSiTunesSetRating3</string>
 			<key>name</key>
 			<string>Set Rating to 3</string>
@@ -108,7 +115,7 @@
 			<key>onPress</key>
 			<true/>
 			<key>set</key>
-			<string>iTunes</string>
+			<string>Quicksilver</string>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
@@ -138,8 +145,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesPreviousSongTrigger</string>
-			<key>command</key>
-			<string>QSiTunesPreviousSongCommand</string>
 			<key>name</key>
 			<string>Previous Song</string>
 			<key>set</key>
@@ -187,8 +192,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesPlayTrigger</string>
-			<key>command</key>
-			<string>QSiTunesPlayCommand</string>
 			<key>name</key>
 			<string>Play</string>
 			<key>set</key>
@@ -198,8 +201,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesMute</string>
-			<key>command</key>
 			<string>QSiTunesMute</string>
 			<key>keyCode</key>
 			<integer>109</integer>
@@ -215,8 +216,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesDecreaseRating</string>
-			<key>command</key>
-			<string>QSiTunesDecreaseRating</string>
 			<key>name</key>
 			<string>Decrease Rating</string>
 			<key>set</key>
@@ -226,8 +225,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSetRating4</string>
-			<key>command</key>
 			<string>QSiTunesSetRating4</string>
 			<key>name</key>
 			<string>Set Rating to 4</string>
@@ -249,8 +246,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesStopTrigger</string>
-			<key>command</key>
-			<string>QSiTunesStopCommand</string>
 			<key>name</key>
 			<string>Stop</string>
 			<key>set</key>
@@ -260,8 +255,27 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSearchAll</string>
+			<string>54AEAFE0-B1E5-46BC-9B25-CE33A833757D</string>
 			<key>command</key>
+			<dict>
+				<key>actionID</key>
+				<string>FileOpenAction</string>
+				<key>directID</key>
+				<string>/System/Applications/Calculator.app</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>3</integer>
+			<key>modifiers</key>
+			<integer>393475</integer>
+			<key>onPress</key>
+			<true/>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>QSiTunesSearchAll</string>
 			<key>name</key>
 			<string>Search iTunes</string>
@@ -283,8 +297,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesIncreaseVolume</string>
-			<key>command</key>
-			<string>QSiTunesIncreaseVolume</string>
 			<key>keyCode</key>
 			<integer>111</integer>
 			<key>modifiers</key>
@@ -299,12 +311,31 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesLovePlaylistTrigger</string>
-			<key>command</key>
-			<string>QSiTunesLovePlaylistCommand</string>
 			<key>name</key>
 			<string>Love Current Playlist</string>
 			<key>set</key>
 			<string>iTunes</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>714DDBAD-62C2-43EB-92B5-DEF58F5A81BB</string>
+			<key>command</key>
+			<dict>
+				<key>actionID</key>
+				<string>FileOpenAction</string>
+				<key>directID</key>
+				<string>/System/Applications/Mail.app</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>0</integer>
+			<key>modifiers</key>
+			<integer>393475</integer>
+			<key>onPress</key>
+			<true/>
 			<key>type</key>
 			<string>QSHotKeyTrigger</string>
 		</dict>
@@ -316,7 +347,7 @@
 				<key>actionID</key>
 				<string>FileOpenAction</string>
 				<key>directID</key>
-				<string>/Applications/Google Chrome.app</string>
+				<string>/Applications/Firefox.app</string>
 			</dict>
 			<key>enabled</key>
 			<true/>
@@ -352,7 +383,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyCode</key>
-			<integer>5</integer>
+			<integer>4</integer>
 			<key>modifiers</key>
 			<integer>393475</integer>
 			<key>onPress</key>
@@ -362,8 +393,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSearchArtists</string>
-			<key>command</key>
 			<string>QSiTunesSearchArtists</string>
 			<key>name</key>
 			<string>Search Artists</string>
@@ -417,8 +446,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesShowTrackNotification</string>
-			<key>command</key>
-			<string>QSiTunesShowTrackNotification</string>
 			<key>name</key>
 			<string>Show Playing Track</string>
 			<key>set</key>
@@ -428,8 +455,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesDecreaseVolume</string>
-			<key>command</key>
 			<string>QSiTunesDecreaseVolume</string>
 			<key>keyCode</key>
 			<integer>103</integer>
@@ -445,8 +470,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesPauseTrigger</string>
-			<key>command</key>
-			<string>QSiTunesPauseCommand</string>
 			<key>name</key>
 			<string>Pause</string>
 			<key>set</key>
@@ -456,8 +479,6 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesSetRating1</string>
-			<key>command</key>
 			<string>QSiTunesSetRating1</string>
 			<key>name</key>
 			<string>Set Rating to 1</string>
@@ -469,8 +490,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSiTunesNextSongTrigger</string>
-			<key>command</key>
-			<string>QSiTunesNextSongCommand</string>
 			<key>name</key>
 			<string>Next Song</string>
 			<key>set</key>
@@ -480,9 +499,28 @@
 		</dict>
 		<dict>
 			<key>ID</key>
-			<string>QSiTunesEQToggleTrigger</string>
+			<string>82E425D6-4AC2-47C8-8B2A-4C2EF0AC5DFC</string>
 			<key>command</key>
-			<string>QSiTunesEQToggleCommand</string>
+			<dict>
+				<key>actionID</key>
+				<string>FileOpenAction</string>
+				<key>directID</key>
+				<string>/System/Applications/Music.app</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>2</integer>
+			<key>modifiers</key>
+			<integer>393475</integer>
+			<key>onPress</key>
+			<true/>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSiTunesEQToggleTrigger</string>
 			<key>name</key>
 			<string>Toggle iTunes Equalizer</string>
 			<key>set</key>

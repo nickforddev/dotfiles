@@ -63,6 +63,7 @@ plugins=(
   jsontools
   history-substring-search
   zsh-syntax-highlighting
+  zsh-autosuggestions
   fzf
   z
 )
@@ -87,14 +88,30 @@ alias vrcl='vim ~/.vimrc.local'
 alias vrcb='vim ~/.vimrc.bundles'
 alias vrcbl='vim ~/.vimrc.bundles.local'
 
-alias gmlm='gco master; gl; gco @{-1}; gm master'
-alias gmld='gco develop; gl; gco @{-1}; gm develop'
+# git
+alias gs='git stash'
+alias gsp='git stash pop'
+alias glb='gco @{-1}'
+alias gmlm='gco master; gl; glb; gm master'
+alias gmld='gco develop; gl; glb; gm develop'
+
+# commit spamming for debugging CI
+gppls() {
+  cat /dev/urandom | base64 | tr -dc '0-9a-zA-Z' | head -c28 | read -d '' name
+  gaa && gc -m $name && gp
+}
 
 # yarn
 alias yi='yarn install'
 
+# get ip
+alias wmip="curl checkip.amazonaws.com"
+
 # misc
 alias chrome="open -a 'Google Chrome'"
+alias awsconfig="code ~/.aws"
+
+eval $(thefuck --alias)
 
 # get aliases and stuff from local
 source ~/.zprofile
@@ -120,11 +137,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-
 [[ -f /usr/local/opt/postgresql@11 ]] && export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
@@ -138,3 +151,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

@@ -23,6 +23,7 @@ Plugin 'SirVer/ultisnips'                      " snippets
 Plugin 'Valloric/YouCompleteMe'                " autocompletion
 Plugin 'mattn/emmet-vim'                       " emmet support
 Plugin 'majutsushi/tagbar'                     " class outline viewer
+Plugin 'severin-lemaignan/vim-minimap'         " minimap
 
 " Editing
 " --------------------------------------------------------------------------------------------------

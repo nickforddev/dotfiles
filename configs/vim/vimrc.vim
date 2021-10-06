@@ -223,6 +223,10 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 autocmd VimEnter * NERDTree                       " open NERDTree on vim launch
 autocmd VimEnter * wincmd p                       " try to focus document instead of NERDTree
 
+" Minimap
+
+au BufReadPost,BufNewFile * Minimap               " open Minimap when files are opened
+
 " Passwords
 " --------------------------------------------------------------------------------------------------
 
