@@ -45,10 +45,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # command auto-correction
 ENABLE_CORRECTION="true"
 
+# fix slow paste
+DISABLE_MAGIC_FUNCTIONS="true"
+
 # plugins
 # https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 plugins=(
-  osx
+  macos
   sudo
   brew
   aws
@@ -76,6 +79,8 @@ alias dotfiles='code ~/Sites/dotfiles'
 
 # open current project readme in VSCode
 alias readme='code ./README.md'
+
+alias getip='curl http://checkip.amazonaws.com'
 
 # zsh rec files alises
 alias zrc='vim ~/.zshrc'
@@ -110,6 +115,7 @@ alias wmip="curl checkip.amazonaws.com"
 # misc
 alias chrome="open -a 'Google Chrome'"
 alias awsconfig="code ~/.aws"
+alias python="python3"
 
 eval $(thefuck --alias)
 
@@ -152,5 +158,9 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export DENO_INSTALL="/Users/nichford/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"

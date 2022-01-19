@@ -148,7 +148,7 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
-    "viceroy.config.internal.lastUpdateTime": "2021-10-06T17:33:31.398Z",
+    "viceroy.config.internal.lastUpdateTime": "2021-12-21T17:54:43.590Z",
     "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
     "java.help.firstView": "gettingStarted",
     "yaml.customTags": [
@@ -185,5 +185,6 @@
         "file:///Users/nichford/.vscode/extensions/marklel.vscode-brazil-0.42.200985/assets/languages/rde/schema.json": "**/definition.yaml"
     },
     "viceroy.doc.welcome.showAtStartup": false,
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off"
 }
