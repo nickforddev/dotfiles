@@ -1,9 +1,5 @@
-[{
-    "key": "cmd+v",
-    "command": "pasteAndIndent.action",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
+[
+    {
     "key": "cmd+v",
     "command": "editor.action.clipboardPasteAction",
     "when": "!editorTextFocus"

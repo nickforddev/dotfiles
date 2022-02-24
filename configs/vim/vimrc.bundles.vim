@@ -20,7 +20,7 @@ Plugin 'mileszs/ack.vim'                       " ack support
 Plugin 'airblade/vim-gitgutter'                " git diff in the gutter
 Plugin 'tpope/vim-fugitive'                    " git integration
 Plugin 'SirVer/ultisnips'                      " snippets
-Plugin 'Valloric/YouCompleteMe'                " autocompletion
+Plugin 'ycm-core/YouCompleteMe'                " autocompletion
 Plugin 'mattn/emmet-vim'                       " emmet support
 Plugin 'majutsushi/tagbar'                     " class outline viewer
 Plugin 'severin-lemaignan/vim-minimap'         " minimap
@@ -53,7 +53,7 @@ Plugin 'drewtempelmeyer/palenight.vim'         " pale night
 " Syntax
 " --------------------------------------------------------------------------------------------------
 
-Plugin 'klen/python-mode'                      " python
+Plugin 'python-mode/python-mode'               " python
 Plugin 'plasticboy/vim-markdown'               " markdown
 Plugin 'othree/html5.vim'                      " html5
 Plugin 'hail2u/vim-css3-syntax'                " css3

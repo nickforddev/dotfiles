@@ -4,20 +4,6 @@
 
 set nocompatible                                  " Disable legacy mode
 
-" Vundle
-" --------------------------------------------------------------------------------------------------
-
-set rtp+=~/.vim/bundle/Vundle.vim                 " set vundle runtime path
-
-call vundle#begin()                               " begin vundle
-
-if filereadable(expand("~/.vimrc.bundles"))       " include vundle plugin files
-  source ~/.vimrc.bundles
-  source ~/.vimrc.bundles.local
-endif
-
-call vundle#end()                                 " end vundle
-
 " Settings
 " --------------------------------------------------------------------------------------------------
 
@@ -32,6 +18,20 @@ syntax on                                         " turn on syntax highlighting
 filetype plugin indent on                         " determine syntax via filetype and more
 
 let mapleader=","                                 " change to easier mapleader
+
+" Vundle
+" --------------------------------------------------------------------------------------------------
+
+set rtp+=~/.vim/bundle/Vundle.vim                 " set vundle runtime path
+
+call vundle#begin()                               " begin vundle
+
+if filereadable(expand("~/.vimrc.bundles"))       " include vundle plugin files
+  source ~/.vimrc.bundles
+  source ~/.vimrc.bundles.local
+endif
+
+call vundle#end()                                 " end vundle
 
 " Spelling
 " --------------------------------------------------------------------------------------------------
@@ -303,7 +303,7 @@ au FileType python
 au BufRead,BufNewFile *.wisp set ft=clojure
 
 " Python
-let g:ycm_server_python_interpreter='python'
+let g:ycm_server_python_interpreter='python3'
 let g:pymode_rope_goto_definition_bind='<Leader>gt'
 let g:pymode_folding=0
 let g:pymode_options_max_line_length=100
