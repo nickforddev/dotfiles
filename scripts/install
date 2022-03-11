@@ -1,72 +1,7 @@
 #!/usr/bin/env bash
 
-echo "Installing core dependencies..."
-
-if hash brew 2>/dev/null; then
-  echo "Homebrew is installed"
-else
-  echo "Installing homebrew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-# update homebrew and update packages
-brew update
-brew upgrade
-
-# save homebrew's installed location.
-BREW_PREFIX=$(brew --prefix)
-
-# install zsh
-brew install zsh zsh-completions
-
-if [[ $SHELL =~ "zsh" ]]
-then
-  echo "zsh is already the current shell"
-else
-  echo "Setting zsh to default shell"
-  chsh -s /bin/zsh
-fi
-
-if [ ! -n "$ZSH" ]; then
-  ZSH=~/.oh-my-zsh
-fi
-
-if [ -d "$ZSH" ]; then
-  echo "oh-my-zsh already installed"
-else
-  # install oh-my-zsh
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
-
-# install oh-my-zsh plugins
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-brew install pyenv
-
-# install more recent version of vim and nvim
-brew install vim nvim
-
-# install fonts
-brew tap homebrew/cask-fonts
-brew cask install font-hack
-brew cask install font-roboto
-brew cask install font-open-sans
-brew cask install font-inconsolata
-brew cask install font-source-code-pro
-brew cask install font-source-code-pro-for-powerline
-brew cask install font-material-icons
-
-# Install other useful binaries.
-brew install fzf
-brew install z
-brew install thefuck
-
-# install node
-brew install nvm
-env nvm install node
-
-# Remove outdated versions from the cellar.
-brew cleanup
+./scripts/init      # runs bash
+./scripts/setup     # runs bash
+./scripts/npm       # runs bash, this currently runs asynchronously...
+./scripts/link      # runs node
+./scripts/source    # runs zsh
