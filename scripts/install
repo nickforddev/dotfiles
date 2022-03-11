@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Running Homebrew setup..."
+echo "Installing core dependencies..."
 
 if hash brew 2>/dev/null; then
   echo "Homebrew is installed"
@@ -13,7 +13,7 @@ fi
 brew update
 brew upgrade
 
-# save homebrew’s installed location.
+# save homebrew's installed location.
 BREW_PREFIX=$(brew --prefix)
 
 # install zsh
@@ -21,7 +21,7 @@ brew install zsh zsh-completions
 
 if [[ $SHELL =~ "zsh" ]]
 then
-  echo "Zsh is already the current shell"
+  echo "zsh is already the current shell"
 else
   echo "Setting zsh to default shell"
   chsh -s /bin/zsh
@@ -32,19 +32,22 @@ if [ ! -n "$ZSH" ]; then
 fi
 
 if [ -d "$ZSH" ]; then
-  echo "Oh-my-zsh already installed"
+  echo "oh-my-zsh already installed"
 else
   # install oh-my-zsh
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
+# install oh-my-zsh plugins
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 brew install pyenv
 
-# install more recent version of vim
-brew install vim
-
-# install powerlevel10k
-brew install romkatv/powerlevel10k/powerlevel10k
+# install more recent version of vim and nvim
+brew install vim nvim
 
 # install fonts
 brew tap homebrew/cask-fonts
@@ -57,8 +60,6 @@ brew cask install font-source-code-pro-for-powerline
 brew cask install font-material-icons
 
 # Install other useful binaries.
-brew install git-lfs
-brew install zsh-history-substring-search
 brew install fzf
 brew install z
 brew install thefuck

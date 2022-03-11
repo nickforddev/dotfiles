@@ -79,7 +79,7 @@
 			<key>keyCode</key>
 			<integer>1</integer>
 			<key>modifiers</key>
-			<integer>655650</integer>
+			<integer>393475</integer>
 			<key>onPress</key>
 			<true/>
 			<key>type</key>
@@ -378,7 +378,7 @@
 				<key>actionID</key>
 				<string>FileOpenAction</string>
 				<key>directID</key>
-				<string>/Applications/RubyMine.app</string>
+				<string>/Applications/IntelliJ IDEA.app</string>
 			</dict>
 			<key>enabled</key>
 			<true/>

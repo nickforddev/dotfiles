@@ -19,15 +19,18 @@ filetype plugin indent on                         " determine syntax via filetyp
 
 let mapleader=","                                 " change to easier mapleader
 
-" Vundle
+" Plugins
 " --------------------------------------------------------------------------------------------------
 
-set rtp+=~/.vim/bundle/Vundle.vim                 " set vundle runtime path
+set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()                               " begin vundle
 
-if filereadable(expand("~/.vimrc.bundles"))       " include vundle plugin files
+if filereadable(expand("~/.vimrc.bundles"))       " include plugins
   source ~/.vimrc.bundles
+endif
+
+if filereadable(expand("~/.vimrc.bundles.local")) " include local plugins
   source ~/.vimrc.bundles.local
 endif
 
@@ -121,6 +124,34 @@ let g:ackprg="ag --nogroup --nocolor --column"    " use AG
 let g:ctrlp_working_path_mode='ra'                " ctrlp
 let g:ctrlp_by_filename=0
 
+if executable('fzf')
+  set rtp+=/usr/local/opt/fzf
+
+  if has('nvim')
+    let $FZF_DEFAULT_OPTS='--layout=reverse'
+    let g:fzf_layout = { 'window': 'call FloatingFZF()' }
+
+    function! FloatingFZF()
+      let buf = nvim_create_buf(v:false, v:true)
+      call setbufvar(buf, '&signcolumn', 'no')
+
+      let height = &lines - 18
+      let width = float2nr(&columns - (&columns * 2 / 20))
+      let col = float2nr((&columns - width) / 2)
+
+      let opts = {
+        \ 'relative': 'editor',
+        \ 'row': 4,
+        \ 'col': col,
+        \ 'width': width,
+        \ 'height': height
+        \ }
+
+      call nvim_open_win(buf, v:true, opts)
+    endfunction
+  endif
+endif
+
 " if executable('fzf')
 "   let g:ctrlp_use_caching=0
 "   let g:ctrlp_user_command='cd %s && find . -not \( -name .git -type d -prune \) -type f'
@@ -196,7 +227,9 @@ if exists("&undodir")                             " persistent undo
 endif 
 
 set nostartofline                                 " dont reset cursor to start of line when moving
-set esckeys                                       " allow cursor keys in insert mode
+if !has('nvim')                                   " vertical bar in insert mode (for iTerm)
+  set esckeys                                     " allow cursor keys in insert mode
+endif
 
 au FocusLost * :silent! wall                      " save when losing focus
 au VimEnter * cd %:p:h                            " when we open a new session change the path
@@ -225,7 +258,7 @@ autocmd VimEnter * wincmd p                       " try to focus document instea
 
 " Minimap
 
-au BufReadPost,BufNewFile * Minimap               " open Minimap when files are opened
+" au BufReadPost,BufNewFile * Minimap               " open Minimap when files are opened
 
 " Passwords
 " --------------------------------------------------------------------------------------------------
@@ -247,7 +280,11 @@ let g:ale_sign_column_always=1
 " --------------------------------------------------------------------------------------------------
 
 set background=dark
-colorscheme palenight
+if has('nvim')
+  colorscheme onedarker
+else
+  colorscheme onedark
+endif
 
 let g:rehash256=1                                 " use 256 color if theme is molokai
 let g:airline_theme="tomorrow"                    " add a more detailed theme for airline
@@ -256,7 +293,7 @@ let g:airline#extensions#ale#enabled=1
 let g:vim_markdown_folding_disabled=1             " disable markdown folding
 let g:palenight_terminal_italics=1
 
-if has("nvim")                                    " vertical bar in insert mode (for iTerm)
+if has('nvim')                                    " vertical bar in insert mode (for iTerm)
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 else
@@ -358,7 +395,6 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gp :Git push<CR>
 nmap <leader>gc :Git c<CR>
 nmap <leader>rr :redraw! \| :NERDTree<CR>
-nmap <leader>cc :nohlsearch<CR>
 nmap <leader>d :NERDTreeTabsToggle<CR>
 nmap <leader>ff :NERDTreeTabsFind<CR>
 nmap <leader>tb :TagbarToggle<CR>
@@ -371,8 +407,15 @@ nmap <Leader>wqa :wqa<CR>
 nmap <Leader>pu :put<CR>
 vmap p                                            "_dP
 
-map  <C-k> :CtrlPBuffer<CR>                       " additional mapping for buffer search
-imap <C-k> <ESC>:CtrlPBuffer<CR>
+map <C-p> :FZF<CR>
+
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+
+inoremap jk <ESC>
+" nmap <C-n> :NERDTreeToggle<CR>
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
 
 " map  <C-b> :CtrlPBufTag<CR>
 " imap <C-b> <ESC>:CtrlPBufTag<CR>

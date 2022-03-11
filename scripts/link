@@ -31,7 +31,7 @@ inquirer
             type: 'checkbox',
             name: 'type',
             message: 'What configs do you want to install?',
-            choices: configs.map(name => ({
+            choices: configs.map((name) => ({
               name,
               checked: true
             }))

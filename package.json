@@ -1,5 +1,5 @@
 {
-  "name": "@nickforddesign/dotfiles",
+  "name": "@nickforddev/dotfiles",
   "version": "0.1.0",
   "description": "dotfiles for zsh and vim",
   "main": "setup",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickforddesign/dotfiles.git"
+    "url": "git+https://github.com/nickforddev/dotfiles.git"
   },
   "keywords": [
     "dotfiles"
@@ -20,9 +20,9 @@
   "author": "Nick Ford",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nickforddesign/dotfiles/issues"
+    "url": "https://github.com/nickforddev/dotfiles/issues"
   },
-  "homepage": "https://github.com/nickforddesign/dotfiles#readme",
+  "homepage": "https://github.com/nickforddev/dotfiles#readme",
   "dependencies": {
     "@thrivehive/eslint-config-node": "^1.2.3",
     "chalk": "^2.4.2",

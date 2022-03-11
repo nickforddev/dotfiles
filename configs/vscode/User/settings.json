@@ -148,7 +148,7 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
-    "viceroy.config.internal.lastUpdateTime": "2021-12-21T17:54:43.590Z",
+    "viceroy.config.internal.lastUpdateTime": "2022-03-03T15:56:55.853Z",
     "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
     "java.help.firstView": "gettingStarted",
     "yaml.customTags": [
@@ -186,5 +186,6 @@
     },
     "viceroy.doc.welcome.showAtStartup": false,
     "redhat.telemetry.enabled": false,
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "bracketPairColorizer.depreciation-notice": false
 }

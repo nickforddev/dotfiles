@@ -24,6 +24,8 @@ export FZF_BASE=/path/to/fzf/install/dir
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
+
 # fh - search history
 fh() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 20% +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
@@ -65,10 +67,10 @@ plugins=(
   python
   jsontools
   history-substring-search
-  zsh-syntax-highlighting
-  zsh-autosuggestions
   fzf
   z
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 # setup zshell
@@ -115,7 +117,6 @@ alias wmip="curl checkip.amazonaws.com"
 # misc
 alias chrome="open -a 'Google Chrome'"
 alias awsconfig="code ~/.aws"
-alias python="python3"
 
 eval $(thefuck --alias)
 
@@ -157,6 +158,12 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+fi
 
 export DENO_INSTALL="/Users/nichford/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"

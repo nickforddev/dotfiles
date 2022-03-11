@@ -1,40 +1,43 @@
 " ==================================================================================================
-" Vim bundles
+" Vim plugins
 " ==================================================================================================
 
 " Essentials
 " --------------------------------------------------------------------------------------------------
 
 Plugin 'VundleVim/Vundle.vim'                  " package manager
-Plugin 'scrooloose/nerdtree'                   " filesystem browser
+Plugin 'preservim/nerdtree'                   " filesystem browser
+Plugin 'Xuyuanp/nerdtree-git-plugin'           " add git diff icons to nerdtree
 Plugin 'jistr/vim-nerdtree-tabs'               " nerdtree tabs
-Plugin 'bling/vim-airline.git'                 " vim airline support
+Plugin 'bling/vim-airline'                     " vim airline support
 Plugin 'vim-airline/vim-airline-themes'        " vim airline themes
-Plugin 'w0rp/ale'                              " linter
+" Plugin 'w0rp/ale'                              " linter
 
 " Utilities
 " --------------------------------------------------------------------------------------------------
 
-Plugin 'kien/ctrlp.vim'                        " fuzzy finder for files, buffer, etc
 Plugin 'mileszs/ack.vim'                       " ack support
 Plugin 'airblade/vim-gitgutter'                " git diff in the gutter
-Plugin 'tpope/vim-fugitive'                    " git integration
 Plugin 'SirVer/ultisnips'                      " snippets
-Plugin 'ycm-core/YouCompleteMe'                " autocompletion
+" Plugin 'ycm-core/YouCompleteMe'                " autocompletion
+Plugin 'neoclide/coc.nvim'
 Plugin 'mattn/emmet-vim'                       " emmet support
-Plugin 'majutsushi/tagbar'                     " class outline viewer
-Plugin 'severin-lemaignan/vim-minimap'         " minimap
+Plugin 'preservim/tagbar'                     " class outline viewer
+" Plugin 'severin-lemaignan/vim-minimap'         " minimap
+Plugin 'ryanoasis/vim-devicons'                " file icons
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'airblade/vim-rooter'                     " find git root
 
 " Editing
 " --------------------------------------------------------------------------------------------------
 
-Plugin 'tpope/vim-commentary'                  " comment handling
 Plugin 'Raimondi/delimitMate'                  " delimit quotes, braces, etc
 Plugin 'tpope/vim-surround'                    " wrap text
 Plugin 'tpope/vim-sleuth'                      " use tabwidth of current file
 Plugin 'godlygeek/tabular'                     " tab alignment tools
 Plugin 'terryma/vim-expand-region'             " selection expansion/reduction
 Plugin 'kristijanhusak/vim-multiple-cursors'   " allow for multiple cursors
+Plugin 'preservim/nerdcommenter'               " comment management
 
 " Buffers
 " --------------------------------------------------------------------------------------------------
@@ -47,8 +50,14 @@ Plugin 'sjl/vitality.vim'                      " iterm / tmux support
 
 Plugin 'jordwalke/flatlandia'                  " flatlandia
 Plugin 'morhetz/gruvbox'                       " gruvbox
-Plugin 'joshdick/onedark.vim'                  " one dark
 Plugin 'drewtempelmeyer/palenight.vim'         " pale night
+Plugin 'joshdick/onedark.vim'                  " one dark
+
+if has('nvim')
+  Plugin 'navarasu/onedark.nvim'               " one dark
+  Plugin 'lunarvim/darkplus.nvim'
+  Plugin 'lunarvim/onedarker.nvim'
+endif
 
 " Syntax
 " --------------------------------------------------------------------------------------------------

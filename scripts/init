@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo "Installing nickforddev's dotfiles"
+
+DOTFILES=~/.dotfiles
+mkdir -p DOTFILES
+
+env git clone --depth=1 https://github.com/nickforddevv/dotfiles.git "$DOTFILES"|| {
+  printf "Error: git clone of dotfiles repo failed\n"
+  exit 1
+}
+
+pushd $DOTFILES
