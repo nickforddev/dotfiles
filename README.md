@@ -26,7 +26,7 @@ To run the setup script locally:
 
 ```bash
 # clone the repo
-git clone https://github.com/nickforddesign/dotfiles && cd dotfiles
+git clone https://github.com/nickforddev/dotfiles && cd dotfiles
 
 # run the install script
 ./install.sh
