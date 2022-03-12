@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-./scripts/init      # runs bash
+./scripts/install
