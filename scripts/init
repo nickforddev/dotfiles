@@ -1,13 +1,58 @@
 #!/usr/bin/env bash
 
+set -e
+
 echo "Installing nickforddev's dotfiles"
 
+# Make sure important variables exist if not already defined
+#
+# $USER is defined by login(1) which is not always executed (e.g. containers)
+# POSIX: https://pubs.opengroup.org/onlinepubs/009695299/utilities/id.html
+USER=${USER:-$(id -u -n)}
+# $HOME is defined at the time of login, but it could be unset. If it is unset,
+# a tilde by itself (~) will not be expanded to the current user's home directory.
+# POSIX: https://pubs.opengroup.org/onlinepubs/009696899/basedefs/xbd_chap08.html#tag_08_03
+HOME="${HOME:-$(getent passwd $USER 2>/dev/null | cut -d: -f6)}"
+# macOS does not have getent, but this works even if $HOME is unset
+HOME="${HOME:-$(eval echo ~$USER)}"
+
+# Default settings
+DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
+REPO=${REPO:-nickforddev/dotfiles}
+REMOTE=${REMOTE:-https://github.com/${REPO}.git}
+BRANCH=${BRANCH:-mainline}
 DOTFILES=~/.dotfiles
+
+command_exists() {
+  command -v "$@" >/dev/null 2>&1
+}
+
 mkdir -p DOTFILES
 
-env git clone --depth=1 https://github.com/nickforddevv/dotfiles.git "$DOTFILES"|| {
-  printf "Error: git clone of dotfiles repo failed\n"
+umask g-w,o-w
+
+command_exists git || {
+  fmt_error "git is not installed"
   exit 1
 }
+
+# Manual clone with git config options to support git < v1.7.2
+git init --quiet "$DOTFILES" && cd "$DOTFILES" \
+&& git config core.eol lf \
+&& git config core.autocrlf false \
+&& git config fsck.zeroPaddedFilemode ignore \
+&& git config fetch.fsck.zeroPaddedFilemode ignore \
+&& git config receive.fsck.zeroPaddedFilemode ignore \
+&& git config oh-my-zsh.remote origin \
+&& git config oh-my-zsh.branch "$BRANCH" \
+&& git remote add origin "$REMOTE" \
+&& git fetch --depth=1 origin \
+&& git checkout -b "$BRANCH" "origin/$BRANCH" || {
+  [ ! -d "$DOTFILES" ] || rm -rf "$DOTFILES" 2>/dev/null
+  fmt_error "git clone of repo failed"
+  exit 1
+}
+
+echo
 
 pushd $DOTFILES
