@@ -53,6 +53,4 @@ git init --quiet "$DOTFILES" && cd "$DOTFILES" \
   exit 1
 }
 
-echo
-
 pushd $DOTFILES
