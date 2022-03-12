@@ -1,12 +1,13 @@
 {
   "name": "@nickforddev/dotfiles",
-  "version": "0.1.0",
-  "description": "dotfiles for zsh and vim",
-  "main": "setup",
+  "version": "1.0.1",
+  "description": "dotfiles for zsh, vim, neovim, vscode, etc",
+  "main": "install-mac.sh",
   "scripts": {
+    "install": "./scripts/install",
+    "init": "./scripts/init",
     "link": "./scripts/link",
-    "brew": "./scripts/brew",
-    "clone": "./scripts/clone",
+    "setup": "./scripts/setup",
     "npm": "./scripts/npm",
     "source": "./scripts/source"
   },
@@ -24,7 +25,7 @@
   },
   "homepage": "https://github.com/nickforddev/dotfiles#readme",
   "dependencies": {
-    "@thrivehive/eslint-config-node": "^1.2.3",
+    "@nickforddev/eslint-config-node": "^1.0.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "eslint": "^5.16.0",
