@@ -1,8 +1,18 @@
 #!/usr/bin/env bash
 
+# exit immediately if anything returns non 0
 set -e
 
-echo "Installing nickforddev's dotfiles"
+GH_USER = "nickforddev"
+
+read -p "Would you like to install @$GH_USER's dotfiles? " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+  exit 1
+fi
+
+echo "Installing @$GH_USER's dotfiles"
 
 # Make sure important variables exist if not already defined
 #
@@ -18,16 +28,13 @@ HOME="${HOME:-$(eval echo ~$USER)}"
 
 # Default settings
 DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
-REPO=${REPO:-nickforddev/dotfiles}
+REPO=${REPO:-$GH_USER/dotfiles}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-mainline}
-DOTFILES=~/.dotfiles
 
 command_exists() {
   command -v "$@" >/dev/null 2>&1
 }
-
-mkdir -p DOTFILES
 
 umask g-w,o-w
 
@@ -36,7 +43,7 @@ command_exists git || {
   exit 1
 }
 
-# Manual clone with git config options to support git < v1.7.2
+# Manual clone with git config options
 git init --quiet "$DOTFILES" && cd "$DOTFILES" \
 && git config core.eol lf \
 && git config core.autocrlf false \
@@ -52,5 +59,3 @@ git init --quiet "$DOTFILES" && cd "$DOTFILES" \
   echo "git clone of repo failed"
   exit 1
 }
-
-pushd $DOTFILES

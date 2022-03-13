@@ -77,7 +77,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # open dotfiles project in VSCode
-alias dotfiles='code ~/Sites/dotfiles'
+alias dotfiles='code ~/.dotfiles'
 
 # open current project readme in VSCode
 alias readme='code ./README.md'

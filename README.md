@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-My dotfiles for zsh, vim, vscode, etc
+My dotfiles for zsh, vim, neovim, vscode, etc
 
 ## Screenshots
 
@@ -14,7 +14,8 @@ My dotfiles for zsh, vim, vscode, etc
 
 Running the setup script does the following:
 
-1. Install homebrew & homebrew packages
+1. Install zsh and oh-my-zsh
+1. Install homebrew & packages
 1. Install nvm, node, and npm
 1. Install node dependencies
 1. Symlink dotfiles
@@ -25,11 +26,8 @@ Before symlinking the dotfiles, you will be prompted to pick which ones to insta
 To run the setup script locally:
 
 ```bash
-# clone the repo
-git clone https://github.com/nickforddev/dotfiles && cd dotfiles
-
-# run the install script
-./install.sh
+# macOS
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/nickforddev/dotfiles/mainline/install-mac.sh)"
 ```
 
 ## Untracked configs
@@ -40,16 +38,15 @@ If a setting is device-specific or sensitive, it should be added to a `.untracke
 
 Installs the following:
 
-- homebrew
 - zsh
 - oh-my-zsh
+- homebrew
 - powerlevel10k
-- git-lfs
-- vim
+- vim, nvim
+- pyenv
+- nvm
 - node
 - npm
-- nvm
-- cask-fonts
 
 ## Fonts
 
@@ -89,14 +86,14 @@ With [Powerlevel10k](https://github.com/romkatv/powerlevel10k) theme and a bunch
 
 ## Vim
 
-Opinionated Vim config using Vundle as a package manager
+Vim config using Vundle as plugin manager
 
 ### Vim bundles
 
 | Package                                                                                       | Description                           |
 |-----------------------------------------------------------------------------------------------|---------------------------------------|
 | **Essentials**                                                                                |                                       |
-| [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim)                               | _package manager_                     |
+| [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim)                               | _plugin manager_                     |
 | [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)                                 | _filesystem browser_                  |
 | [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)                         | _nerdtree tabs_                       |
 | [bling/vim-airline.git](https://github.com/bling/vim-airline.git)                             | _vim airline support_                 |
@@ -136,14 +133,3 @@ Opinionated Vim config using Vundle as a package manager
 | [isRuslan/vim-es6](https://github.com/isRuslan/vim-es6)                                       | _es6 (javascript)_                    |
 | [posva/vim-vue](https://github.com/posva/vim-vue)                                             | _vue_                                 |
 
-## VSCode
-
-Various preferred settings
-
-## Quicksilver
-
-Various preferred triggers
-
-## MacOS
-
-Various preferred settings
