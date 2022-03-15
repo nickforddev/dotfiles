@@ -51,13 +51,13 @@ brew install vim nvim
 
 # install fonts
 brew tap homebrew/cask-fonts
-brew cask install font-hack
-brew cask install font-roboto
-brew cask install font-open-sans
-brew cask install font-inconsolata
-brew cask install font-source-code-pro
-brew cask install font-source-code-pro-for-powerline
-brew cask install font-material-icons
+brew --cask install font-hack
+brew --cask install font-roboto
+brew --cask install font-open-sans
+brew --cask install font-inconsolata
+brew --cask install font-source-code-pro
+brew --cask install font-source-code-pro-for-powerline
+brew --cask install font-material-icons
 
 # Install other useful binaries.
 brew install fzf

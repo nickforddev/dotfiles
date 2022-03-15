@@ -4,7 +4,6 @@
   "description": "dotfiles for zsh, vim, neovim, vscode, etc",
   "main": "install-mac.sh",
   "scripts": {
-    "install": "./scripts/install",
     "init": "./scripts/init",
     "link": "./scripts/link",
     "setup": "./scripts/setup",

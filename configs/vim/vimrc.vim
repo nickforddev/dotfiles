@@ -54,11 +54,13 @@ set cursorline                                    " highlights cursor line
 set title                                         " Show the filename in the window title bar
 set shortmess=atI                                 " hide intro
 set report=0                                      " show messages
+set noshowcmd
+set noruler
 
 " Buffers
 " --------------------------------------------------------------------------------------------------
 
-set ruler                                         " coordinates bottom right
+"set ruler                                         " coordinates bottom right
 set list                                          " display whitespace
 set listchars=tab:\ ·,trail:·                     " characters to represent spaces and tabs
 set fillchars=vert:\ "                            "" define character to use for buffer separators
@@ -212,7 +214,7 @@ set history=999                                   " increase history (default=20
 set undolevels=999                                " moar undo (default=100)
 set autoread                                      " reload files if changed externally
 
-set showcmd                                       " show (partial) command in the status line
+" set showcmd                                       " show (partial) command in the status line
 set showmode                                      " show what mode you are in (Normal/Insert/Visual)
 
 set backupdir=~/.vim/tmp/backup/                  " where to put backup files.
