@@ -44,7 +44,28 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+# setup python
 brew install pyenv
+
+# :)
+brew install amethyst
+brew install neofetch
+brew install cmatrix
+brew install htop
+
+# musikcube
+brew tap clangen/musikcube
+brew install musikcube
+
+# cli-visualizer
+brew install fftw cmake
+brew tap homebrew/dupes
+brew install ncurses
+
+git clone --depth=1 https://github.com/dpayne/cli-visualizer ~
+cd ~/cli-visualizer
+./install.sh
+rm -rf ~/cli-visualizer
 
 # install more recent version of vim and nvim
 brew install vim nvim
@@ -64,7 +85,7 @@ brew install fzf
 brew install z
 brew install thefuck
 
-# install node
+# install node.js
 brew install nvm
 env nvm install node
 
