@@ -65,6 +65,7 @@ yabai -m config mouse_action2               resize
 
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
+yabai -m rule --add label="Firefox" app="^Firefox$" title="^(Opening) (.*)$" manage=off
 yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
 yabai -m rule --add label="App Store" app="^App Store$" manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
@@ -73,7 +74,9 @@ yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
 yabai -m rule --add label="Mail" app="^Slack$" space=1
 yabai -m rule --add label="Slack" app="^Slack$" space=2
-yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$"  space=3
+yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" space=3
+yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
+yabai -m rule --add label="Cisco AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
 # ===== Signals ================================

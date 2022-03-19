@@ -15,8 +15,23 @@ lctrl + alt - up : yabai -m window --focus north     # k
 lctrl + alt - right : yabai -m window --focus east   # l
 
 # Spaces
+# Navigate
 lctrl - left : yabai -m space --focus prev
 lctrl - right : yabai -m space --focus next
+
+# Create/destroy
+shift + alt - n : yabai -m space --create
+shift + alt - d : yabai -m space --destroy
+
+# Moving windows to spaces
+shift + ctrl + alt - left : yabai -m window --space prev
+shift + ctrl + alt - right : yabai -m window --space next
+
+shift + ctrl + alt - 1 : yabai -m window --space 1
+shift + ctrl + alt - 2 : yabai -m window --space 2
+shift + ctrl + alt - 3 : yabai -m window --space 3
+shift + ctrl + alt - 4 : yabai -m window --space 4
+shift + ctrl + alt - 5 : yabai -m window --space 5
 
 # Displays
 # Focus previous display by arrangement index
@@ -31,12 +46,21 @@ ctrl + cmd - down : yabai -m window --warp south
 ctrl + cmd - up : yabai -m window --warp north
 ctrl + cmd - right : yabai -m window --warp east
 
+# Swap windows
+shift + ctrl - left : yabai -m window --swap west
+shift + ctrl - down : yabai -m window --swap south
+shift + ctrl - up : yabai -m window --swap north
+shift + ctrl - right : yabai -m window --swap east
+
 # Move window to next display
 ctrl + alt + cmd - right : yabai -m window --display next; yabai -m display --focus 2; yabai -m window --toggle border; yabai -m window --toggle border;
 ctrl + alt + cmd - left : yabai -m window --display prev; yabai -m display --focus 1; yabai -m window --toggle border; yabai -m window --toggle border;
 
 # Maximize window
 lctrl + alt + cmd - up : yabai -m window --toggle zoom-fullscreen
+
+# Toggle split mode
+shift + alt - s : yabai -m window --toggle split
 
 # Move focus container to workspace
 shift + alt - m : yabai -m window --space last; yabai -m space --focus last
@@ -63,7 +87,7 @@ lctrl + alt - e : yabai -m space --balance
 # Enable / Disable gaps in current workspace
 lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
-# Rotate windows clockwise and anticlockwise
+# Rotate windows clockwise and counterclockwise
 alt - r         : yabai -m space --rotate 270
 shift + alt - r : yabai -m space --rotate 90
 
