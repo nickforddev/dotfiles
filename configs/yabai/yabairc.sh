@@ -71,7 +71,7 @@ yabai -m rule --add label="App Store" app="^App Store$" manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
 yabai -m rule --add label="Archive Utility" app="^Archive Utility$" manage=off
 yabai -m rule --add label="Installer" app="^Installer$" manage=off
-yabai -m rule --add label="1Password 7" app="^1Password 7" manage=off
+# yabai -m rule --add label="1Password 7" app="^1Password 7" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
 yabai -m rule --add label="Mail" app="^Slack$" space=1
@@ -87,6 +87,7 @@ yabai -m rule --add label="Slack" app="^Slack$" space=2
 yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" space=3
 yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
 yabai -m rule --add label="Cisco AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
+yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="(Licenses)" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
 # ===== Signals ================================
