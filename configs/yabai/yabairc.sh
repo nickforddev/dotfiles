@@ -7,7 +7,7 @@ set -x
 declare -A gaps
 declare -A color
 
-gaps["top"]="14"
+gaps["top"]="64"
 gaps["bottom"]="14"
 gaps["left"]="14"
 gaps["right"]="14"
@@ -69,6 +69,8 @@ yabai -m rule --add label="Firefox" app="^Firefox$" title="^(Opening) (.*)$" man
 yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
 yabai -m rule --add label="App Store" app="^App Store$" manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
+yabai -m rule --add label="Archive Utility" app="^Archive Utility$" manage=off
+yabai -m rule --add label="Installer" app="^Installer$" manage=off
 yabai -m rule --add label="1Password 7" app="^1Password 7" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
