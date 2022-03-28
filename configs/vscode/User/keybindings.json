@@ -72,5 +72,65 @@
     "key": "ctrl+space",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+home",
+    "command": "subwordNavigation.cursorSubwordLeftSelect",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+left",
+    "command": "-subwordNavigation.cursorSubwordLeftSelect",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+home",
+    "command": "subwordNavigation.cursorSubwordLeft",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+left",
+    "command": "-subwordNavigation.cursorSubwordLeft",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+end",
+    "command": "subwordNavigation.cursorSubwordRight",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+right",
+    "command": "-subwordNavigation.cursorSubwordRight",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+end",
+    "command": "subwordNavigation.cursorSubwordRightSelect",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+right",
+    "command": "-subwordNavigation.cursorSubwordRightSelect",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+delete",
+    "command": "subwordNavigation.deleteSubwordLeft",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+backspace",
+    "command": "-subwordNavigation.deleteSubwordLeft",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+delete",
+    "command": "subwordNavigation.deleteSubwordRight",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+delete",
+    "command": "-subwordNavigation.deleteSubwordRight",
+    "when": "editorTextFocus && !editorReadonly"
 }
 ]

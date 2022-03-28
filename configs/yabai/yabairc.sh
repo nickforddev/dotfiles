@@ -7,20 +7,21 @@ set -x
 declare -A gaps
 declare -A color
 
-gaps["top"]="58"
+gaps["top"]="14"
 gaps["bottom"]="14"
 gaps["left"]="14"
 gaps["right"]="14"
 gaps["inner"]="14"
 
 color["focused"]="0xFF5ffdff"
-color["normal"]="0xFFd97e96"
-# color["preselect"]="0xE050a6a8"
+color["normal"]="0xFF010101"
+color["preselect"]="0xFF010101"
+# color["preselect"]="0xFF50a6a8"
 # color["preselect"]="0xE02d74da"
 
 # Uncomment to refresh ubersicht widget on workspace change
 # Make sure to replace WIDGET NAME for the name of the ubersicht widget
-# ubersicht_spaces_refresh_command="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"WIDGET NAME\"'"
+# ubersicht_spaces_refresh_command="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
 
 # ===== Loading Scripting Additions ============
 
@@ -31,6 +32,8 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 # ===== Tiling setting =========================
 
 yabai -m config layout                      bsp
+
+yabai -m config external_bar                all:44:0
 
 yabai -m config top_padding                 "${gaps["top"]}"
 yabai -m config bottom_padding              "${gaps["bottom"]}"
@@ -75,7 +78,6 @@ yabai -m rule --add label="Installer" app="^Installer$" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
 yabai -m rule --add label="Mail" app="^Slack$" space=1
-# yabai -m rule --add app="^Mail$" title="^New Message*" manage=off
 yabai -m rule --add app="^Mail$" title="^New Message*" sticky=on
 yabai -m rule --add app="^Mail$" title="^Re:*" manage=off
 yabai -m rule --add app="^Mail$" title="^Re:*" sticky=on
@@ -88,6 +90,7 @@ yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" space=3
 yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
 yabai -m rule --add label="Cisco AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="(Licenses)" manage=off
+yabai -m rule --add label="Übersicht" app="^Übersicht$" title="Preferences" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
 # ===== Signals ================================
@@ -101,11 +104,11 @@ yabai -m rule --add label="About This Mac" app="System Information" title="About
 # yabai -m signal --add event=window_focused action="sketchybar --update"
 # yabai -m signal --add event=window_title_changed action="sketchybar --update"
 
-yabai -m signal --add event=window_created action="sketchybar -m --trigger yabai_window &> /dev/null"
-yabai -m signal --add event=window_destroyed action="sketchybar -m --trigger yabai_window &> /dev/null"
-yabai -m signal --add event=window_focused action="sketchybar -m --trigger yabai_window &> /dev/null"
-yabai -m signal --add event=space_changed action="sketchybar -m --trigger yabai_window &> /dev/null"
-yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger yabai_window &> /dev/null"
+# yabai -m signal --add event=window_created action="sketchybar -m --trigger yabai_window &> /dev/null"
+# yabai -m signal --add event=window_destroyed action="sketchybar -m --trigger yabai_window &> /dev/null"
+# yabai -m signal --add event=window_focused action="sketchybar -m --trigger yabai_window &> /dev/null"
+# yabai -m signal --add event=space_changed action="sketchybar -m --trigger yabai_window &> /dev/null"
+# yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger yabai_window &> /dev/null"
 
 set +x
 printf "yabai: configuration loaded...\\n"

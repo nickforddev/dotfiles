@@ -39,7 +39,7 @@ audio.stereo.enabled=false
 #visualizer.spectrum.character=#
 
 ##Spectrum bar width. Defaults to 2.
-#visualizer.spectrum.bar.width=2
+visualizer.spectrum.bar.width=2
 
 ##The amount of space between each bar in the spectrum visualizer. Defaults to 1. It's possible to set this to
 ##zero to have no space between bars
@@ -50,7 +50,7 @@ audio.stereo.enabled=false
 
 ##This configures the falloff effect on the spectrum visualizer. Available falloff options are fill,top,none.
 ##Defaults to "fill"
-#visualizer.spectrum.falloff.mode=fill
+# visualizer.spectrum.falloff.mode=fill
 
 ##Configures how fast the falloff character falls. This is an exponential falloff so values usually look
 ##best 0.9+ and small changes in this value can have a large effect. Defaults to 0.95
@@ -85,7 +85,7 @@ audio.stereo.enabled=false
 
 
 ##Turns off overriding the user's terminal colors. This is true by default.
-#colors.override.terminal=false
+colors.override.terminal=false
 
 ##Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/ directory. The default scheme is "colors".
-colors.scheme=berry,rainbow
+colors.scheme=berry

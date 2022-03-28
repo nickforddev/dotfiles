@@ -19,6 +19,16 @@ lctrl + alt - right : yabai -m window --focus east   # l
 lctrl - left : yabai -m space --focus prev
 lctrl - right : yabai -m space --focus next
 
+lctrl - 1 : yabai -m space --focus 1
+lctrl - 2 : yabai -m space --focus 2
+lctrl - 3 : yabai -m space --focus 3
+lctrl - 4 : yabai -m space --focus 4
+lctrl - 5 : yabai -m space --focus 5
+lctrl - 6 : yabai -m space --focus 6
+lctrl - 7 : yabai -m space --focus 7
+lctrl - 8 : yabai -m space --focus 8
+lctrl - 9 : yabai -m space --focus 9
+
 # Create/destroy
 shift + alt - n : yabai -m space --create;\
     id="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')";\
@@ -35,6 +45,10 @@ shift + ctrl + alt - 2 : yabai -m window --space 2
 shift + ctrl + alt - 3 : yabai -m window --space 3
 shift + ctrl + alt - 4 : yabai -m window --space 4
 shift + ctrl + alt - 5 : yabai -m window --space 5
+shift + ctrl + alt - 6 : yabai -m window --space 6
+shift + ctrl + alt - 7 : yabai -m window --space 7
+shift + ctrl + alt - 8 : yabai -m window --space 8
+shift + ctrl + alt - 9 : yabai -m window --space 9
 
 # Displays
 # Focus previous display by arrangement index
@@ -73,11 +87,11 @@ shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
 shift + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
 shift + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
 shift + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
-shift + alt - 5 : yabai -m window --space 4; yabai -m space --focus 5
-shift + alt - 6 : yabai -m window --space 4; yabai -m space --focus 6
-shift + alt - 7 : yabai -m window --space 4; yabai -m space --focus 7
-shift + alt - 8 : yabai -m window --space 4; yabai -m space --focus 8
-shift + alt - 9 : yabai -m window --space 4; yabai -m space --focus 9
+shift + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
+shift + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
+shift + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
+shift + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
+shift + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
 
 # Resize windows
 lctrl + alt - h : yabai -m window --resize left:-50:0; \
