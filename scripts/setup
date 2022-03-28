@@ -88,6 +88,7 @@ brew --cask install font-material-icons
 brew install fzf
 brew install z
 brew install thefuck
+brew install jq
 
 # install node.js
 brew install nvm

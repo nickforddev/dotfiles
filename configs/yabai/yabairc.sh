@@ -7,15 +7,15 @@ set -x
 declare -A gaps
 declare -A color
 
-gaps["top"]="64"
+gaps["top"]="58"
 gaps["bottom"]="14"
 gaps["left"]="14"
 gaps["right"]="14"
 gaps["inner"]="14"
 
-color["focused"]="0xE0d97e96"
-color["normal"]="0x66010101"
-color["preselect"]="0xE050a6a8"
+color["focused"]="0xFF5ffdff"
+color["normal"]="0xFFd97e96"
+# color["preselect"]="0xE050a6a8"
 # color["preselect"]="0xE02d74da"
 
 # Uncomment to refresh ubersicht widget on workspace change
@@ -46,7 +46,7 @@ yabai -m config window_opacity              on
 yabai -m config window_shadow               float
 
 yabai -m config window_border               on
-yabai -m config window_border_width         3
+yabai -m config window_border_width         6
 yabai -m config active_window_border_color  "${color["focused"]}"
 yabai -m config normal_window_border_color  "${color["normal"]}"
 yabai -m config insert_feedback_color       "${color["preselect"]}"
@@ -75,6 +75,14 @@ yabai -m rule --add label="1Password 7" app="^1Password 7" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
 yabai -m rule --add label="Mail" app="^Slack$" space=1
+# yabai -m rule --add app="^Mail$" title="^New Message*" manage=off
+yabai -m rule --add app="^Mail$" title="^New Message*" sticky=on
+yabai -m rule --add app="^Mail$" title="^Re:*" manage=off
+yabai -m rule --add app="^Mail$" title="^Re:*" sticky=on
+yabai -m rule --add app="^Mail$" title="^Fwd:*" manage=off
+yabai -m rule --add app="^Mail$" title="^Fwd:*" sticky=on
+yabai -m rule --add app="^Mail$" space=2
+yabai -m rule --add app="^Mail$" title="^General$" manage=off
 yabai -m rule --add label="Slack" app="^Slack$" space=2
 yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" space=3
 yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
@@ -86,10 +94,17 @@ yabai -m rule --add label="About This Mac" app="System Information" title="About
 # yabai -m signal --add event=application_front_switched action="${ubersicht_spaces_refresh_command}"
 # yabai -m signal --add event=display_changed action="${ubersicht_spaces_refresh_command}"
 # yabai -m signal --add event=space_changed action="${ubersicht_spaces_refresh_command}"
-# yabai -m signal --add event=window_created action="${ubersicht_spaces_refresh_command}"
-# yabai -m signal --add event=window_destroyed action="${ubersicht_spaces_refresh_command}"
-# yabai -m signal --add event=window_focused action="${ubersicht_spaces_refresh_command}"
-# yabai -m signal --add event=window_title_changed action="${ubersicht_spaces_refresh_command}"
+# yabai -m signal --add event=space_changed action="sketchybar --update"
+# # yabai -m signal --add event=window_created action="${ubersicht_spaces_refresh_command}"
+# # yabai -m signal --add event=window_destroyed action="${ubersicht_spaces_refresh_command}"
+# yabai -m signal --add event=window_focused action="sketchybar --update"
+# yabai -m signal --add event=window_title_changed action="sketchybar --update"
+
+yabai -m signal --add event=window_created action="sketchybar -m --trigger yabai_window &> /dev/null"
+yabai -m signal --add event=window_destroyed action="sketchybar -m --trigger yabai_window &> /dev/null"
+yabai -m signal --add event=window_focused action="sketchybar -m --trigger yabai_window &> /dev/null"
+yabai -m signal --add event=space_changed action="sketchybar -m --trigger yabai_window &> /dev/null"
+yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger yabai_window &> /dev/null"
 
 set +x
 printf "yabai: configuration loaded...\\n"
