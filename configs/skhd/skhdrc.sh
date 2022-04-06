@@ -9,46 +9,49 @@
 # fn + lalt - 5 : "${HOME}"/.config/yabai/scripts/show_song.sh
 
 # Navigation
-lctrl + alt - left : yabai -m window --focus west    # h
-lctrl + alt - down : yabai -m window --focus south   # j
-lctrl + alt - up : yabai -m window --focus north     # k
-lctrl + alt - right : yabai -m window --focus east   # l
+ctrl + alt - left : yabai -m window --focus west    # h
+ctrl + alt - down : yabai -m window --focus south   # j
+ctrl + alt - up : yabai -m window --focus north     # k
+ctrl + alt - right : yabai -m window --focus east   # l
 
 # Spaces
 # Navigate
-lctrl - left : yabai -m space --focus prev
-lctrl - right : yabai -m space --focus next
+ctrl - left : yabai -m space --focus prev
+ctrl - right : yabai -m space --focus next
 
-lctrl - 1 : yabai -m space --focus 1
-lctrl - 2 : yabai -m space --focus 2
-lctrl - 3 : yabai -m space --focus 3
-lctrl - 4 : yabai -m space --focus 4
-lctrl - 5 : yabai -m space --focus 5
-lctrl - 6 : yabai -m space --focus 6
-lctrl - 7 : yabai -m space --focus 7
-lctrl - 8 : yabai -m space --focus 8
-lctrl - 9 : yabai -m space --focus 9
+ctrl - 1 : yabai -m space --focus 1
+ctrl - 2 : yabai -m space --focus 2
+ctrl - 3 : yabai -m space --focus 3
+ctrl - 4 : yabai -m space --focus 4
+ctrl - 5 : yabai -m space --focus 5
+ctrl - 6 : yabai -m space --focus 6
+ctrl - 7 : yabai -m space --focus 7
+ctrl - 8 : yabai -m space --focus 8
+ctrl - 9 : yabai -m space --focus 9
 
 # Create/destroy
 shift + alt - n : yabai -m space --create;\
-    id="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')";\
-    yabai -m window --space $id;\
+    id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')";\
+    # yabai -m window --space $id;\
     yabai -m space --focus $id;
-shift + alt - d : yabai -m space --destroy
+shift + alt - d : id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index'-1)";\
+    # [ "$id" == -1 ] && id=0;\
+    yabai -m space --destroy;\
+    yabai -m space --focus $id;
 
 # Moving windows to spaces
-shift + ctrl + alt - left : yabai -m window --space prev
-shift + ctrl + alt - right : yabai -m window --space next
+shift + ctrl + alt - left : yabai -m window --space prev; yabai -m space --focus prev; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - right : yabai -m window --space next; "${HOME}"/.config/skhd/scripts/fix_border.sh
 
-shift + ctrl + alt - 1 : yabai -m window --space 1
-shift + ctrl + alt - 2 : yabai -m window --space 2
-shift + ctrl + alt - 3 : yabai -m window --space 3
-shift + ctrl + alt - 4 : yabai -m window --space 4
-shift + ctrl + alt - 5 : yabai -m window --space 5
-shift + ctrl + alt - 6 : yabai -m window --space 6
-shift + ctrl + alt - 7 : yabai -m window --space 7
-shift + ctrl + alt - 8 : yabai -m window --space 8
-shift + ctrl + alt - 9 : yabai -m window --space 9
+shift + ctrl + alt - 1 : yabai -m window --space 1; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 2 : yabai -m window --space 2; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 3 : yabai -m window --space 3; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 4 : yabai -m window --space 4; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 5 : yabai -m window --space 5; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 6 : yabai -m window --space 6; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 7 : yabai -m window --space 7; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 8 : yabai -m window --space 8; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 9 : yabai -m window --space 9; "${HOME}"/.config/skhd/scripts/fix_border.sh
 
 # Displays
 # Focus previous display by arrangement index
@@ -70,11 +73,11 @@ shift + ctrl - up : yabai -m window --swap north
 shift + ctrl - right : yabai -m window --swap east
 
 # Move window to next display
-ctrl + alt + cmd - right : yabai -m window --display next; yabai -m display --focus 2; yabai -m window --toggle border; yabai -m window --toggle border;
-ctrl + alt + cmd - left : yabai -m window --display prev; yabai -m display --focus 1; yabai -m window --toggle border; yabai -m window --toggle border;
+ctrl + alt + cmd - right : yabai -m window --display next; yabai -m display --focus 2; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+ctrl + alt + cmd - left : yabai -m window --display prev; yabai -m display --focus 1; "${HOME}"/.config/skhd/scripts/fix_border.sh;
 
 # Maximize window
-lctrl + alt + cmd - up : yabai -m window --toggle zoom-fullscreen
+ctrl + alt + cmd - up : yabai -m window --toggle zoom-fullscreen
 
 # Toggle split mode
 shift + alt - s : yabai -m window --toggle split
@@ -94,20 +97,20 @@ shift + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
 shift + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
 
 # Resize windows
-lctrl + alt - h : yabai -m window --resize left:-50:0; \
-                  yabai -m window --resize right:-50:0
-lctrl + alt - j : yabai -m window --resize bottom:0:50; \
-                  yabai -m window --resize top:0:50
-lctrl + alt - k : yabai -m window --resize top:0:-50; \
-                  yabai -m window --resize bottom:0:-50
-lctrl + alt - l : yabai -m window --resize right:50:0; \
-                  yabai -m window --resize left:50:0
+ctrl + alt - h : yabai -m window --resize left:-50:0; \
+                 yabai -m window --resize right:-50:0
+ctrl + alt - j : yabai -m window --resize bottom:0:50; \
+                 yabai -m window --resize top:0:50
+ctrl + alt - k : yabai -m window --resize top:0:-50; \
+                 yabai -m window --resize bottom:0:-50
+ctrl + alt - l : yabai -m window --resize right:50:0; \
+                 yabai -m window --resize left:50:0
 
 # Equalize size of windows
-lctrl + alt - e : yabai -m space --balance
+ctrl + alt - e : yabai -m space --balance
 
 # Enable / Disable gaps in current workspace
-lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+ctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # Rotate windows clockwise and counterclockwise
 alt - r         : yabai -m space --rotate 270
@@ -118,20 +121,33 @@ shift + alt - x : yabai -m space --mirror x-axis
 shift + alt - y : yabai -m space --mirror y-axis
 
 # Set insertion point for focused container
-shift + lctrl + alt - h : yabai -m window --insert west
-shift + lctrl + alt - j : yabai -m window --insert south
-shift + lctrl + alt - k : yabai -m window --insert north
-shift + lctrl + alt - l : yabai -m window --insert east
+shift + ctrl + alt - h : yabai -m window --insert west
+shift + ctrl + alt - j : yabai -m window --insert south
+shift + ctrl + alt - k : yabai -m window --insert north
+shift + ctrl + alt - l : yabai -m window --insert east
 
 # Float / Unfloat window
 shift + alt - space : \
     yabai -m window --toggle float; #\
     # yabai -m window --toggle border
 
+# Roggle sticky, float and resize to picture-in-picture size
+shift + alt + ctrl - space : yabai -m window --toggle sticky;\
+    yabai -m window --grid 5:5:4:0:1:1
+
+# Switch applications
+shift + ctrl - a : open -a /System/Applications/Calendar.app
+shift + ctrl - s : open -a /System/Applications/Mail.app
+shift + ctrl - 0x29 : open -a /Applications/Visual\ Studio\ Code.app # ;
+shift + ctrl - 0x27 : open /Applications/Firefox.app                 # '
+shift + ctrl - l : open /Applications/iTerm.app
+shift + ctrl - k : open /Applications/Slack.app
+shift + ctrl - j : open /Applications/Amazon\ Chime.app
+shift + ctrl - h : open /Applications/IntelliJ\ IDEA.app
+
 # Restart Yabai
-shift + lctrl + alt - r : \
-    /usr/bin/env osascript <<< \
-        "display notification \"Restarting Yabai\" with title \"Yabai\""; \
+shift + ctrl + alt - r : osascript \
+    "display notification \"Restarting Yabai\" with title \"Yabai\""; \
     launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # Make window native fullscreen

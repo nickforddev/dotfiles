@@ -77,7 +77,7 @@ yabai -m rule --add label="Installer" app="^Installer$" manage=off
 # yabai -m rule --add label="1Password 7" app="^1Password 7" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
-yabai -m rule --add label="Mail" app="^Slack$" space=1
+yabai -m rule --add label="Calendar" app="^Calendar$" space=1
 yabai -m rule --add app="^Mail$" title="^New Message*" sticky=on
 yabai -m rule --add app="^Mail$" title="^Re:*" manage=off
 yabai -m rule --add app="^Mail$" title="^Re:*" sticky=on
@@ -85,9 +85,9 @@ yabai -m rule --add app="^Mail$" title="^Fwd:*" manage=off
 yabai -m rule --add app="^Mail$" title="^Fwd:*" sticky=on
 yabai -m rule --add app="^Mail$" space=2
 yabai -m rule --add app="^Mail$" title="^General$" manage=off
-yabai -m rule --add label="Slack" app="^Slack$" space=2
 yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" space=3
 yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
+yabai -m rule --add label="Slack" app="^Slack$" space=4
 yabai -m rule --add label="Cisco AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="(Licenses)" manage=off
 yabai -m rule --add label="Übersicht" app="^Übersicht$" title="Preferences" manage=off
