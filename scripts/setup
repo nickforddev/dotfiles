@@ -89,6 +89,7 @@ brew install fzf
 brew install z
 brew install thefuck
 brew install jq
+brew install tree
 
 # install node.js
 brew install nvm
