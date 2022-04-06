@@ -254,6 +254,10 @@ let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.iml']
 let NERDTreeHijackNetrw=0
 let g:nerdtree_tabs_startup_cd=0
 let g:nerdtree_tabs_open_on_gui_startup=0
+" nerdtree syntax"
+let s:cyan = "50a6a8"
+let s:magenta = "a36584"
+let g:WebDevIconsDefaultFolderSymbolColor = s:cyan " sets the color for folders that did not 
 
 autocmd VimEnter * NERDTree                       " open NERDTree on vim launch
 autocmd VimEnter * wincmd p                       " try to focus document instead of NERDTree
@@ -289,7 +293,7 @@ else
 endif
 
 let g:rehash256=1                                 " use 256 color if theme is molokai
-let g:airline_theme="tomorrow"                    " add a more detailed theme for airline
+let g:airline_theme="onedark"                     " add a more detailed theme for airline
 let g:airline_powerline_fonts=1                   " use powerline fonts
 let g:airline#extensions#ale#enabled=1
 let g:vim_markdown_folding_disabled=1             " disable markdown folding

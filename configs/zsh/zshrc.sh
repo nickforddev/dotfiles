@@ -37,7 +37,7 @@ fhf() {
 }
 
 grepo() {
-  git remote get-url origin | sed 's/git@github.com://' | sed 's/\.git//' | read -d '' name
+  local name=$(git remote get-url origin | sed 's/git@github.com://' | sed 's/\.git//')
   open "https://github.com/${name}"
 }
 
