@@ -89,6 +89,9 @@ const baseStyles = /* css */ `
   height: var(--bar-height);
   display: flex;
   align-items: center;
+  left: 18px;
+  position: fixed;
+  top: 14px;
 }
 .simple-bar--spaces.simple-bar--empty,
 .simple-bar--data.simple-bar--empty {
