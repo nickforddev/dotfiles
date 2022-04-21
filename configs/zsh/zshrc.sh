@@ -101,6 +101,7 @@ alias gsp='git stash pop'
 alias glb='gco @{-1}'
 alias gmlm='gco master; gl; glb; gm master'
 alias gmld='gco develop; gl; glb; gm develop'
+alias glra='gl --rebase --autostash'
 
 # commit spamming for debugging CI
 gppls() {

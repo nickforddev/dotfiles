@@ -90,6 +90,7 @@ brew install z
 brew install thefuck
 brew install jq
 brew install tree
+brew install switchaudio-osx
 
 # install node.js
 brew install nvm
