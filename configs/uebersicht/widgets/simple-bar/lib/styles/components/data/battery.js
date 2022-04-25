@@ -14,7 +14,7 @@ export const batteryStyles = /* css */ `
   background-color: transparent;
 }
 .simple-bar--background-color-as-foreground .battery--caffeinate {
-  color: var(--foreground);
+  color: var(--cyan);
 }
 .battery__icon {
   position: relative;
@@ -57,7 +57,7 @@ export const batteryStyles = /* css */ `
   z-index: 1;
 }
 .battery--caffeinate .battery__charging-icon {
-  stroke: var(--white);
+  stroke: var(--cyan);
 }
 .simple-bar--background-color-as-foreground .battery__charging-icon,
 .simple-bar--no-color-in-data .battery__charging-icon {
@@ -91,14 +91,14 @@ export const batteryStyles = /* css */ `
 .battery--low .battery__icon-filler {
   background-color: var(--red);
 }
-.battery__caffeinate-icon {
-  position: absolute;
-  top: calc(50% - 15px);
-  right: -4px;
-  width: 30px !important;
-  height: 30px !important;
-  box-sizing: border-box;
-  fill: var(--main);
-  opacity: 0.1;
-}
+// .battery__caffeinate-icon {
+//   position: absolute;
+//   top: calc(50% - 15px);
+//   right: -4px;
+//   width: 30px !important;
+//   height: 30px !important;
+//   box-sizing: border-box;
+//   fill: var(--main);
+//   opacity: 0.1;
+// }
 `

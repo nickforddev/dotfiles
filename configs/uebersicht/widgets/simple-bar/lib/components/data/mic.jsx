@@ -66,9 +66,9 @@ export const Widget = () => {
   const classes = Utils.classnames('mic')
 
   return (
-    <DataWidget.Widget classes={classes} disableSlider>
+    <DataWidget.Widget classes={classes} disableSlider onClick={onMouseUp}>
       <div className="mic__display">
-        <Icon onMouseUp={onMouseUp} />
+        <Icon />
       </div>
     </DataWidget.Widget>
   )

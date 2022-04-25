@@ -27,10 +27,10 @@ const toggleCaffeinate = async (system, caffeinate, option) => {
   const command = system === 'x86_64' ? 'caffeinate' : 'arch -arch arm64 caffeinate'
   if (!caffeinate.length) {
     Uebersicht.run(`${command} ${option} &`)
-    Utils.notification('Enabling caffeinate...')
+    // Utils.notification('Enabling caffeinate...')
   } else {
     await Uebersicht.run('pkill -f caffeinate')
-    Utils.notification('Disabling caffeinate...')
+    // Utils.notification('Disabling caffeinate...')
   }
 }
 
@@ -88,7 +88,7 @@ export const Widget = () => {
 
   return (
     <DataWidget.Widget classes={classes} Icon={Icon} disableSlider {...onClickProp}>
-      {caffeinate.length > 0 && <Icons.Coffee className="battery__caffeinate-icon" />}
+      {/* {caffeinate.length > 0 && <Icons.Coffee className="battery__caffeinate-icon" />} */}
       {percentage}%
     </DataWidget.Widget>
   )
