@@ -136,10 +136,11 @@ shift + alt + ctrl - space : yabai -m window --toggle sticky;\
     yabai -m window --grid 5:5:4:0:1:1
 
 # Switch applications
+
+shift + ctrl - 0x29 : open -a /Applications/Visual\ Studio\ Code.app # ;
+shift + ctrl - 0x27 : "${HOME}"/.config/skhd/scripts/open_browser.sh # '
 shift + ctrl - a : open -a /System/Applications/Calendar.app
 shift + ctrl - s : open -a /System/Applications/Mail.app
-shift + ctrl - 0x29 : open -a /Applications/Visual\ Studio\ Code.app # ;
-shift + ctrl - 0x27 : open /Applications/Firefox.app                 # '
 shift + ctrl - l : open /Applications/iTerm.app
 shift + ctrl - k : open /Applications/Slack.app
 shift + ctrl - j : open /Applications/Amazon\ Chime.app
