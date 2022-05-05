@@ -2,7 +2,7 @@ import * as Themes from './themes'
 import * as Pywal from './pywal/pywal-colors'
 import * as Settings from '../settings'
 
-const WITH_PYWAL = false
+const WITH_PYWAL = true
 
 const overrideColors = WITH_PYWAL ? Pywal.colors : {}
 

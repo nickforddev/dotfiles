@@ -11,5 +11,7 @@ export const colors = {
   orange: Pywal.variables.scrollbar,
   blue: Pywal.variables.matched,
   magenta: Pywal.variables.variable,
-  cyan: Pywal.variables.function
+  cyan: Pywal.variables.function,
+  focusRing: `0 0 0 3px ${Pywal.variables.result}`,
+  hoverRing: `0 0 0 3px ${Pywal.variables.variable}`,
 }

@@ -52,6 +52,7 @@ Plugin 'jordwalke/flatlandia'                  " flatlandia
 Plugin 'morhetz/gruvbox'                       " gruvbox
 Plugin 'drewtempelmeyer/palenight.vim'         " pale night
 Plugin 'joshdick/onedark.vim'                  " one dark
+Plugin 'dylanaraps/wal.vim'
 
 if has('nvim')
   Plugin 'navarasu/onedark.nvim'               " one dark

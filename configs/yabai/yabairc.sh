@@ -1,23 +1,13 @@
 #!/usr/bin/env bash
 
-set -x
 
 # ====== Variables =============================
 
-declare -A gaps
-declare -A color
 
-gaps["top"]="14"
-gaps["bottom"]="14"
-gaps["left"]="14"
-gaps["right"]="14"
-gaps["inner"]="14"
 
-color["focused"]="0xFF5ffdff"
-color["normal"]="0xFF010101"
-color["preselect"]="0xFF010101"
-# color["preselect"]="0xFF50a6a8"
-# color["preselect"]="0xE02d74da"
+gap="14"
+
+./scripts/colors.sh
 
 # Uncomment to refresh ubersicht widget on workspace change
 # Make sure to replace WIDGET NAME for the name of the ubersicht widget
@@ -35,11 +25,11 @@ yabai -m config layout                      bsp
 
 yabai -m config external_bar                all:44:0
 
-yabai -m config top_padding                 "${gaps["top"]}"
-yabai -m config bottom_padding              "${gaps["bottom"]}"
-yabai -m config left_padding                "${gaps["left"]}"
-yabai -m config right_padding               "${gaps["right"]}"
-yabai -m config window_gap                  "${gaps["inner"]}"
+yabai -m config top_padding                 $gap
+yabai -m config bottom_padding              $gap
+yabai -m config left_padding                $gap
+yabai -m config right_padding               $gap
+yabai -m config window_gap                  $gap
 
 yabai -m config mouse_follows_focus         off
 yabai -m config focus_follows_mouse         off
@@ -47,12 +37,6 @@ yabai -m config focus_follows_mouse         off
 yabai -m config window_topmost              off
 yabai -m config window_opacity              on
 yabai -m config window_shadow               float
-
-yabai -m config window_border               on
-yabai -m config window_border_width         6
-yabai -m config active_window_border_color  "${color["focused"]}"
-yabai -m config normal_window_border_color  "${color["normal"]}"
-yabai -m config insert_feedback_color       "${color["preselect"]}"
 
 yabai -m config active_window_opacity       1.0
 yabai -m config normal_window_opacity       0.90

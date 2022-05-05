@@ -286,11 +286,12 @@ let g:ale_sign_column_always=1
 " --------------------------------------------------------------------------------------------------
 
 set background=dark
-if has('nvim')
-  colorscheme onedarker
-else
-  colorscheme onedark
-endif
+" if has('nvim')
+"   colorscheme onedarker
+" else
+"   colorscheme onedark
+" endif
+colorscheme wal
 
 let g:rehash256=1                                 " use 256 color if theme is molokai
 let g:airline_theme="onedark"                     " add a more detailed theme for airline

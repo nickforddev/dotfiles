@@ -70,7 +70,7 @@ export const spaceStyles = /* css */ `
   color: var(--foreground);
 }
 .space--focused .space__icon {
-  fill: #5ffdff;
+  fill: var(--green);
 }
 .simple-bar--background-color-as-foreground .space--focused .space__inner {
   color: var(--foreground);
