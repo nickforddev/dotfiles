@@ -38,6 +38,21 @@ tab-item tab-item-substance tab-closebox:hover {
   cursor: pointer;
 }
 
+tab-closebox::after {
+  content: "⨉";
+  background: none !important;
+  color: var(--background) !important;
+  line-height: 1.2em;
+  mask: none !important;
+  text-align: center;
+  font-size: 0.8em;
+  width: 1.25em;
+}
+
+tab-item.active:hover tab-closebox::after {
+  color: var(--foreground) !important;
+}
+
 /* active tab border */
 tab-item.active tab-item-substance,
 tab-item.bundled-active,
@@ -62,8 +77,11 @@ tab-item.active tab-item-substance .background {
 
 tab-item tab-item-substance:hover {
   background: var(--color1) !important;
-  color: var(--background);
   opacity: 1;
+}
+
+tab-item:not(.active):hover .label-content {
+  color: var(--background) !important;
 }
 
 tab-item.active tab-item-substance:hover {
