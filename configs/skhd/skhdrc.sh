@@ -76,6 +76,9 @@ shift + ctrl - right : yabai -m window --swap east
 ctrl + alt + cmd - right : yabai -m window --display next; yabai -m display --focus 2; "${HOME}"/.config/skhd/scripts/fix_border.sh;
 ctrl + alt + cmd - left : yabai -m window --display prev; yabai -m display --focus 1; "${HOME}"/.config/skhd/scripts/fix_border.sh;
 
+# Fix border
+shift + ctrl - b : "${HOME}"/.config/skhd/scripts/fix_border.sh
+
 # Maximize window
 ctrl + alt + cmd - up : yabai -m window --toggle zoom-fullscreen
 
