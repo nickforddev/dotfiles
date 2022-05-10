@@ -35,23 +35,6 @@ export FZF_BASE=/path/to/fzf/install/dir
 
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
 
-# fh - search history
-fh() {
-  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 20% +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
-}
-
-# fh - search history full
-fhf() {
-  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
-}
-
-grepo() {
-  local name=$(git remote get-url origin | sed 's/git@github.com://' | sed 's/\.git//')
-  open "https://github.com/${name}"
-}
-
-source ~/.config/zsh/scripts/theme/theme.sh
-
 # set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -87,6 +70,30 @@ plugins=(
 # setup zshell
 source $ZSH/oh-my-zsh.sh
 
+# fh - search history
+fh() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 20% +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}
+
+# fh - search history full
+fhf() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}
+
+grepo() {
+  local name=$(git remote get-url origin | sed 's/git@github.com://' | sed 's/\.git//')
+  open "https://github.com/${name}"
+}
+
+# commit spamming for debugging CI
+gppls() {
+  cat /dev/urandom | base64 | tr -dc '0-9a-zA-Z' | head -c28 | read -d '' name
+  gaa && gc -m $name && gp
+}
+
+# theme cli
+source ~/.config/zsh/scripts/theme/theme.sh
+
 # open dotfiles project in VSCode
 alias dotfiles='code ~/.dotfiles'
 
@@ -113,12 +120,6 @@ alias glb='gco @{-1}'
 alias gmlm='gco master; gl; glb; gm master'
 alias gmld='gco develop; gl; glb; gm develop'
 alias glra='gl --rebase --autostash'
-
-# commit spamming for debugging CI
-gppls() {
-  cat /dev/urandom | base64 | tr -dc '0-9a-zA-Z' | head -c28 | read -d '' name
-  gaa && gc -m $name && gp
-}
 
 # yarn
 alias yi='yarn install'

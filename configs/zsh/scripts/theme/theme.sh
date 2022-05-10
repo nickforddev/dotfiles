@@ -1,3 +1,5 @@
+#/usr/bin/env bash
+
 theme() {
   local backend="${2:-wal}"
   local saturation="${3:-1}"
