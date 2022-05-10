@@ -8,9 +8,9 @@ source = "Soundflower (2ch)"
 method = ncurses
 
 [color]
-; foreground = 'cyan'
-gradient = 1
-gradient_count = 8
+foreground = 'cyan'
+; gradient = 1
+; gradient_count = 8
 gradient_color_1 = '#50a6a8'
 gradient_color_2 = '#52B0B2'
 gradient_color_3 = '#53B9BB'

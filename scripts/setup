@@ -91,6 +91,7 @@ brew install thefuck
 brew install jq
 brew install tree
 brew install switchaudio-osx
+brew install imagemagick
 
 # install node.js
 brew install nvm
@@ -99,4 +100,4 @@ env nvm install node
 # Remove outdated versions from the cellar.
 brew cleanup
 
-pip3 install pywal imagemagick haishoku colorz colorthief
+pip3 install pywal haishoku colorz colorthief

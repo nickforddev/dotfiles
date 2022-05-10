@@ -1,3 +1,12 @@
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# Not supported in the "fish" shell.
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -40,6 +49,8 @@ grepo() {
   local name=$(git remote get-url origin | sed 's/git@github.com://' | sed 's/\.git//')
   open "https://github.com/${name}"
 }
+
+source ~/.config/zsh/scripts/theme/theme.sh
 
 # set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -118,6 +129,7 @@ alias wmip="curl checkip.amazonaws.com"
 # misc
 alias chrome="open -a 'Google Chrome'"
 alias awsconfig="code ~/.aws"
+alias slack="export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app"
 
 eval $(thefuck --alias)
 

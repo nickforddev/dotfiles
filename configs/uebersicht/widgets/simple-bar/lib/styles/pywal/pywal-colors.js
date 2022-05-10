@@ -1,4 +1,5 @@
 import * as Pywal from './pywal'
+import * as PywalFull from './pywal-full'
 
 export const colors = {
   main: Pywal.variables.background,
@@ -12,6 +13,6 @@ export const colors = {
   blue: Pywal.variables.matched,
   magenta: Pywal.variables.variable,
   cyan: Pywal.variables.function,
-  focusRing: `0 0 0 3px ${Pywal.variables.result}`,
+  focusRing: `0 0 0 3px ${PywalFull.variables.colors.color6}`,
   hoverRing: `0 0 0 3px ${Pywal.variables.variable}`,
 }

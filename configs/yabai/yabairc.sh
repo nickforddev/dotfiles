@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-
-# ====== Variables =============================
-
-
-
 gap="14"
 
-./scripts/colors.sh
+~/.dotfiles/configs/yabai/scripts/colors.sh
 
 # Uncomment to refresh ubersicht widget on workspace change
 # Make sure to replace WIDGET NAME for the name of the ubersicht widget
@@ -47,6 +42,9 @@ yabai -m config auto_balance                on
 yabai -m config mouse_modifier              fn
 yabai -m config mouse_action1               move
 yabai -m config mouse_action2               resize
+
+yabai -m config window_border               on
+yabai -m config window_border_width         6
 
 # ===== Rules ==================================
 

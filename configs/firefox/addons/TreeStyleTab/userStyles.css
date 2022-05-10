@@ -1,0 +1,86 @@
+/* paste this into TreeStyleTab preferences */
+
+@import url('http://localhost:2121/colors.css');
+
+:root {
+  --tab-border-radius-size: 0 !important;
+  --tab-accent: var(--color6);
+}
+
+tab-item .favicon {
+  margin-left: -8px !important;
+}
+
+tab-item .label {
+  margin-left: 8px !important;
+}
+
+#tabbar {
+  scrollbar-width: none;
+}
+
+tab-item tab-item-substance {
+  --tab-size: 38px !important;
+  height: var(--tab-size);
+  border-left: 3px solid var(--tab-accent);
+}
+
+tab-item tab-item-substance tab-closebox:hover::before {
+  border-radius: 0 !important;
+}
+
+tab-item tab-item-substance:not(:hover) tab-closebox {
+  display: none;
+}
+
+tab-item tab-item-substance tab-closebox:hover {
+  cursor: pointer;
+}
+
+/* active tab border */
+tab-item.active tab-item-substance,
+tab-item.bundled-active,
+tab-item.bundled-active tab-item-substance:hover,
+.mutiple-highlighted>tab-item.highlighted,
+.mutiple-highlighted>tab-item.highlighted tab-item-substance:hover {
+  border: 3px solid var(--tab-accent);
+}
+
+/* active tab border, browser not focused */
+tab-item.active tab-item-substance:-moz-window-inactive,
+tab-item.bundled-active:-moz-window-inactive,
+tab-item.bundled-active tab-item-substance:-moz-window-inactive,
+.mutiple-highlighted>tab-item.highlighted:-moz-window-inactive,
+.mutiple-highlighted>tab-item.highlighted tab-item-substance:-moz-window-inactive {
+  border: 3px solid transparent;
+}
+
+tab-item.active tab-item-substance .background {
+  box-shadow: none !important;
+}
+
+tab-item tab-item-substance:hover {
+  background: var(--color1) !important;
+  opacity: 1;
+}
+
+tab-item.active tab-item-substance:hover {
+  background: transparent !important;
+}
+
+/* show separator space between root level tabs */
+tab-item[data-level="0"] {
+  margin-top: calc(var(--tab-size) / 3);
+}
+
+/* cancel needless separators on exceptions */
+tab-item[data-level="0"].pinned,
+tab-item[data-level="0"].pinned+tab-item[data-level="0"],
+tab-item[data-level="0"]+tab-item[data-level="0"]:not([data-child-ids]) {
+  margin-top: 0;
+}
+
+/* disable expansion icons */
+tab-item .twisty {
+  visibility: hidden;
+}
