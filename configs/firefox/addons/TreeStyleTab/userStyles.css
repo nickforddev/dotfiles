@@ -22,13 +22,14 @@ tab-item .label {
 tab-item tab-item-substance {
   --tab-size: 38px !important;
   height: var(--tab-size);
-  border-left: 3px solid var(--tab-accent);
+  box-shadow: 0 0 3px var(--color10);
 }
 
 tab-item tab-item-substance tab-closebox:hover::before {
   border-radius: 0 !important;
 }
 
+/* hide close button unless hovered */
 tab-item tab-item-substance:not(:hover) tab-closebox {
   display: none;
 }
@@ -61,6 +62,7 @@ tab-item.active tab-item-substance .background {
 
 tab-item tab-item-substance:hover {
   background: var(--color1) !important;
+  color: var(--background);
   opacity: 1;
 }
 
