@@ -1,29 +1,29 @@
 export const variables = {
-    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/springtrain.png",
+    "wallpaper": "/Users/nford/.dotfiles/wallpaper/estuary.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#0a1d21",
-        "foreground": "#cde3e2",
-        "cursor": "#cde3e2"
+        "background": "#1a1b1d",
+        "foreground": "#c5c6c6",
+        "cursor": "#c5c6c6"
     },
     "colors": {
-        "color0": "#0a1d21",
-        "color1": "#ff1969",
-        "color2": "#0cfef7",
-        "color3": "#08ffe5",
-        "color4": "#00f3d4",
-        "color5": "#45ffdb",
-        "color6": "#5bffe3",
-        "color7": "#cde3e2",
-        "color8": "#8f9e9e",
-        "color9": "#ff1969",
-        "color10": "#0cfef7",
-        "color11": "#08ffe5",
-        "color12": "#00f3d4",
-        "color13": "#45ffdb",
-        "color14": "#5bffe3",
-        "color15": "#cde3e2"
+        "color0": "#1a1b1d",
+        "color1": "#1f537c",
+        "color2": "#46238c",
+        "color3": "#26779c",
+        "color4": "#2facbe",
+        "color5": "#8bdb70",
+        "color6": "#dbdb70",
+        "color7": "#c5c6c6",
+        "color8": "#535455",
+        "color9": "#1f537c",
+        "color10": "#46238c",
+        "color11": "#26779c",
+        "color12": "#2facbe",
+        "color13": "#8bdb70",
+        "color14": "#dbdb70",
+        "color15": "#c5c6c6"
     }
 }
 ;
