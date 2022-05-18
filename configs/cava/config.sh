@@ -2,7 +2,7 @@
 autosens = 1
 
 [input]
-source = "Soundflower (2ch)"
+source = "BlackHole 2ch"
 
 [output]
 method = ncurses

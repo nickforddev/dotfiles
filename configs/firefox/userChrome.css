@@ -1,0 +1,134 @@
+/* hide some stuff I dont use */
+#OtherBookmarks,
+#star-button-box,
+#pageAction-urlbar-_testpilot-containers,
+#home-button
+{
+  display: none !important;
+}
+
+/* horizontal tabs */
+
+/* .tab-background {
+  margin-block: 0 !important;
+  border-radius: 0 !important;
+}
+
+.tab-background[selected="true"] {
+  background-image: none !important;
+  border-radius: 0 !important;
+  border: 3px solid #5ffdff !important;
+}
+
+.tab-background[selected="true"]:-moz-window-inactive {
+  border: 3px solid #010101 !important;
+}
+
+#urlbar-input-container,
+.tab-label
+{
+  font-size: 0.9em !important;
+}
+
+.tabbrowser-tab {
+  padding-inline: 0 !important;
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"], [multiselected]) {
+  background-color: #496886 !important;
+}
+
+#tabs-newtab-button {
+  padding-inline: 0 !important;
+}
+
+#toolbarbutton-icon {
+  border-radius: 0 !important;
+} */
+
+:root {
+  --tab-border-radius: 0px !important;
+  --sidebar-width: 180px;
+  --toolbar-height: -26px;
+  --menubar-height: -60px;
+  --toolmenubar-height: -85px; /* sum of previous two */
+  --urlbar-toolbar-height: 18px;
+  --tab-border-radius-size: 0 !important;
+  --tab-dropshadow-size: 0 !important;
+  --tab-border: 3px solid cyan !important;
+  --bg-color: #2e3440;
+  --bg-color-nactive: #e8e8e8;
+  --shadow-color: #404040;
+  --shadow-color-inactive: #868686;
+  --tab-surface-active-color: #94A1C0;
+  --tab-surface-active-gradient: -moz-linear-gradient(top, #A0B0CF, #7386AB) repeat-x;
+  --tab-surface-active-gradient-inactive: -moz-linear-gradient(top, #B4B4B4, #8A8A8A) repeat-x;
+  --tab-text: #e5e9f0;
+  --tab-text-inverted: #2e3440;
+  --tab-text-active: #e5e9f0;
+  --badge-bg-color: #d8dee9;
+  --badge-color-inactive: #b5b5b5;
+  --badge-bg-color-inactive: #d8dee9;
+  --dropmarker-border-color: #577bf3;
+  --dropmarker-bg-color: #d0def5;
+  --throbber-color: white;
+  --throbber-shadow-color: var(--dropmarker-border-color);
+
+  --tab-highlighted-highlight: #eceff4;
+  --tab-highlighted-glow: #5e81ac;
+  --tab-highlighted-base: var(--bg-color);
+
+  --faviconized-tab-size: 20px;
+}
+
+/* Tree Style Tab base */
+
+/* show bookmarks toolbar on new tab only */
+#main-window #PersonalToolbar {
+  /* visibility: collapse !important; */
+  z-index: 1 !important;
+  position: relative !important;
+  margin-left: var(--sidebar-width); /* shift toolbar to the right out of the way of the sidebar */
+  margin-top: var(--toolbar-height) !important;
+}
+
+#main-window[title^="Mozilla Firefox"] #PersonalToolbar {
+  visibility: visible !important;
+  margin-top: -1px !important;
+}
+
+/* lock sidebar to height by doing the inverse margin of the toolbar element */
+#sidebar-box {
+  z-index: 1000 !important;
+  position: relative! important;
+  margin-top: -50px;
+}
+
+#main-window[title^="Mozilla Firefox"] #sidebar-box {
+  margin-top: var(--toolmenubar-height) !important;
+}
+
+/* lock sidebar to specified width */
+#sidebar-box, #sidebar-box #sidebar {
+  min-width: var(--sidebar-width) !important;
+  max-width: var(--sidebar-width) !important;
+}
+
+/* hide sidebar header for tree style tabs sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+/* Hide the title bar */
+#titlebar { visibility: collapse; }
+
+/* hide normal horizontal tab bar */
+#TabsToolbar { visibility: collapse; }
+
+toolbar#nav-bar {
+  height: 35px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: var(--sidebar-width);
+  padding-left: 7px;
+}

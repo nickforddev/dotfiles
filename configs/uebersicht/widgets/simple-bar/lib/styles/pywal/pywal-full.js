@@ -1,29 +1,29 @@
 export const variables = {
-    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/goodbook.png",
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/hexfade.jpeg",
     "alpha": "100",
 
     "special": {
-        "background": "#0d0d0e",
-        "foreground": "#a4d4d4",
-        "cursor": "#a4d4d4"
+        "background": "#172024",
+        "foreground": "#c5c7c8",
+        "cursor": "#c5c7c8"
     },
     "colors": {
-        "color0": "#0d0d0e",
-        "color1": "#008872",
-        "color2": "#c44e00",
-        "color3": "#e02900",
-        "color4": "#d34e00",
-        "color5": "#ff9e1a",
-        "color6": "#ffd40a",
-        "color7": "#a4d4d4",
-        "color8": "#729494",
-        "color9": "#008872",
-        "color10": "#c44e00",
-        "color11": "#e02900",
-        "color12": "#d34e00",
-        "color13": "#ff9e1a",
-        "color14": "#ffd40a",
-        "color15": "#a4d4d4"
+        "color0": "#172024",
+        "color1": "#c716c3",
+        "color2": "#30a7e8",
+        "color3": "#ed616f",
+        "color4": "#2ccee7",
+        "color5": "#ef976f",
+        "color6": "#63edbe",
+        "color7": "#c5c7c8",
+        "color8": "#51575a",
+        "color9": "#c716c3",
+        "color10": "#30a7e8",
+        "color11": "#ed616f",
+        "color12": "#2ccee7",
+        "color13": "#ef976f",
+        "color14": "#63edbe",
+        "color15": "#c5c7c8"
     }
 }
 ;

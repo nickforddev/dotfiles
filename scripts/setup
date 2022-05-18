@@ -65,11 +65,13 @@ brew install musikcube
 brew install fftw cmake
 brew tap homebrew/dupes
 brew install ncurses
+brew install cava
+brew install blackhole-2ch
 
-git clone --depth=1 https://github.com/dpayne/cli-visualizer ~
-cd ~/cli-visualizer
-./install.sh
-rm -rf ~/cli-visualizer
+# git clone --depth=1 https://github.com/dpayne/cli-visualizer ~
+# cd ~/cli-visualizer
+# ./install.sh
+# rm -rf ~/cli-visualizer
 
 # install more recent version of vim and nvim
 brew install vim nvim
