@@ -28,6 +28,7 @@ ctrl - 6 : yabai -m space --focus 6
 ctrl - 7 : yabai -m space --focus 7
 ctrl - 8 : yabai -m space --focus 8
 ctrl - 9 : yabai -m space --focus 9
+ctrl - 0 : yabai -m space --focus 10
 
 # Create/destroy
 shift + alt - n : yabai -m space --create;\
@@ -52,6 +53,7 @@ shift + ctrl + alt - 6 : yabai -m window --space 6; "${HOME}"/.config/skhd/scrip
 shift + ctrl + alt - 7 : yabai -m window --space 7; "${HOME}"/.config/skhd/scripts/fix_border.sh
 shift + ctrl + alt - 8 : yabai -m window --space 8; "${HOME}"/.config/skhd/scripts/fix_border.sh
 shift + ctrl + alt - 9 : yabai -m window --space 9; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt - 0 : yabai -m window --space 10; "${HOME}"/.config/skhd/scripts/fix_border.sh
 
 # Displays
 # Focus previous display by arrangement index
@@ -98,6 +100,7 @@ shift + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
 shift + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
 shift + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
 shift + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
+shift + alt - 0 : yabai -m window --space 10; yabai -m space --focus 10
 
 # Resize windows
 ctrl + alt - h : yabai -m window --resize left:-50:0; \
