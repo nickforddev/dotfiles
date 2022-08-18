@@ -148,7 +148,7 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
-    "viceroy.config.internal.lastUpdateTime": "2022-03-21T17:47:51.495Z",
+    "viceroy.config.internal.lastUpdateTime": "2022-06-15T18:27:04.653Z",
     "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
     "java.help.firstView": "gettingStarted",
     "yaml.customTags": [
@@ -187,5 +187,7 @@
     "viceroy.doc.welcome.showAtStartup": false,
     "redhat.telemetry.enabled": false,
     "telemetry.telemetryLevel": "off",
-    "bracketPairColorizer.depreciation-notice": false
+    "bracketPairColorizer.depreciation-notice": false,
+    "viceroy.config.beautyMode": false,
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/nichford/.vscode/extensions/vscjava.vscode-lombok-1.0.1/server/lombok.jar\""
 }

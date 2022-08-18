@@ -46,6 +46,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # setup python
 brew install pyenv
+brew install pyenv-virtualenv
 
 # :)
 brew install koekeishiya/formulae/yabai

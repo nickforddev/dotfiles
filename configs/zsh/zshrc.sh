@@ -1,11 +1,6 @@
 # Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-# Not supported in the "fish" shell.
 (cat ~/.cache/wal/sequences &)
 
-# Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -94,6 +89,8 @@ gppls() {
 # theme cli
 source ~/.config/zsh/scripts/theme/theme.sh
 
+# walserver
+source ~/.dotfiles/configs/pywal/server.sh
 # open dotfiles project in VSCode
 alias dotfiles='code ~/.dotfiles'
 
@@ -128,9 +125,14 @@ alias yi='yarn install'
 alias wmip="curl checkip.amazonaws.com"
 
 # misc
+alias cputmp='sudo powermetrics -n 1 --samplers smc | grep -i "CPU die temperature"'
 alias chrome="open -a 'Google Chrome'"
 alias awsconfig="code ~/.aws"
-alias slack="export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app"
+
+slackwal() {
+  echo "$(<$HOME/.cache/wal/colors-slack.js)" | pbcopy
+  echo "Slack colors copied to clipboard"
+}
 
 eval $(thefuck --alias)
 
@@ -172,6 +174,7 @@ export NVM_DIR="$HOME/.nvm"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
 
 export DENO_INSTALL="/Users/nichford/.deno"
