@@ -1,0 +1,21 @@
+set $wallpaper /Users/nichford/.dotfiles/wallpaper/hexfade.jpeg
+
+set $background #172024
+set $foreground #c5c7c8
+
+set $color0 #172024
+set $color1 #c716c3
+set $color2 #30a7e8
+set $color3 #ed616f
+set $color4 #2ccee7
+set $color5 #ef976f
+set $color6 #63edbe
+set $color7 #c5c7c8
+set $color8 #51575a
+set $color9 #c716c3
+set $color10 #30a7e8
+set $color11 #ed616f
+set $color12 #2ccee7
+set $color13 #ef976f
+set $color14 #63edbe
+set $color15 #c5c7c8

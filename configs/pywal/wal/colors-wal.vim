@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/Users/nichford/.dotfiles/wallpaper/hexfade.jpeg"
+let background = "#172024"
+let foreground = "#c5c7c8"
+let cursor     = "#c5c7c8"
+
+" Colors
+let color0  = "#172024"
+let color1  = "#c716c3"
+let color2  = "#30a7e8"
+let color3  = "#ed616f"
+let color4  = "#2ccee7"
+let color5  = "#ef976f"
+let color6  = "#63edbe"
+let color7  = "#c5c7c8"
+let color8  = "#51575a"
+let color9  = "#c716c3"
+let color10 = "#30a7e8"
+let color11 = "#ed616f"
+let color12 = "#2ccee7"
+let color13 = "#ef976f"
+let color14 = "#63edbe"
+let color15 = "#c5c7c8"
