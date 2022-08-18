@@ -1,0 +1,65 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 10,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#17202466",
+        "font" : "System Light",
+        "color" : "#ef976fFF"
+      },
+      "shortcut" : {
+        "size" : 13,
+        "colorSelected" : "#ed616fFF",
+        "font" : "System Light",
+        "color" : "#17202466"
+      },
+      "backgroundSelected" : "#ed616fFF",
+      "text" : {
+        "size" : 22,
+        "colorSelected" : "#c5c7c8FF",
+        "font" : "System Light",
+        "color" : "#c5c7c8FF"
+      },
+      "iconPaddingHorizontal" : 10,
+      "roundness" : 0,
+      "paddingVertical" : 8,
+      "iconSize" : 46
+    },
+    "search" : {
+      "backgroundSelected" : "#ed616fFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#c5c7c8FF",
+        "font" : "System Light",
+        "color" : "#c5c7c8FF"
+      },
+      "background" : "#17202466",
+      "roundness" : 0,
+      "paddingVertical" : 2
+    },
+    "window" : {
+      "color" : "#17202466",
+      "paddingHorizontal" : 10,
+      "width" : 620,
+      "borderPadding" : 0,
+      "borderColor" : "#ed616fFF",
+      "blur" : 10,
+      "roundness" : 0,
+      "paddingVertical" : 10
+    },
+    "credit" : "metafates",
+    "visualEffectMode" : 2,
+    "separator" : {
+      "color" : "#00000005",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#ed616fFF",
+      "thickness" : 2
+    },
+    "name" : "Pywal"
+  }
+}

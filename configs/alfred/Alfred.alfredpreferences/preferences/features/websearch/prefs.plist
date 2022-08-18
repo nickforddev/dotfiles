@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>3398A1DE-62BE-45C0-95A8-879707F28276</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wc</string>
+			<key>text</key>
+			<string>Search Wiki contributions by {query}</string>
+			<key>url</key>
+			<string>https://w.amazon.com/bin/view/XWiki/UserContributions/?authors={query}&amp;startDate=01%2F01%2F2010&amp;submit=Show+contributions</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>399F53D8-CC8A-4C09-8978-46B39E9C6046</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>c</string>
+			<key>text</key>
+			<string>Search code.amazon.com for {query}</string>
+			<key>url</key>
+			<string>https://code.amazon.com/search?term={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>42B57941-C068-4B1D-8E4D-3DD12888D647</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>w</string>
+			<key>text</key>
+			<string>Search Wiki for '{query}'</string>
+			<key>url</key>
+			<string>https://w.amazon.com/bin/view/Main/Search?text={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>5378B6A6-67D3-4348-A3CE-D7ADF62BF01D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>cp</string>
+			<key>text</key>
+			<string>Amazon Code Package "{query}"</string>
+			<key>url</key>
+			<string>https://code.amazon.com/packages/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>9DA1C850-B5E4-45F7-9CCA-39912E8FC649</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>s</string>
+			<key>text</key>
+			<string>Search Sage for '{query}'</string>
+			<key>url</key>
+			<string>https://sage.amazon.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F08D4827-6058-462D-B509-981EA2221D26</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>crs</string>
+			<key>text</key>
+			<string>CRs by {query}, YTD</string>
+			<key>url</key>
+			<string>https://code.amazon.com/reviews/from-user/{query}?start_time=2022-01-01&amp;open=true&amp;canceled=&amp;shipped=true&amp;pending=true&amp;commit=Go</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F7F5AB59-93BA-4DD8-B9E8-11BE555B16C9</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>pt</string>
+			<key>text</key>
+			<string>Search Phonetool for '{query}'</string>
+			<key>url</key>
+			<string>https://phonetool.amazon.com/search?filter_type=All%20fields&amp;query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
