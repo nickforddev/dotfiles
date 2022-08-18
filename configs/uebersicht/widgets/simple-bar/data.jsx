@@ -4,6 +4,7 @@ import * as Time from './lib/components/data/time.jsx'
 import * as DateDisplay from './lib/components/data/date-display.jsx'
 import * as Weather from './lib/components/data/weather.jsx'
 import * as Battery from './lib/components/data/battery.jsx'
+import * as Powermetrics from './lib/components/data/powermetrics.jsx'
 import * as Sound from './lib/components/data/sound.jsx'
 import * as Mic from './lib/components/data/mic.jsx'
 import * as Wifi from './lib/components/data/wifi.jsx'
@@ -36,6 +37,7 @@ Utils.injectStyles('simple-bar-data-styles', [
   Crypto.styles,
   Stock.styles,
   Battery.styles,
+  Powermetrics.styles,
   Wifi.styles,
   ViscosityVPN.styles,
   Keyboard.styles,
@@ -70,6 +72,7 @@ const render = () => {
       <Music.Widget />
       <Mpd.Widget />
       <Weather.Widget />
+      {/* <Powermetrics.Widget /> */}
       <Battery.Widget />
       <Mic.Widget />
       <Sound.Widget />
