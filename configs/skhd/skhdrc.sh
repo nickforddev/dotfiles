@@ -30,11 +30,18 @@ ctrl - 8 : yabai -m space --focus 8
 ctrl - 9 : yabai -m space --focus 9
 ctrl - 0 : yabai -m space --focus 10
 
-# Create/destroy
+# Create new space
 shift + alt - n : yabai -m space --create;\
     id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')";\
-    # yabai -m window --space $id;\
     yabai -m space --focus $id;
+
+# Create new space and move current window to it
+shift + ctrl + alt - n : yabai -m space --create;\
+    id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')";\
+    yabai -m window --space $id;\
+    yabai -m space --focus $id;
+
+# Destroy space
 shift + alt - d : id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index'-1)";\
     # [ "$id" == -1 ] && id=0;\
     yabai -m space --destroy;\
