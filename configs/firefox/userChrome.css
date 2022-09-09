@@ -94,10 +94,12 @@
 /* show bookmarks toolbar on new tab only */
 #main-window #PersonalToolbar {
   /* visibility: collapse !important; */
+  transition: none !important;
   z-index: 1 !important;
   position: relative !important;
-  margin-left: var(--sidebar-width); /* shift toolbar to the right out of the way of the sidebar */
-  margin-top: var(--toolbar-height) !important;
+  margin-left: 0;
+  margin-top: calc(var(--toolbar-height) - 4px) !important;
+  padding: 4px 2px;
 }
 
 #main-window[title^="Mozilla Firefox"] #PersonalToolbar {
@@ -106,11 +108,11 @@
 }
 
 /* lock sidebar to height by doing the inverse margin of the toolbar element */
-#sidebar-box {
+/* #sidebar-box {
   z-index: 1000 !important;
   position: relative! important;
   margin-top: -50px;
-}
+} */
 
 #main-window[title^="Mozilla Firefox"] #sidebar-box {
   margin-top: var(--toolmenubar-height) !important;
@@ -137,6 +139,6 @@ toolbar#nav-bar {
   height: 35px;
   padding-top: 2px;
   padding-bottom: 2px;
-  margin-left: var(--sidebar-width);
+  /* margin-left: var(--sidebar-width); */
   padding-left: 7px;
 }

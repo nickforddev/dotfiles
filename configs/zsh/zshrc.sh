@@ -183,3 +183,10 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
+
+# decode jwt
+jwtp() {
+  jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
+}
+
+walstart

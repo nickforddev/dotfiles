@@ -114,7 +114,7 @@
     "when": "editorTextFocus"
 },
 {
-    "key": "ctrl+delete",
+    "key": "ctrl+backspace",
     "command": "subwordNavigation.deleteSubwordLeft",
     "when": "editorTextFocus && !editorReadonly"
 },
@@ -132,5 +132,15 @@
     "key": "ctrl+delete",
     "command": "-subwordNavigation.deleteSubwordRight",
     "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "backspace",
+    "command": "deleteLeft",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+backspace",
+    "command": "-deleteLeft",
+    "when": "textInputFocus"
 }
 ]

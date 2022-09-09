@@ -9,10 +9,10 @@
 # fn + lalt - 5 : "${HOME}"/.config/yabai/scripts/show_song.sh
 
 # Navigation
-ctrl + alt - left : yabai -m window --focus west    # h
-ctrl + alt - down : yabai -m window --focus south   # j
-ctrl + alt - up : yabai -m window --focus north     # k
-ctrl + alt - right : yabai -m window --focus east   # l
+ctrl + alt + cmd - left : yabai -m window --focus west    # h
+ctrl + alt + cmd - down : yabai -m window --focus south   # j
+ctrl + alt + cmd - up : yabai -m window --focus north     # k
+ctrl + alt + cmd - right : yabai -m window --focus east   # l
 
 # Spaces
 # Navigate
@@ -21,7 +21,7 @@ ctrl - right : yabai -m space --focus next
 
 ctrl - 1 : yabai -m space --focus 1
 ctrl - 2 : yabai -m space --focus 2
-ctrl - 3 : yabai -m space --focus 3
+ctrl - 3 : yabai -m space --focus 3; sleep 0.2; yabai -m window --toggle zoom-fullscreen; # fix for chime issue
 ctrl - 4 : yabai -m space --focus 4
 ctrl - 5 : yabai -m space --focus 5
 ctrl - 6 : yabai -m space --focus 6
@@ -36,7 +36,7 @@ shift + alt - n : yabai -m space --create;\
     yabai -m space --focus $id;
 
 # Create new space and move current window to it
-shift + ctrl + alt - n : yabai -m space --create;\
+shift + ctrl + alt + cmd - n : yabai -m space --create;\
     id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')";\
     yabai -m window --space $id;\
     yabai -m space --focus $id;
@@ -48,8 +48,8 @@ shift + alt - d : id="$(yabai -m query --spaces --display | jq 'map(select(."is-
     yabai -m space --focus $id;
 
 # Moving windows to spaces
-shift + ctrl + alt - left : yabai -m window --space prev; yabai -m space --focus prev; "${HOME}"/.config/skhd/scripts/fix_border.sh
-shift + ctrl + alt - right : yabai -m window --space next; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt + cmd - left : yabai -m window --space prev; yabai -m space --focus prev; "${HOME}"/.config/skhd/scripts/fix_border.sh
+shift + ctrl + alt + cmd - right : yabai -m window --space next; "${HOME}"/.config/skhd/scripts/fix_border.sh
 
 shift + ctrl + alt - 1 : yabai -m window --space 1; "${HOME}"/.config/skhd/scripts/fix_border.sh
 shift + ctrl + alt - 2 : yabai -m window --space 2; "${HOME}"/.config/skhd/scripts/fix_border.sh
@@ -90,6 +90,11 @@ shift + ctrl - b : "${HOME}"/.config/skhd/scripts/fix_border.sh
 
 # Maximize window
 ctrl + alt + cmd - up : yabai -m window --toggle zoom-fullscreen
+ctrl + alt + cmd - down : yabai -m window --toggle zoom-parent
+
+# Float window to center
+shift + alt - t : yabai -m window --toggle float; yabai -m window --grid 4:4:1:1:2:2
+# alt - t : yabai -m window --toggle float;
 
 # Toggle split mode
 shift + alt - s : yabai -m window --toggle split

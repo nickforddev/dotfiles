@@ -4,6 +4,19 @@
 <dict>
 	<key>customSites</key>
 	<dict>
+		<key>3365C6C3-416E-44E1-8139-85660229443F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>text</key>
+			<string>Search Github for {query}</string>
+			<key>url</key>
+			<string>https://github.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>3398A1DE-62BE-45C0-95A8-879707F28276</key>
 		<dict>
 			<key>enabled</key>
