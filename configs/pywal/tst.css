@@ -15,6 +15,14 @@ tab-item .label {
   margin-left: 8px !important;
 }
 
+tab-item[data-level="0"] {
+  margin-top: 0 !important;
+}
+
+tab-item:first-child {
+  margin-top: 0 !important;
+}
+
 #tabbar {
   scrollbar-width: none;
 }
