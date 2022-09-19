@@ -21,7 +21,7 @@ ctrl - right : yabai -m space --focus next
 
 ctrl - 1 : yabai -m space --focus 1
 ctrl - 2 : yabai -m space --focus 2
-ctrl - 3 : yabai -m space --focus 3; sleep 0.2; yabai -m window --toggle zoom-fullscreen; # fix for chime issue
+ctrl - 3 : yabai -m space --focus 3; sleep 1; yabai -m window --toggle zoom-fullscreen; # fix for chime issue
 ctrl - 4 : yabai -m space --focus 4
 ctrl - 5 : yabai -m space --focus 5
 ctrl - 6 : yabai -m space --focus 6
