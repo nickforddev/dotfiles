@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/sunset.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#120d14",
+        "foreground": "#f2e2c7",
+        "cursor": "#f2e2c7"
+    },
+    "colors": {
+        "color0": "#120d14",
+        "color1": "#f60037",
+        "color2": "#ff4a2b",
+        "color3": "#fe9d4c",
+        "color4": "#feb04e",
+        "color5": "#e000c4",
+        "color6": "#ffb17d",
+        "color7": "#f2e2c7",
+        "color8": "#a99e8b",
+        "color9": "#f60037",
+        "color10": "#ff4a2b",
+        "color11": "#fe9d4c",
+        "color12": "#feb04e",
+        "color13": "#e000c4",
+        "color14": "#ffb17d",
+        "color15": "#f2e2c7"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/lava.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#070412",
+        "foreground": "#bfb3bc",
+        "cursor": "#bfb3bc"
+    },
+    "colors": {
+        "color0": "#070412",
+        "color1": "#2100b9",
+        "color2": "#bf00ae",
+        "color3": "#ff1300",
+        "color4": "#f90015",
+        "color5": "#fe934c",
+        "color6": "#1a00f5",
+        "color7": "#bfb3bc",
+        "color8": "#857d83",
+        "color9": "#2100b9",
+        "color10": "#bf00ae",
+        "color11": "#ff1300",
+        "color12": "#f90015",
+        "color13": "#fe934c",
+        "color14": "#1a00f5",
+        "color15": "#bfb3bc"
+    }
+}

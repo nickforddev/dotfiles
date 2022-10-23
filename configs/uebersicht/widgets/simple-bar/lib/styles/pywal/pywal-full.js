@@ -1,5 +1,5 @@
 export const variables = {
-    "wallpaper": "/Users/nford/.dotfiles/wallpaper/hexfade.jpeg",
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/hexfade.jpeg",
     "alpha": "100",
 
     "special": {

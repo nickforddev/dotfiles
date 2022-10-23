@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/estuary.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0f151f",
+        "foreground": "#d5d9cd",
+        "cursor": "#d5d9cd"
+    },
+    "colors": {
+        "color0": "#0f151f",
+        "color1": "#f4d500",
+        "color2": "#ffea2d",
+        "color3": "#008ed5",
+        "color4": "#00c9fb",
+        "color5": "#1abaff",
+        "color6": "#86ff44",
+        "color7": "#d5d9cd",
+        "color8": "#95978f",
+        "color9": "#f4d500",
+        "color10": "#ffea2d",
+        "color11": "#008ed5",
+        "color12": "#00c9fb",
+        "color13": "#1abaff",
+        "color14": "#86ff44",
+        "color15": "#d5d9cd"
+    }
+}

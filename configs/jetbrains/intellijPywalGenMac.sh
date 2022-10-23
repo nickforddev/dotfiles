@@ -12,6 +12,23 @@ c=("${c[@]//\#}")
 ijConfigPath=$1
 
 # Set colors based on pywal
+color0=${c[0]}
+color1=${c[1]}
+color2=${c[2]}
+color3=${c[3]}
+color4=${c[4]}
+color5=${c[5]}
+color6=${c[6]}
+color7=${c[7]}
+color8=${c[8]}
+color9=${c[9]}
+color10=${c[10]}
+color11=${c[11]}
+color12=${c[12]}
+color13=${c[13]}
+color14=${c[14]}
+color15=${c[15]}
+
 txtColor=${c[15]}
 bgColor=${c[0]}
 sbgColor=${c[1]}
@@ -25,6 +42,12 @@ sbColor=${c[1]}
 treeColor=${c[15]}
 disabledColor=${c[15]}
 activeColor=${c[2]}
+
+selectionBgColor="${c[8]}77"
+selectionFgColor=${c[1]}
+
+reDarkGrey="${c[8]}B0"
+reErrorColor=${c[4]}
 
 # Get current Directory
 SOURCE="${BASH_SOURCE[0]}"
@@ -100,3 +123,80 @@ sed -i '' $exp $ijMPath
 exp=s/leActive/$activeColor/g
 sed -i '' $exp $ijCfPath
 sed -i '' $exp $ijMPath
+
+exp=s/reColor15/$color15/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor14/$color14/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor13/$color13/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor12/$color12/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor11/$color11/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor10/$color10/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor9/$color9/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor8/$color8/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor7/$color7/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor6/$color6/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor5/$color5/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor4/$color4/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor3/$color3/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor2/$color2/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor1/$color1/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reColor0/$color0/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reSelectBgColor/$selectionBgColor/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+exp=s/reDarkGrey/$reDarkGrey/g
+sed -i '' $exp $ijCfPath
+sed -i '' $exp $ijMPath
+
+echo "updated $ijCfPath"
+
+cp -f $ijCfPath $DIR\/gen/pywal_editor_scheme.icls
+cp -f $ijMPath $DIR\/gen/pywal_theme.icls

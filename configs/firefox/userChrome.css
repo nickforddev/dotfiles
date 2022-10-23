@@ -56,7 +56,7 @@
 
 :root {
   --tab-border-radius: 0px !important;
-  --sidebar-width: 180px;
+  /* --sidebar-width: 180px; */
   --toolbar-height: -26px;
   --menubar-height: -60px;
   --toolmenubar-height: -85px; /* sum of previous two */
@@ -119,10 +119,10 @@
 }
 
 /* lock sidebar to specified width */
-#sidebar-box, #sidebar-box #sidebar {
+/* #sidebar-box, #sidebar-box #sidebar {
   min-width: var(--sidebar-width) !important;
   max-width: var(--sidebar-width) !important;
-}
+} */
 
 /* hide sidebar header for tree style tabs sidebar */
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {

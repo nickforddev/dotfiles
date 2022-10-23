@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/hexfade.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#473f4b",
+        "foreground": "#9ee4e0",
+        "cursor": "#9ee4e0"
+    },
+    "colors": {
+        "color0": "#473f4b",
+        "color1": "#3d00df",
+        "color2": "#ee00a9",
+        "color3": "#ff5e78",
+        "color4": "#19b1ff",
+        "color5": "#1bb8ff",
+        "color6": "#14ebfe",
+        "color7": "#9ee4e0",
+        "color8": "#6e9f9c",
+        "color9": "#3d00df",
+        "color10": "#ee00a9",
+        "color11": "#ff5e78",
+        "color12": "#19b1ff",
+        "color13": "#1bb8ff",
+        "color14": "#14ebfe",
+        "color15": "#9ee4e0"
+    }
+}

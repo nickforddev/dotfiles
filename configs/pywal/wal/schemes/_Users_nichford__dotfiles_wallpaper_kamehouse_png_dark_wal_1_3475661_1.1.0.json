@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/kamehouse.png",
+    "alpha": "100",
+    "special": {
+        "background": "#2f2a39",
+        "foreground": "#e8cac1",
+        "cursor": "#e8cac1"
+    },
+    "colors": {
+        "color0": "#2f2a39",
+        "color1": "#0036fb",
+        "color2": "#1863fe",
+        "color3": "#fe13a3",
+        "color4": "#2261ff",
+        "color5": "#418aff",
+        "color6": "#9760ff",
+        "color7": "#e8cac1",
+        "color8": "#a28d87",
+        "color9": "#0036fb",
+        "color10": "#1863fe",
+        "color11": "#fe13a3",
+        "color12": "#2261ff",
+        "color13": "#418aff",
+        "color14": "#9760ff",
+        "color15": "#e8cac1"
+    }
+}

@@ -142,5 +142,9 @@
     "key": "ctrl+backspace",
     "command": "-deleteLeft",
     "when": "textInputFocus"
+},
+{
+    "key": "ctrl+alt+cmd+b",
+    "command": "editor.action.selectToBracket"
 }
 ]

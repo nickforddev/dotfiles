@@ -190,10 +190,11 @@
     "bracketPairColorizer.depreciation-notice": false,
     "viceroy.config.beautyMode": false,
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/nichford/.vscode/extensions/vscjava.vscode-lombok-1.0.1/server/lombok.jar\"",
-    "editor.experimental.stickyScroll.enabled": true,
     "editor.guides.bracketPairs":"active",
     "json.schemas": [
     
     ],
-    "npm.keybindingsChangedWarningShown": true
+    "npm.keybindingsChangedWarningShown": true,
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.inheritEnv": false
 }

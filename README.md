@@ -38,3 +38,5 @@ Before symlinking the dotfiles, you will be prompted to pick which ones to insta
 ## Untracked configs
 
 If a setting is device-specific or sensitive, it should be added to a `.untracked` config. For instance, if `~/.zshrc.untracked` exists, it will be automatically sourced, but not tracked by git.
+
+TODO: JetBrains editor scheme is not dynamic

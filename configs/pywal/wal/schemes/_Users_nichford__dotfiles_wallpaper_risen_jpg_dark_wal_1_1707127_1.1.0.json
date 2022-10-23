@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/risen.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#101022",
+        "foreground": "#edd4d4",
+        "cursor": "#edd4d4"
+    },
+    "colors": {
+        "color0": "#101022",
+        "color1": "#e50076",
+        "color2": "#ef006b",
+        "color3": "#6b00db",
+        "color4": "#ff03a1",
+        "color5": "#ff4477",
+        "color6": "#fe8c95",
+        "color7": "#edd4d4",
+        "color8": "#a59494",
+        "color9": "#e50076",
+        "color10": "#ef006b",
+        "color11": "#6b00db",
+        "color12": "#ff03a1",
+        "color13": "#ff4477",
+        "color14": "#fe8c95",
+        "color15": "#edd4d4"
+    }
+}

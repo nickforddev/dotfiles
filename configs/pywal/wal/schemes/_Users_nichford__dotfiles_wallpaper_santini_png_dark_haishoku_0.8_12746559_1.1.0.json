@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/santini.png",
+    "alpha": "100",
+    "special": {
+        "background": "#15181a",
+        "foreground": "#c4c5c5",
+        "cursor": "#c4c5c5"
+    },
+    "colors": {
+        "color0": "#15181a",
+        "color1": "#0c4170",
+        "color2": "#137caf",
+        "color3": "#3a21e6",
+        "color4": "#42abea",
+        "color5": "#ef7573",
+        "color6": "#66c2ee",
+        "color7": "#c4c5c5",
+        "color8": "#4f5153",
+        "color9": "#0c4170",
+        "color10": "#137caf",
+        "color11": "#3a21e6",
+        "color12": "#42abea",
+        "color13": "#ef7573",
+        "color14": "#66c2ee",
+        "color15": "#c4c5c5"
+    }
+}

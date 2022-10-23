@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/tokyorain.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d160a",
+        "foreground": "#eee4c6",
+        "cursor": "#eee4c6"
+    },
+    "colors": {
+        "color0": "#0d160a",
+        "color1": "#ff3715",
+        "color2": "#00ea60",
+        "color3": "#ffb024",
+        "color4": "#fe994e",
+        "color5": "#0084af",
+        "color6": "#00d2d3",
+        "color7": "#eee4c6",
+        "color8": "#a69f8a",
+        "color9": "#ff3715",
+        "color10": "#00ea60",
+        "color11": "#ffb024",
+        "color12": "#fe994e",
+        "color13": "#0084af",
+        "color14": "#00d2d3",
+        "color15": "#eee4c6"
+    }
+}

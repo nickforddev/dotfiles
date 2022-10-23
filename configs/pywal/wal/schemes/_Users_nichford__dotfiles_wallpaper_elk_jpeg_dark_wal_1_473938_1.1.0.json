@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/elk.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c2e36",
+        "foreground": "#c6dfdc",
+        "cursor": "#c6dfdc"
+    },
+    "colors": {
+        "color0": "#0c2e36",
+        "color1": "#37ffdf",
+        "color2": "#00b0ee",
+        "color3": "#00c6ff",
+        "color4": "#20d9ff",
+        "color5": "#41eaff",
+        "color6": "#eeff84",
+        "color7": "#c6dfdc",
+        "color8": "#8a9c9a",
+        "color9": "#37ffdf",
+        "color10": "#00b0ee",
+        "color11": "#00c6ff",
+        "color12": "#20d9ff",
+        "color13": "#41eaff",
+        "color14": "#eeff84",
+        "color15": "#c6dfdc"
+    }
+}

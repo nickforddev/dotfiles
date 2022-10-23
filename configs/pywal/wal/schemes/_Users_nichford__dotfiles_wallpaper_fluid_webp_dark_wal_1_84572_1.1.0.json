@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/fluid.webp",
+    "alpha": "100",
+    "special": {
+        "background": "#3a0717",
+        "foreground": "#ccdcd0",
+        "cursor": "#ccdcd0"
+    },
+    "colors": {
+        "color0": "#3a0717",
+        "color1": "#005ca4",
+        "color2": "#006ce9",
+        "color3": "#00c3d8",
+        "color4": "#14fef6",
+        "color5": "#25fcff",
+        "color6": "#61ff9b",
+        "color7": "#ccdcd0",
+        "color8": "#8e9a91",
+        "color9": "#005ca4",
+        "color10": "#006ce9",
+        "color11": "#00c3d8",
+        "color12": "#14fef6",
+        "color13": "#25fcff",
+        "color14": "#61ff9b",
+        "color15": "#ccdcd0"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/cave.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#171817",
+        "foreground": "#c5c5c5",
+        "cursor": "#c5c5c5"
+    },
+    "colors": {
+        "color0": "#171817",
+        "color1": "#005c88",
+        "color2": "#00923f",
+        "color3": "#0085ad",
+        "color4": "#00a5ec",
+        "color5": "#29adff",
+        "color6": "#54e2fe",
+        "color7": "#c5c5c5",
+        "color8": "#515151",
+        "color9": "#005c88",
+        "color10": "#00923f",
+        "color11": "#0085ad",
+        "color12": "#00a5ec",
+        "color13": "#29adff",
+        "color14": "#54e2fe",
+        "color15": "#c5c5c5"
+    }
+}

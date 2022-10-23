@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/springtrain.png",
+    "alpha": "100",
+    "special": {
+        "background": "#06211a",
+        "foreground": "#c0c7c5",
+        "cursor": "#c0c7c5"
+    },
+    "colors": {
+        "color0": "#06211a",
+        "color1": "#00cb93",
+        "color2": "#6bfff3",
+        "color3": "#00b1a8",
+        "color4": "#30feff",
+        "color5": "#00cee1",
+        "color6": "#0ae6fe",
+        "color7": "#c0c7c5",
+        "color8": "#445853",
+        "color9": "#00cb93",
+        "color10": "#6bfff3",
+        "color11": "#00b1a8",
+        "color12": "#30feff",
+        "color13": "#00cee1",
+        "color14": "#0ae6fe",
+        "color15": "#c0c7c5"
+    }
+}

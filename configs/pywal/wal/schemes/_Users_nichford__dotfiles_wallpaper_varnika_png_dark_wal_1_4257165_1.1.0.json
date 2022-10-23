@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/varnika.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0D1E2E",
+        "foreground": "#d6a2c1",
+        "cursor": "#d6a2c1"
+    },
+    "colors": {
+        "color0": "#0D1E2E",
+        "color1": "#fe0f29",
+        "color2": "#ff4352",
+        "color3": "#00a88e",
+        "color4": "#ff8831",
+        "color5": "#ff9f62",
+        "color6": "#0067e5",
+        "color7": "#d6a2c1",
+        "color8": "#957187",
+        "color9": "#fe0f29",
+        "color10": "#ff4352",
+        "color11": "#00a88e",
+        "color12": "#ff8831",
+        "color13": "#ff9f62",
+        "color14": "#0067e5",
+        "color15": "#d6a2c1"
+    }
+}

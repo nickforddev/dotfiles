@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/ghostmeadow.webp",
+    "alpha": "100",
+    "special": {
+        "background": "#15151b",
+        "foreground": "#c4c4c6",
+        "cursor": "#c4c4c6"
+    },
+    "colors": {
+        "color0": "#15151b",
+        "color1": "#0e2e84",
+        "color2": "#135cb3",
+        "color3": "#1682cd",
+        "color4": "#4c6beb",
+        "color5": "#ef6fc4",
+        "color6": "#f28a96",
+        "color7": "#c4c4c6",
+        "color8": "#4f4f54",
+        "color9": "#0e2e84",
+        "color10": "#135cb3",
+        "color11": "#1682cd",
+        "color12": "#4c6beb",
+        "color13": "#ef6fc4",
+        "color14": "#f28a96",
+        "color15": "#c4c4c6"
+    }
+}

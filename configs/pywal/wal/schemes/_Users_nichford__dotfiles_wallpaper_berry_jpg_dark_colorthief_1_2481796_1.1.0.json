@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/Users/nichford/.dotfiles/wallpaper/berry.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#261321",
+        "foreground": "#e6c0dc",
+        "cursor": "#e6c0dc"
+    },
+    "colors": {
+        "color0": "#261321",
+        "color1": "#1ba4ff",
+        "color2": "#fe5590",
+        "color3": "#c664ff",
+        "color4": "#56c8fe",
+        "color5": "#fe90db",
+        "color6": "#98bcff",
+        "color7": "#e6c0dc",
+        "color8": "#cd82ba",
+        "color9": "#1ba4ff",
+        "color10": "#fe5590",
+        "color11": "#c664ff",
+        "color12": "#56c8fe",
+        "color13": "#fe90db",
+        "color14": "#98bcff",
+        "color15": "#e6c0dc"
+    }
+}
