@@ -69,6 +69,32 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>580B03C0-AF58-4939-8057-51474845F51D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>raoc</string>
+			<key>text</key>
+			<string>Search /r/AdventOfCode for "{query}"</string>
+			<key>url</key>
+			<string>https://www.reddit.com/search/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>58A8CE6B-C923-49FE-8614-5641EC43147F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>nbt</string>
+			<key>text</key>
+			<string>New Ayres Backlog Ticket "{query}"</string>
+			<key>url</key>
+			<string>https://sim.amazon.com/issues/create?template=bc7b15d0-7107-4168-95ec-eeb55b73a7ec&amp;issue-description=%23%23%23%20Background%20Information%0A*Background%20Information%20should%20provide%20high%20level%20information%20about%20where%20this%20task%20fits%20into%20the%20big%20picture%20of%20the%20team/org.%20It%20should%20provide%20an%20engineer%20with%20sufficient%20context%20to%20accomplish%20the%20task%20without%20needing%20outside%20information.*%0A%0A%23%23%23%20Problem%20Statement%0A*A%20clear%20and%20concise%20description%20of%20the%20problem%20that%20will%20be%20addressed%20by%20this%20SIM*%0A%0A%23%23%23%20Impact%0A*%5BOptional%5D%20An%20overview%20of%20the%20value%20completing%20this%20SIM%20provides.%20Should%20answer%20the%20question%20%22Why%20are%20we%20doing%20this%3F%22*%0A%0A%23%23%23%20Definition%20of%20Done%0A*Explicit%20requirements%20that%20must%20be%20met%20in%20order%20to%20call%20the%20SIM%20complete.%20This%20should%20not%20contain%20ambiguity.*%0A%0A%23%23%23%20Resources%0A*Any%20additional%20information%20%28docs%2C%20code%20links%2C%20etc.%29%20to%20help%20the%20assignee%20complete%20the%20task.*&amp;issue-requester=&amp;title={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>9DA1C850-B5E4-45F7-9CCA-39912E8FC649</key>
 		<dict>
 			<key>enabled</key>

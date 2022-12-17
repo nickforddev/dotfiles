@@ -164,6 +164,11 @@ shift + ctrl - k : open /Applications/Slack.app
 shift + ctrl - j : open /Applications/Amazon\ Chime.app
 shift + ctrl - h : open /Applications/IntelliJ\ IDEA.app
 
+# Like current song
+
+ctrl - f8 : "${HOME}"/.config/skhd/scripts/like_current_song.sh # f4
+# ctrl - f4 : say "test"
+
 # Restart Yabai
 shift + ctrl + alt - r : osascript \
     "display notification \"Restarting Yabai\" with title \"Yabai\""; \
