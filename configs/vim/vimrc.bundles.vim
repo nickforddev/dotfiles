@@ -18,7 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'        " vim airline themes
 
 Plugin 'mileszs/ack.vim'                       " ack support
 Plugin 'airblade/vim-gitgutter'                " git diff in the gutter
-Plugin 'SirVer/ultisnips'                      " snippets
+" Plugin 'SirVer/ultisnips'                      " snippets
 " Plugin 'ycm-core/YouCompleteMe'                " autocompletion
 Plugin 'neoclide/coc.nvim'
 Plugin 'mattn/emmet-vim'                       " emmet support

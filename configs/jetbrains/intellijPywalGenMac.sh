@@ -44,10 +44,12 @@ disabledColor=${c[15]}
 activeColor=${c[2]}
 
 selectionBgColor="${c[8]}77"
-selectionFgColor=${c[1]}
+selectionFgColor=${c[2]}
 
 reDarkGrey="${c[8]}B0"
 reErrorColor=${c[4]}
+
+caretColor=${c[8]}
 
 # Get current Directory
 SOURCE="${BASH_SOURCE[0]}"

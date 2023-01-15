@@ -8,6 +8,8 @@
 # fn + lalt - 4 : "${HOME}"/.config/yabai/scripts/show_disk.sh
 # fn + lalt - 5 : "${HOME}"/.config/yabai/scripts/show_song.sh
 
+# space_1='Calendar';
+
 # Navigation
 ctrl + alt + cmd - left : yabai -m window --focus west    # h
 ctrl + alt + cmd - down : yabai -m window --focus south   # j
@@ -29,6 +31,23 @@ ctrl - 7 : yabai -m space --focus 7
 ctrl - 8 : yabai -m space --focus 8
 ctrl - 9 : yabai -m space --focus 9
 ctrl - 0 : yabai -m space --focus 10
+
+:: default     : "${HOME}"/.config/skhd/scripts/listen.sh 0
+:: listening @ : "${HOME}"/.config/skhd/scripts/listen.sh 1
+
+default < ctrl - 0x30 ; listening
+
+listening < 1 : yabai -m window --space 11; yabai -m space --focus 11; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+listening < 2 : yabai -m window --space 12; yabai -m space --focus 12; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+listening < 3 : yabai -m window --space 13; yabai -m space --focus 13; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+listening < 4 : yabai -m window --space 14; yabai -m space --focus 14; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+listening < 5 : yabai -m window --space 15; yabai -m space --focus 15; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+listening < 6 : yabai -m window --space 16; yabai -m space --focus 16; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+
+listening < 0x35 ; default
+
+# toggle mic
+ctrl + alt + cmd - m : "${HOME}"/.config/skhd/scripts/mic.sh
 
 # Create new space
 shift + alt - n : yabai -m space --create;\
