@@ -86,6 +86,9 @@ gppls() {
   gaa && gc -m $name && gp
 }
 
+# youtube album downloader
+source ~/.config/zsh/scripts/ytsplit.sh
+
 # theme cli
 source ~/.config/zsh/scripts/theme/theme.sh
 

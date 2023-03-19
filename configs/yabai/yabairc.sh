@@ -67,15 +67,19 @@ yabai -m rule --add app="^Mail$" title="^Fwd:*" manage=off
 yabai -m rule --add app="^Mail$" title="^Fwd:*" sticky=on
 yabai -m rule --add app="^Mail$" space=2
 yabai -m rule --add app="^Mail$" title="^General$" manage=off
-yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" space=3
+yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" title="^Amazon Chime[^\:]$" space=3
+yabai -m rule --add label="Amazon Chime Mute box" app="^Amazon Chime$" title="^Mute box$" space=3
 yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
 yabai -m rule --add label="Slack" app="^Slack$" space=4
 yabai -m rule --add label="Cisco AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="(Licenses)" manage=off
+yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="Rollback Changes" manage=off
 yabai -m rule --add label="Übersicht" app="^Übersicht$" title="Preferences" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
 # ===== Signals ================================
+
+yabai -m signal --add event=application_activated app="^Amazon Chime$" action="${HOME}"/.config/skhd/scripts/chime.sh;
 
 # yabai -m signal --add event=application_front_switched action="${ubersicht_spaces_refresh_command}"
 # yabai -m signal --add event=display_changed action="${ubersicht_spaces_refresh_command}"

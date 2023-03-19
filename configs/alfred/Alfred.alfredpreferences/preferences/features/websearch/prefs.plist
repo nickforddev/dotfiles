@@ -104,7 +104,7 @@
 			<key>text</key>
 			<string>Search Sage for '{query}'</string>
 			<key>url</key>
-			<string>https://sage.amazon.com/search?q={query}</string>
+			<string>https://refresh.sage.amazon.dev/search?q={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

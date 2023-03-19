@@ -415,6 +415,8 @@ nmap <Leader>pu :put<CR>
 vmap p                                            "_dP
 
 map <C-p> :FZF<CR>
+map <C-b> :vertical resize -10<CR>
+map <C-v> :vertical resize +10<CR>
 
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1

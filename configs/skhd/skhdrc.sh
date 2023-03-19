@@ -23,7 +23,7 @@ ctrl - right : yabai -m space --focus next
 
 ctrl - 1 : yabai -m space --focus 1
 ctrl - 2 : yabai -m space --focus 2
-ctrl - 3 : yabai -m space --focus 3; sleep 1; yabai -m window --toggle zoom-fullscreen; # fix for chime issue
+ctrl - 3 : yabai -m space --focus 3
 ctrl - 4 : yabai -m space --focus 4
 ctrl - 5 : yabai -m space --focus 5
 ctrl - 6 : yabai -m space --focus 6
@@ -35,7 +35,8 @@ ctrl - 0 : yabai -m space --focus 10
 :: default     : "${HOME}"/.config/skhd/scripts/listen.sh 0
 :: listening @ : "${HOME}"/.config/skhd/scripts/listen.sh 1
 
-default < ctrl - 0x30 ; listening
+# Press ctrl - ` and then a number to move a space with index > 10
+default < ctrl - 0x32 ; listening
 
 listening < 1 : yabai -m window --space 11; yabai -m space --focus 11; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
 listening < 2 : yabai -m window --space 12; yabai -m space --focus 12; skhd -k 'escape'; "${HOME}"/.config/skhd/scripts/fix_border.sh;
@@ -101,15 +102,16 @@ shift + ctrl - up : yabai -m window --swap north
 shift + ctrl - right : yabai -m window --swap east
 
 # Move window to next display
-ctrl + alt + cmd - right : yabai -m window --display next; yabai -m display --focus 2; "${HOME}"/.config/skhd/scripts/fix_border.sh;
-ctrl + alt + cmd - left : yabai -m window --display prev; yabai -m display --focus 1; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+shift + ctrl + alt - right : yabai -m window --display next; yabai -m display --focus 2; "${HOME}"/.config/skhd/scripts/fix_border.sh;
+shift + ctrl + alt - left : yabai -m window --display prev; yabai -m display --focus 1; "${HOME}"/.config/skhd/scripts/fix_border.sh;
 
 # Fix border
 shift + ctrl - b : "${HOME}"/.config/skhd/scripts/fix_border.sh
 
 # Maximize window
-ctrl + alt + cmd - up : yabai -m window --toggle zoom-fullscreen
-ctrl + alt + cmd - down : yabai -m window --toggle zoom-parent
+ctrl + alt + cmd - f : yabai -m window --toggle zoom-parent
+alt - f         : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
 
 # Float window to center
 shift + alt - t : yabai -m window --toggle float; yabai -m window --grid 4:4:1:1:2:2
@@ -188,11 +190,11 @@ shift + ctrl - h : open /Applications/IntelliJ\ IDEA.app
 ctrl - f8 : "${HOME}"/.config/skhd/scripts/like_current_song.sh # f4
 # ctrl - f4 : say "test"
 
+# toggle chime meeting window between space 3 and first space on display 2
+ctrl + alt + cmd - t : "${HOME}"/.config/skhd/scripts/chime_toggle_display.sh
+
 # Restart Yabai
 shift + ctrl + alt - r : osascript \
     "display notification \"Restarting Yabai\" with title \"Yabai\""; \
     launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
-# Make window native fullscreen
-alt - f         : yabai -m window --toggle zoom-fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
