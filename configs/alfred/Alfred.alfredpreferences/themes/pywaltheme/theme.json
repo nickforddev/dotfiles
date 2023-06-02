@@ -4,22 +4,22 @@
       "textSpacing" : 10,
       "subtext" : {
         "size" : 11,
-        "colorSelected" : "#17202466",
+        "colorSelected" : "#0a1d2166",
         "font" : "System Light",
-        "color" : "#ef976fFF"
+        "color" : "#45ffdbFF"
       },
       "shortcut" : {
         "size" : 13,
-        "colorSelected" : "#ed616fFF",
+        "colorSelected" : "#08ffe5FF",
         "font" : "System Light",
-        "color" : "#17202466"
+        "color" : "#0a1d2166"
       },
-      "backgroundSelected" : "#ed616fFF",
+      "backgroundSelected" : "#08ffe5FF",
       "text" : {
         "size" : 22,
-        "colorSelected" : "#c5c7c8FF",
+        "colorSelected" : "#cde3e2FF",
         "font" : "System Light",
-        "color" : "#c5c7c8FF"
+        "color" : "#cde3e2FF"
       },
       "iconPaddingHorizontal" : 10,
       "roundness" : 0,
@@ -27,25 +27,25 @@
       "iconSize" : 46
     },
     "search" : {
-      "backgroundSelected" : "#ed616fFF",
+      "backgroundSelected" : "#08ffe5FF",
       "paddingHorizontal" : 8,
       "spacing" : 10,
       "text" : {
         "size" : 36,
-        "colorSelected" : "#c5c7c8FF",
+        "colorSelected" : "#cde3e2FF",
         "font" : "System Light",
-        "color" : "#c5c7c8FF"
+        "color" : "#cde3e2FF"
       },
-      "background" : "#17202466",
+      "background" : "#0a1d2166",
       "roundness" : 0,
       "paddingVertical" : 2
     },
     "window" : {
-      "color" : "#17202466",
+      "color" : "#0a1d2166",
       "paddingHorizontal" : 10,
       "width" : 620,
       "borderPadding" : 0,
-      "borderColor" : "#ed616fFF",
+      "borderColor" : "#08ffe5FF",
       "blur" : 10,
       "roundness" : 0,
       "paddingVertical" : 10
@@ -57,7 +57,7 @@
       "thickness" : 1
     },
     "scrollbar" : {
-      "color" : "#ed616fFF",
+      "color" : "#08ffe5FF",
       "thickness" : 2
     },
     "name" : "Pywal"

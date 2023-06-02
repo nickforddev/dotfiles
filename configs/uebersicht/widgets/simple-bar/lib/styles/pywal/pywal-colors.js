@@ -13,6 +13,6 @@ export const colors = {
   blue: Pywal.variables.matched,
   magenta: Pywal.variables.variable,
   cyan: Pywal.variables.function,
-  focusRing: `0 0 0 3px ${PywalFull.variables.colors.color6}`,
-  hoverRing: `0 0 0 3px ${Pywal.variables.variable}`,
+  focusRing: `0 0 0 4px ${PywalFull.variables.colors.color6}`,
+  hoverRing: `0 0 0 4px ${Pywal.variables.variable}`,
 }

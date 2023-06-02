@@ -1,16 +1,16 @@
 export const variables = {
-    "cursor": "#c5c7c8",
-    "number": "#c5c7c8",
-    "parens": "#ef976f",
-    "result": "#2ccee7",
-    "comment": "#51575a",
-    "matched": "#2ccee7",
-    "function": "#c716c3",
-    "operator": "#ed616f",
-    "variable": "#30a7e8",
-    "scrollbar": "#ed616f",
-    "separator": "#ed616f",
-    "background": "#172024",
-    "editorbackground": "#172024"
+    "cursor": "#cde3e2",
+    "number": "#cde3e2",
+    "parens": "#45ffdb",
+    "result": "#00f3d4",
+    "comment": "#8f9e9e",
+    "matched": "#00f3d4",
+    "function": "#ff1969",
+    "operator": "#08ffe5",
+    "variable": "#0cfef7",
+    "scrollbar": "#08ffe5",
+    "separator": "#08ffe5",
+    "background": "#0a1d21",
+    "editorbackground": "#0a1d21"
 }
 ;

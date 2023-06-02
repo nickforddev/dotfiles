@@ -44,7 +44,8 @@ yabai -m config mouse_action1               move
 yabai -m config mouse_action2               resize
 
 yabai -m config window_border               on
-yabai -m config window_border_width         6
+yabai -m config window_border_width         3
+yabai -m config window_border_blur          off
 
 # ===== Rules ==================================
 

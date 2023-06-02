@@ -50,6 +50,9 @@ listening < 0x35 ; default
 # toggle mic
 ctrl + alt + cmd - m : "${HOME}"/.config/skhd/scripts/mic.sh
 
+# toggle bar
+ctrl + alt + cmd - b : "${HOME}"/.config/skhd/scripts/toggle_bar.sh
+
 # Create new space
 shift + alt - n : yabai -m space --create;\
     id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')";\

@@ -1,7 +1,6 @@
-export const variables = {
+{
     "wallpaper": "/Users/nichford/.dotfiles/wallpaper/springtrain.png",
     "alpha": "100",
-
     "special": {
         "background": "#0a1d21",
         "foreground": "#cde3e2",
@@ -26,4 +25,3 @@ export const variables = {
         "color15": "#cde3e2"
     }
 }
-;

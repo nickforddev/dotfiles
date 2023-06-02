@@ -6,7 +6,7 @@ export const spacesStyles = /* css */ `
   flex: 0 0 auto;
   display: flex;
   align-items: stretch;
-  background: var(--background);
+  // background: var(--background);
   padding-right: 6px;
 }
 .simple-bar--no-bar-background .spaces {

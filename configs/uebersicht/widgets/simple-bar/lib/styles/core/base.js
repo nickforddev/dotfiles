@@ -72,6 +72,7 @@ const baseStyles = /* css */ `
   box-shadow: inset 0px 0px 0px 3px #010101;
   overflow: hidden;
   justify-content: flex-end;
+  border-radius: 14px;
 }
 .simple-bar--floating.simple-bar--data {
   right: 5px;

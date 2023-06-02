@@ -92,6 +92,18 @@ source ~/.config/zsh/scripts/ytsplit.sh
 # theme cli
 source ~/.config/zsh/scripts/theme/theme.sh
 
+theme1() {
+  theme hexfade.jpeg haishoku 0.8
+}
+
+theme2() {
+  theme ghostmeadow.webp haishoku 0.8
+}
+
+theme3() {
+  theme springtrain.png 0.8
+}
+
 # walserver
 source ~/.dotfiles/configs/pywal/server.sh
 # open dotfiles project in VSCode

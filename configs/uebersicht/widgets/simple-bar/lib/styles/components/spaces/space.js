@@ -46,8 +46,14 @@ export const spaceStyles = /* css */ `
 }
 .space:first-of-type .space__inner {
   margin-left: 0;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;}
+
 }
 .space:hover .space__inner {
+  z-index: 1;
+}
+.space:hover {
   z-index: 1;
 }
 .spaces__add {
@@ -68,6 +74,7 @@ export const spaceStyles = /* css */ `
 }
 .space--focused .space__inner {
   color: var(--foreground);
+  z-index: 3;
 }
 .space--focused .space__icon {
   fill: var(--green);

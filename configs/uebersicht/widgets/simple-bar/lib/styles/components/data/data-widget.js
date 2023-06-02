@@ -20,6 +20,11 @@ export const dataWidgetStyles = /* css */ `
   transition: all 160ms var(--transition-easing);
   flex-shrink: 0;
 }
+.data-widget:last-child {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-right:1px;
+}
 .simple-bar--no-color-in-data .data-widget {
   color: var(--foreground);
   background-color: var(--minor);

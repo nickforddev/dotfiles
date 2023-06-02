@@ -108,6 +108,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>C945C7A3-FC45-4ECE-8911-104174E07F1F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>h</string>
+			<key>text</key>
+			<string>Search Hoot for '{query}'</string>
+			<key>url</key>
+			<string>https://datacentral.a2z.com/hoot/search?state=ACTIVE&amp;q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>F08D4827-6058-462D-B509-981EA2221D26</key>
 		<dict>
 			<key>enabled</key>
