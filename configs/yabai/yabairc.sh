@@ -31,7 +31,7 @@ yabai -m config focus_follows_mouse         off
 
 yabai -m config window_topmost              off
 yabai -m config window_opacity              on
-yabai -m config window_shadow               float
+yabai -m config window_shadow               off
 
 yabai -m config active_window_opacity       1.0
 yabai -m config normal_window_opacity       0.90

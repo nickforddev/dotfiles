@@ -7,45 +7,6 @@
   display: none !important;
 }
 
-/* horizontal tabs */
-
-/* .tab-background {
-  margin-block: 0 !important;
-  border-radius: 0 !important;
-}
-
-.tab-background[selected="true"] {
-  background-image: none !important;
-  border-radius: 0 !important;
-  border: 3px solid #5ffdff !important;
-}
-
-.tab-background[selected="true"]:-moz-window-inactive {
-  border: 3px solid #010101 !important;
-}
-
-#urlbar-input-container,
-.tab-label
-{
-  font-size: 0.9em !important;
-}
-
-.tabbrowser-tab {
-  padding-inline: 0 !important;
-}
-
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"], [multiselected]) {
-  background-color: #496886 !important;
-}
-
-#tabs-newtab-button {
-  padding-inline: 0 !important;
-}
-
-#toolbarbutton-icon {
-  border-radius: 0 !important;
-} */
-
 /* suppress white flash */
 @-moz-document regexp("moz-extension://.+/sidebar/sidebar.html.*") {
   :root,
@@ -99,7 +60,7 @@
   position: relative !important;
   margin-left: 0;
   margin-top: calc(var(--toolbar-height) - 4px) !important;
-  padding: 4px 2px;
+  padding-bottom: 2px !important;
 }
 
 #main-window[title^="Mozilla Firefox"] #PersonalToolbar {

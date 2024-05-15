@@ -26,7 +26,8 @@ var css = \`
   --color13: $color13;
   --color14: $color14;
   --color15: $color15;
-}\`;
+}
+\`;
 var element = document.createElement('style');
 element.setAttribute('type', 'text/css');
 

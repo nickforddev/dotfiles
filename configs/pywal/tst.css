@@ -30,7 +30,7 @@ tab-item:first-child {
 tab-item tab-item-substance {
   --tab-size: 38px !important;
   height: var(--tab-size);
-  box-shadow: -100px 0 0px 100px var(--color10);
+  /* box-shadow: -100px 0 0px 100px var(--color0); */
 }
 
 tab-item tab-item-substance tab-closebox:hover {
@@ -79,7 +79,7 @@ tab-item.bundled-active,
 tab-item.bundled-active tab-item-substance:hover,
 .mutiple-highlighted>tab-item.highlighted,
 .mutiple-highlighted>tab-item.highlighted tab-item-substance:hover {
-  border: 3px solid var(--color6);
+  border: 3px solid var(--color6) !important;
 }
 
 /* active tab border, browser not focused */
@@ -95,9 +95,9 @@ tab-item.active tab-item-substance .background {
   box-shadow: none !important;
 }
 
-tab-item tab-item-substance:hover {
+tab-item tab-item-substance:hover .background {
   background: var(--color1) !important;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 tab-item:not(.active):hover .label-content {

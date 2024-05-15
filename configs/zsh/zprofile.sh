@@ -1,5 +1,6 @@
 # user path
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:"
+export PATH="/Users/nichford/.local/bin:$PATH"
 
 # pip
 # export PATH=~/Library/Python/3.7/bin:$PATH
@@ -30,3 +31,5 @@ fi
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+source /Users/nichford/bash_extensions/.bash_extensions

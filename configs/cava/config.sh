@@ -1,16 +1,17 @@
 [general]
-autosens = 1
+# ; autosens = 1
 
 [input]
-source = "BlackHole 2ch"
+source = "Background Music"
+method = portaudio
 
 [output]
-method = ncurses
+# method = ncurses
 
 [color]
 foreground = 'cyan'
-; gradient = 1
-; gradient_count = 8
+# ; gradient = 1
+# ; gradient_count = 8
 gradient_color_1 = '#50a6a8'
 gradient_color_2 = '#52B0B2'
 gradient_color_3 = '#53B9BB'
@@ -20,10 +21,9 @@ gradient_color_6 = '#58D6D8'
 gradient_color_7 = '#5AE0E2'
 gradient_color_8 = '#5FFDFF'
 
-[eq]
-1=2
-2=2
-3=1
-4=1
-5=0.5
-
+# [eq]
+# 1=0
+# 2=1
+# 3=0
+# 4=1
+# 5=0

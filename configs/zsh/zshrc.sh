@@ -75,6 +75,8 @@ fhf() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
 }
 
+alias fcd=fzf-cd-widget
+
 grepo() {
   local name=$(git remote get-url origin | sed 's/git@github.com://' | sed 's/\.git//')
   open "https://github.com/${name}"
@@ -84,6 +86,19 @@ grepo() {
 gppls() {
   cat /dev/urandom | base64 | tr -dc '0-9a-zA-Z' | head -c28 | read -d '' name
   gaa && gc -m $name && gp
+}
+
+assume-role() {
+  export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s" \
+  $(aws sts assume-role \
+  --role-arn $1 \
+  --role-session-name $2 \
+  --query "Credentials.[AccessKeyId,SecretAccessKey,SessionToken]" \
+  --output text $3)) 
+}
+
+reset-role() {
+  unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
 }
 
 # youtube album downloader
@@ -167,8 +182,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/etc/bash_completion" ] && . "$NVM_DIR/etc/bash_completion"
 
 [[ -f /usr/local/opt/postgresql@11 ]] && export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
 
@@ -208,16 +223,16 @@ walstart
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/nichford/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/nichford/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/Users/nichford/miniconda/etc/profile.d/conda.sh"
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/nichford/miniconda/bin:$PATH"
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+complete -C 'usr/local/bin/aws_completer'

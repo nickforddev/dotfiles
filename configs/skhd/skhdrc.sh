@@ -86,11 +86,9 @@ shift + ctrl + alt - 9 : yabai -m window --space 9; "${HOME}"/.config/skhd/scrip
 shift + ctrl + alt - 0 : yabai -m window --space 10; "${HOME}"/.config/skhd/scripts/fix_border.sh
 
 # Displays
-# Focus previous display by arrangement index
-shift + alt - w : yabai -m display --focus prev
-
-# Focus next display by arrangement index
-shift + alt - e : yabai -m display --focus next
+# Focus next/prev display
+shift + alt - 0x21 : yabai -m display --focus prev || yabai -m display --focus last
+shift + alt - 0x1E : yabai -m display --focus next || yabai -m display --focus first
 
 # Moving windows
 ctrl + cmd - left : yabai -m window --warp west

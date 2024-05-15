@@ -63,6 +63,8 @@ endif
 " Syntax
 " --------------------------------------------------------------------------------------------------
 
+Plugin 'uiiaoo/java-syntax.vim'                " java
+Plugin 'udalov/kotlin-vim'                     " kotlin
 Plugin 'python-mode/python-mode'               " python
 Plugin 'plasticboy/vim-markdown'               " markdown
 Plugin 'othree/html5.vim'                      " html5

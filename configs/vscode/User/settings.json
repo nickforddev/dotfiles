@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Wal",
+    "workbench.colorTheme": "Wal Bordered",
     "editor.tabSize": 2,
     "editor.rulers": [100],
     "editor.snippetSuggestions": "top",
@@ -40,7 +40,8 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
     },
     "emmet.includeLanguages": {
         "html": "html",
@@ -51,7 +52,7 @@
     "emmet.triggerExpansionOnTab": true,
     "typescript.suggest.completeFunctionCalls": true,
     "javascript.suggest.completeFunctionCalls": true,
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
     "explorer.confirmDragAndDrop": false,
     "cSpell.userWords": [
         "freeezeframe",
@@ -132,13 +133,14 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "viceroy.config.lastVersion": "0.42.200985",
+    "viceroy.config.lastVersion": "0.52.201672",
     "files.watcherExclude": {
         "**/build/**": true,
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
-        "**/node_modules/**": true,
-        "**/.hg/store/**": true
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/node_modules/**": true
     },
     "search.exclude": {
         "env": true,
@@ -148,7 +150,7 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
-    "viceroy.config.internal.lastUpdateTime": "2022-06-15T18:27:04.653Z",
+    "viceroy.config.internal.lastUpdateTime": "2024-05-08T20:45:30.093Z",
     "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home",
     "java.help.firstView": "gettingStarted",
     "yaml.customTags": [
@@ -182,7 +184,7 @@
     ],
     "yaml.validate": false,
     "yaml.schemas": {
-        "file:///Users/nichford/.vscode/extensions/marklel.vscode-brazil-0.42.200985/assets/languages/rde/schema.json": "**/definition.yaml"
+        "file:///Users/nichford/.vscode/extensions/marklel.vscode-brazil-0.52.201672/assets/languages/rde/schema.json": "**/definition.yaml"
     },
     "viceroy.doc.welcome.showAtStartup": false,
     "redhat.telemetry.enabled": false,
@@ -196,5 +198,19 @@
     ],
     "npm.keybindingsChangedWarningShown": true,
     "editor.stickyScroll.enabled": true,
-    "terminal.integrated.inheritEnv": false
+    "terminal.integrated.inheritEnv": false,
+    "[brazilPackageConfig]": {
+        "workbench.editor.languageDetection": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "window.zoomLevel": 1,
+    "genieai.openai.model": "gpt-3.5-turbo-1106",
+    "aws.telemetry": false,
+    "viceroy.workspaceSyncStrategy": "automatic",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "amazonQ.telemetry": false
 }

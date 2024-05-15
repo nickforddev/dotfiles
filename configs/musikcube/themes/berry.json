@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "colors": {
     "background": {
-      "hex": "#152b42",
+      "hex": "#172024",
       "palette": 234
     },
     "foreground": {
@@ -39,7 +39,7 @@
       "palette": 160
     },
     "overlay_background": {
-      "hex": "#496886",
+      "hex": "#c716c3",
       "palette": 240
     },
     "overlay_foreground": {

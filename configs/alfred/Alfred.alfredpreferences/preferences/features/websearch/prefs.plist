@@ -95,6 +95,17 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>959907A1-29B3-474B-AE1A-548E86170960</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>con</string>
+			<key>text</key>
+			<string>View Conduit AWS Account: {query}</string>
+			<key>url</key>
+			<string>https://conduit.security.a2z.com/accounts/aws/{query}</string>
+		</dict>
 		<key>9DA1C850-B5E4-45F7-9CCA-39912E8FC649</key>
 		<dict>
 			<key>enabled</key>
@@ -107,6 +118,17 @@
 			<string>https://refresh.sage.amazon.dev/search?q={query}</string>
 			<key>utf8</key>
 			<true/>
+		</dict>
+		<key>B79B9686-1349-4A59-B40E-82DC1D99EF2E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>isen</string>
+			<key>text</key>
+			<string>Isengard AWS Account: {query}</string>
+			<key>url</key>
+			<string>https://isengard.amazon.com/manage-accounts/{query}</string>
 		</dict>
 		<key>C945C7A3-FC45-4ECE-8911-104174E07F1F</key>
 		<dict>
@@ -126,13 +148,11 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>crs</string>
+			<string>cr</string>
 			<key>text</key>
 			<string>CRs by {query}, YTD</string>
 			<key>url</key>
 			<string>https://code.amazon.com/reviews/from-user/{query}?start_time=2022-01-01&amp;open=true&amp;canceled=&amp;shipped=true&amp;pending=true&amp;commit=Go</string>
-			<key>utf8</key>
-			<true/>
 		</dict>
 		<key>F7F5AB59-93BA-4DD8-B9E8-11BE555B16C9</key>
 		<dict>
