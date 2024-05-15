@@ -26,5 +26,5 @@ yarn-error.log*
 
 # ignored zshrc settings
 
-/configs/zsh/zshrc.untracked.sh
+/**/*/*.untracked.*
 /configs/vscode/User/History
