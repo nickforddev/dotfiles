@@ -1,3 +1,5 @@
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zprofile.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zprofile.pre.zsh"
 # user path
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:"
 export PATH="/Users/nichford/.local/bin:$PATH"
@@ -33,3 +35,10 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 source /Users/nichford/bash_extensions/.bash_extensions
+
+export PATH="/Applications/Fortify/Fortify_SCA_24.4.0/bin:$PATH"
+
+export PATH="/Applications/Fortify/Fortify_Apps_and_Tools_24.4.0/bin:$PATH"
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zprofile.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zprofile.post.zsh"

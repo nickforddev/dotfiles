@@ -6,7 +6,7 @@
 " --------------------------------------------------------------------------------------------------
 
 Plugin 'VundleVim/Vundle.vim'                  " package manager
-Plugin 'preservim/nerdtree'                   " filesystem browser
+Plugin 'preservim/nerdtree'                    " filesystem browser
 Plugin 'Xuyuanp/nerdtree-git-plugin'           " add git diff icons to nerdtree
 Plugin 'jistr/vim-nerdtree-tabs'               " nerdtree tabs
 Plugin 'bling/vim-airline'                     " vim airline support
@@ -16,17 +16,19 @@ Plugin 'vim-airline/vim-airline-themes'        " vim airline themes
 " Utilities
 " --------------------------------------------------------------------------------------------------
 
+Plugin 'voldikss/vim-floaterm'                 " floating terminal
 Plugin 'mileszs/ack.vim'                       " ack support
 Plugin 'airblade/vim-gitgutter'                " git diff in the gutter
 " Plugin 'SirVer/ultisnips'                      " snippets
 " Plugin 'ycm-core/YouCompleteMe'                " autocompletion
 Plugin 'neoclide/coc.nvim'
 Plugin 'mattn/emmet-vim'                       " emmet support
-Plugin 'preservim/tagbar'                     " class outline viewer
+Plugin 'preservim/tagbar'                      " class outline viewer
 " Plugin 'severin-lemaignan/vim-minimap'         " minimap
 Plugin 'ryanoasis/vim-devicons'                " file icons
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plugin 'airblade/vim-rooter'                     " find git root
+Plugin 'airblade/vim-rooter'                   " find git root
+Plugin 'kopischke/vim-fetch'                   " enable opening files with line number at end (filename:34)
 
 " Editing
 " --------------------------------------------------------------------------------------------------

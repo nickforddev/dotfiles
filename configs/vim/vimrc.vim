@@ -391,6 +391,8 @@ map <C-S-Right> gt
 imap <C-S-Left> <Esc>gT
 imap <C-S-Right> <Esc>gt
 
+nnoremap <C-\> :FloatermToggle<CR>
+
 " nnoremap <C-S-Left> <C-w>h
 " nnoremap <C-S-Down> <C-w>j
 " nnoremap <C-S-Up> <C-w>k

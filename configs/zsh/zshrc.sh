@@ -1,3 +1,5 @@
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 # Import colorscheme from 'wal' asynchronously
 (cat ~/.cache/wal/sequences &)
 
@@ -158,6 +160,7 @@ alias wmip="curl checkip.amazonaws.com"
 alias cputmp='sudo powermetrics -n 1 --samplers smc | grep -i "CPU die temperature"'
 alias chrome="open -a 'Google Chrome'"
 alias awsconfig="code ~/.aws"
+alias dvd="python ~/.dotfiles/scripts/dvd_screensaver.py"
 
 slackwal() {
   echo "$(<$HOME/.cache/wal/colors-slack.js)" | pbcopy
@@ -236,3 +239,34 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 complete -C 'usr/local/bin/aws_completer'
+
+cleanup() {
+  local apps=(
+    "Microsoft Outlook:1"
+    "zoom.us:2"
+    "Amazon Chime:3"
+    "Slack:4"
+    "iTerm2:5"
+    "Code:6"
+    "JetBrains Gateway:7"
+    "IntelliJ IDEA:7"
+    "Firefox:8"
+    "Google Chrome:8"
+    "Music:9"
+    "Obsidian:10"
+  )
+  
+  for app_space in "${apps[@]}"; do
+    local app="${app_space%:*}"
+    local space="${app_space#*:}"
+    echo "Moving $app windows..."
+    yabai -m query --windows | jq -r ".[] | select(.app == \"$app\") | .id" | xargs -I {} yabai -m window {} --space $space
+  done
+  echo "Done"
+}
+export PATH="/Applications/Fortify/Fortify_SCA_24.4.0/bin:$PATH"
+
+export PATH="/Applications/Fortify/Fortify_Apps_and_Tools_24.4.0/bin:$PATH"
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"

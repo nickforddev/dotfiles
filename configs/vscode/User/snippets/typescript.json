@@ -10,5 +10,12 @@
 			"console.log($1)",
 		],
 		"description": "Log output to console"
+	},
+	"Print error to console": {
+		"prefix": "cer",
+		"body": [
+			"console.error($1)",
+		],
+		"description": "Log error to console"
 	}
 }

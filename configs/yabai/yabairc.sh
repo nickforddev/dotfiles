@@ -16,36 +16,31 @@ sudo yabai --load-sa
 
 # ===== Tiling setting =========================
 
-yabai -m config layout                      bsp
-
-yabai -m config external_bar                all:44:0
-
-yabai -m config top_padding                 $gap
-yabai -m config bottom_padding              $gap
-yabai -m config left_padding                $gap
-yabai -m config right_padding               $gap
-yabai -m config window_gap                  $gap
-
-yabai -m config mouse_follows_focus         off
-yabai -m config focus_follows_mouse         off
-
-yabai -m config window_topmost              off
-yabai -m config window_opacity              on
-yabai -m config window_shadow               off
-
-yabai -m config active_window_opacity       1.0
-yabai -m config normal_window_opacity       0.90
-yabai -m config split_ratio                 0.50
-
-yabai -m config auto_balance                on
-
-yabai -m config mouse_modifier              fn
-yabai -m config mouse_action1               move
-yabai -m config mouse_action2               resize
-
-yabai -m config window_border               on
-yabai -m config window_border_width         3
-yabai -m config window_border_blur          off
+yabai -m config layout                      bsp            \
+                external_bar                all:44:0       \
+                top_padding                 $gap           \
+                bottom_padding              $gap           \
+                left_padding                $gap           \
+                right_padding               $gap           \
+                window_gap                  $gap           \
+                mouse_follows_focus         off            \
+                focus_follows_mouse         off            \
+                window_topmost              off            \
+                window_opacity              on             \
+                window_opacity_duration     0.2            \
+                window_shadow               off            \
+                window_animation_duration   0.2            \
+                window_animation_easing     ease_out_quint \
+                active_window_opacity       1.0            \
+                normal_window_opacity       0.90           \
+                split_ratio                 0.50           \
+                auto_balance                on             \
+                mouse_modifier              fn             \
+                mouse_action1               move           \
+                mouse_action2               resize         \
+                window_border               on             \
+                window_border_width         3              \
+                window_border_blur          off
 
 # ===== Rules ==================================
 
@@ -72,7 +67,7 @@ yabai -m rule --add label="Amazon Chime" app="^Amazon Chime$" title="^Amazon Chi
 yabai -m rule --add label="Amazon Chime Mute box" app="^Amazon Chime$" title="^Mute box$" space=3
 yabai -m rule --add label="Amazon Connections" app="^Amazon Connections$" space=3
 yabai -m rule --add label="Slack" app="^Slack$" space=4
-yabai -m rule --add label="Cisco AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
+yabai -m rule --add label="AnyConnect" app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="(Licenses)" manage=off
 yabai -m rule --add label="IntelliJ IDEA" app="^IntelliJ IDEA$" title="Rollback Changes" manage=off
 yabai -m rule --add label="Übersicht" app="^Übersicht$" title="Preferences" manage=off
